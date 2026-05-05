@@ -1,0 +1,1455 @@
+{
+  "summary": {
+    "accuracy": {
+      "mean": 4.95,
+      "min": 4,
+      "max": 5,
+      "count": 20
+    },
+    "completeness": {
+      "mean": 4.3,
+      "min": 4,
+      "max": 5,
+      "count": 20
+    },
+    "clarity": {
+      "mean": 4.95,
+      "min": 4,
+      "max": 5,
+      "count": 20
+    },
+    "actionability": {
+      "mean": 5.0,
+      "min": 5,
+      "max": 5,
+      "count": 20
+    },
+    "overall": {
+      "mean": 4.95,
+      "min": 4,
+      "max": 5,
+      "count": 20
+    }
+  },
+  "results": [
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $100.00 (typical range), round number\nTime: late night/early morning (0:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+        "ml_score": 0.8823745846748352,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence at an unusual time and the presence of certain anomalous patterns that deviate from typical user behavior.",
+          "anomalous_patterns": [
+            "Transaction occurred at 0:00, which is outside of typical business hours and may indicate automated or unauthorized activity.",
+            "The transaction amount is a round number ($100.00), which is often associated with fraudulent transactions as fraudsters tend to use round numbers for ease.",
+            "The email domain associated with the transaction is flagged with a high anomaly score (31.0), suggesting it may be linked to known fraudulent activities or is atypical for the user.",
+            "The product code (4.0) may not align with the user's usual purchasing patterns, indicating potential misuse of account credentials."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly. Additionally, review the account's transaction history for similar patterns and check if the email domain has been associated with previous fraudulent activities.",
+          "confidence": 0.8824
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.88,
+          "evidence": [
+            "High fraud probability score of 0.8824",
+            "Transaction occurred at an unusual time (late night/early morning)",
+            "Email domain flagged as suspicious (31.0)",
+            "Round number transaction amount, which can be indicative of testing stolen credentials"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.6,
+          "reasoning": "The high fraud probability score and unusual transaction time suggest potential fraudulent activity. The suspicious email domain and round transaction amount are indicative of identity fraud, possibly using stolen or synthetic identities. However, the transaction could also be an account takeover attempt, given the unauthorized nature implied by the time and email domain. The evidence leans more towards identity fraud due to the nature of the transaction details."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8824, indicating moderate confidence in fraud.",
+            "Transaction occurred late at night, which can be suspicious when combined with other factors.",
+            "Round number transaction amount, which is often associated with fraudulent transactions."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range, suggesting it might be a normal transaction.",
+            "No mention of multiple anomalous PCA components, which would strongly indicate fraud."
+          ],
+          "fraud_likelihood": 0.88,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "The high fraud score combined with the late night timing and round number amount."
+        },
+        "original": {
+          "transaction_id": 2996041.0,
+          "text": "Transaction Amount: $100.00 (typical range), round number\nTime: late night/early morning (0:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8823745846748352,
+          "amount": 100.0,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies multiple suspicious patterns associated with the transaction.",
+          "It provides a comprehensive risk summary and detailed analysis of anomalies.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [],
+        "reasoning": "The AI-generated explanation is thorough, covering all relevant aspects of the transaction that contribute to its fraudulent classification. It is factually correct, well-structured, and offers actionable steps for further investigation."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $77.34 (typical range)\nTime: late night/early morning (1:00), weekend\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8364384174346924,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an atypical time for legitimate transactions and the presence of unusual patterns in the email domain and product fields.",
+          "anomalous_patterns": [
+            "Transaction occurred at 1:00 AM on a weekend, which is outside typical business hours and may indicate fraudulent activity.",
+            "The 'Product' field has a value of 0.0, which is unusual and may suggest an attempt to obfuscate the nature of the purchase.",
+            "The 'Email domain' field has a value of 16.0, which is atypical and could indicate a non-standard or potentially fraudulent email domain."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and investigate the nature of the product associated with this transaction. Additionally, review the account's transaction history for similar patterns during late-night hours.",
+          "confidence": 0.8364
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8364",
+            "Transaction occurred at an unusual time (1:00 AM on a weekend)",
+            "Email domain anomaly score of 16.0, indicating potential use of a suspicious or newly created email domain"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability score and unusual timing suggest potential fraudulent activity. The email domain anomaly further supports the likelihood of identity fraud, as it may indicate the use of a fake or compromised identity. However, the possibility of account takeover cannot be ruled out, as unauthorized access could also explain the suspicious transaction characteristics."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "Transaction occurred late at night/early morning on a weekend, which is less common for legitimate transactions.",
+            "The ML model assigned a high fraud score of 0.8364, indicating moderate confidence in fraudulent activity.",
+            "Multiple anomalous PCA components (|z|>3) are likely present, suggesting unusual transaction patterns."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $77.34 falls within the typical range, which is not inherently suspicious."
+          ],
+          "fraud_likelihood": 0.85,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.9,
+          "key_deciding_factor": "The high fraud score combined with late night timing and potential anomalous PCA components"
+        },
+        "original": {
+          "transaction_id": 3214197.0,
+          "text": "Transaction Amount: $77.34 (typical range)\nTime: late night/early morning (1:00), weekend\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8364384174346924,
+          "amount": 77.338,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 4,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 4,
+        "strengths": [
+          "The explanation accurately identifies the unusual timing of the transaction and the anomalous values in the product and email domain fields.",
+          "The risk summary and recommended actions are clear and actionable."
+        ],
+        "weaknesses": [
+          "While the explanation is generally accurate, the description of the email domain value as 'atypical' could benefit from more context regarding what constitutes a typical email domain."
+        ],
+        "reasoning": "The AI-generated explanation is mostly accurate and provides a comprehensive overview of the suspicious aspects of the transaction. It is clear and actionable, making it useful for a fraud investigator, though it could improve by providing more context on the email domain anomaly."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $300.00 (typical range), round number\nTime: evening (19:00), weekend\nProduct: 1.0\nEmail domain: 54.0\nTime deltas: 8 available",
+        "ml_score": 0.9716363549232484,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its high fraud probability score significantly exceeding the threshold, combined with several anomalous patterns in the transaction details.",
+          "anomalous_patterns": [
+            "The transaction amount is a round number ($300.00), which is often associated with fraudulent activity as fraudsters tend to use round numbers for simplicity.",
+            "The transaction occurred during the evening on a weekend, which is a less typical time for legitimate transactions and can be indicative of fraudulent behavior.",
+            "The email domain associated with the transaction is unusual (54.0), suggesting it may be a temporary or less reputable domain often used in fraudulent activities.",
+            "The fraud probability score of 0.9716 is significantly above the threshold of 0.8231, indicating a high likelihood of fraud."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any previous fraudulent activities associated with it. Additionally, they should contact the account holder to confirm the transaction and review any recent account activity for further anomalies.",
+          "confidence": 0.972
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.95,
+          "evidence": [
+            "High fraud probability score of 0.9716",
+            "Transaction occurred at an unusual time (evening, weekend)",
+            "Round number transaction amount, which can be indicative of testing the account",
+            "Email domain and product details are atypical or suspicious"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.7,
+          "reasoning": "The high fraud probability score and the context of the transaction suggest unauthorized access to the account, possibly by a third party. The transaction's timing and characteristics (round number, unusual email domain) align with patterns seen in account takeovers. However, the possibility of identity fraud cannot be entirely ruled out, as the transaction could involve a stolen or synthetic identity being used to make purchases."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9716, indicating strong model confidence in fraudulent activity.",
+            "Round number transaction amount, which can be a common trait in fraudulent transactions.",
+            "Evening weekend transaction time, which can be associated with higher fraud risk, especially when combined with other anomalous features."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range, which might suggest normal activity."
+          ],
+          "fraud_likelihood": 0.95,
+          "assessment": "The transaction exhibits several red flags, including a high fraud score, round number amount, and timing that aligns with higher fraud risk periods. While the transaction amount is typical, the overall pattern strongly suggests fraudulent activity.",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The high fraud score combined with the round number transaction amount and timing."
+        },
+        "original": {
+          "transaction_id": 3193005.0,
+          "text": "Transaction Amount: $300.00 (typical range), round number\nTime: evening (19:00), weekend\nProduct: 1.0\nEmail domain: 54.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9716363549232484,
+          "amount": 300.0,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies and explains the suspicious patterns associated with the transaction.",
+          "It provides a comprehensive risk summary and detailed analysis of the anomalies.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [],
+        "reasoning": "The AI-generated explanation is thorough, well-structured, and provides clear insights into the fraudulent nature of the transaction. It effectively combines factual accuracy with actionable recommendations, making it an excellent resource for fraud analysis."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $7.23 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8996091485023499,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious primarily due to its occurrence during an unusual time and the high fraud probability score exceeding the threshold.",
+          "anomalous_patterns": [
+            "The transaction occurred at 2:00 AM, which is outside typical business hours and may indicate unauthorized activity.",
+            "The fraud probability score of 0.8996 is significantly higher than the threshold of 0.8231, suggesting a strong likelihood of fraudulent behavior.",
+            "The email domain score of 16.0 is atypical and may indicate a potentially risky or unverified domain."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly. Additionally, review the account's transaction history for similar patterns and check the reputation of the email domain used.",
+          "confidence": 0.9
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8996",
+            "Transaction occurred at an unusual time (2:00 AM)",
+            "Email domain anomaly (16.0) suggesting potential compromise",
+            "Transaction amount is atypically low, possibly testing account access"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability and unusual characteristics, such as the time and email domain anomaly, suggest unauthorized access to the account. The low transaction amount could indicate a test transaction, which is common in account takeovers. However, the use of potentially compromised identity information also aligns with identity fraud, making it a plausible alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8996, indicating moderate confidence in fraud.",
+            "Transaction occurred late at night (2:00 AM), which can be suspicious when combined with other anomalies.",
+            "Email domain anomaly with a z-score of 16.0, suggesting a highly unusual pattern."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $7.23 is within the typical range, which is not inherently suspicious."
+          ],
+          "fraud_likelihood": 0.9,
+          "assessment": "The transaction exhibits multiple red flags, including a high fraud score and significant anomalies in email domain and timing. While the transaction amount is typical, the combination of other factors strongly suggests fraudulent activity.",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The significant anomaly in the email domain (z-score of 16.0) combined with a high fraud score."
+        },
+        "original": {
+          "transaction_id": 3180062.0,
+          "text": "Transaction Amount: $7.23 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8996091485023499,
+          "amount": 7.229,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the unusual transaction time and high fraud probability score as key indicators of fraud.",
+          "It provides a clear summary of the risk factors and their implications.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could have included more context about the significance of the email domain score."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, effectively highlighting the key risk factors associated with the transaction. It is well-structured and provides actionable steps for further investigation, making it a high-quality explanation overall."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $150.00 (typical range), round number\nTime: late night/early morning (23:00), weekday\nProduct: 1.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.9395295977592468,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an unusual time and the use of an uncommon email domain, both of which are indicative of potential fraudulent activity.",
+          "anomalous_patterns": [
+            "Transaction occurred at 23:00, which is outside typical business hours and may indicate unauthorized access.",
+            "Email domain score of 16.0 suggests the use of a rare or newly created domain, often associated with fraudulent activities.",
+            "The transaction amount is a round number, which can sometimes be used to test stolen credit cards."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any previous transactions associated with it. Additionally, review the account's transaction history for any unusual patterns or recent changes in behavior.",
+          "confidence": 0.94
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.9395",
+            "Transaction occurred at an unusual time (late night/early morning)",
+            "Round number transaction amount, which can be indicative of testing account access",
+            "Email domain and product details are atypical or flagged"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability and unusual timing suggest unauthorized access, typical of account takeovers. The round number and atypical email domain further support this. However, the use of potentially stolen or synthetic identities could also explain the transaction, hence the alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9395, indicating strong model confidence in fraud.",
+            "Transaction occurred late at night (23:00), which can be suspicious when combined with other anomalies.",
+            "Round number transaction amount, which is often associated with fraudulent transactions."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range, suggesting it might be a normal transaction."
+          ],
+          "fraud_likelihood": 0.92,
+          "assessment": "The transaction has several indicators of potential fraud, including a high fraud score and late-night timing. While the transaction amount is typical, the combination of factors leans towards fraudulent activity.",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "High fraud score combined with late-night timing and round number transaction."
+        },
+        "original": {
+          "transaction_id": 3124272.0,
+          "text": "Transaction Amount: $150.00 (typical range), round number\nTime: late night/early morning (23:00), weekday\nProduct: 1.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9395295977592468,
+          "amount": 150.0,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the time of the transaction and the unusual email domain as potential indicators of fraud.",
+          "It provides a clear risk summary and detailed anomalous patterns.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could have included more context about the significance of the transaction amount being a round number."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, effectively identifying key risk factors and providing actionable recommendations for further investigation. The minor gap in completeness does not detract significantly from the overall quality."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $31.48 (typical range)\nTime: late night/early morning (22:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nTime deltas: 8 available",
+        "ml_score": 0.9849778413772584,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its high fraud probability score and unusual characteristics related to the time and email domain.",
+          "anomalous_patterns": [
+            "The transaction occurred late at night (22:00) on a weekend, which is atypical for the account holder's usual transaction times.",
+            "The email domain associated with the transaction is flagged with a high-risk score of 19.0, indicating it may be linked to fraudulent activities.",
+            "The fraud probability score of 0.9850 significantly exceeds the threshold of 0.8231, suggesting a strong likelihood of fraudulent behavior."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and cross-reference it with known fraudulent domains. Additionally, they should contact the account holder to confirm the transaction's authenticity, especially given the unusual transaction time.",
+          "confidence": 0.985
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.95,
+          "evidence": [
+            "High fraud probability score of 0.9850",
+            "Transaction occurred at an unusual time (late night/early morning on a weekend)",
+            "Email domain and product details are atypical or flagged",
+            "Time deltas suggest unusual activity patterns"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.7,
+          "reasoning": "The transaction's high fraud probability score and unusual timing suggest unauthorized access, typical of account takeovers. The atypical email domain and product details further support this. However, the use of potentially fraudulent identity information could also indicate identity fraud, hence the alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9850, indicating strong model confidence in fraud.",
+            "Transaction occurred late at night on a weekend, which can be indicative of fraud when combined with other factors.",
+            "Anomalous email domain feature with a value of 19.0, which is unusual and may suggest a disposable or rarely used domain."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $31.48 falls within the typical range, suggesting it is not an unusually large or small transaction."
+          ],
+          "fraud_likelihood": 0.95,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The high fraud score combined with the anomalous email domain feature and late night timing."
+        },
+        "original": {
+          "transaction_id": 3066639.0,
+          "text": "Transaction Amount: $31.48 (typical range)\nTime: late night/early morning (22:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9849778413772584,
+          "amount": 31.482,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and the unusual transaction timing.",
+          "It effectively highlights the risk associated with the email domain.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [],
+        "reasoning": "The AI-generated explanation is comprehensive, covering all relevant aspects of the transaction that contribute to its fraudulent classification. It is clear and well-structured, making it easy to understand, and provides actionable steps for further investigation."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $209.95 (typical range)\nTime: late night/early morning (1:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+        "ml_score": 0.8250606060028076,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an atypical time for legitimate transactions and a high fraud probability score slightly above the threshold.",
+          "anomalous_patterns": [
+            "The transaction occurred at 1:00 AM, which is outside of normal business hours and may indicate unauthorized activity.",
+            "The fraud probability score of 0.8251 exceeds the threshold of 0.8231, suggesting a higher likelihood of fraudulent behavior.",
+            "The email domain associated with the transaction is flagged with a score of 31.0, which may indicate a domain with a history of fraudulent activity."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly to confirm the purchase. Additionally, review the transaction history for similar patterns of late-night transactions and check the email domain against known fraudulent domains.",
+          "confidence": 0.8251
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8251",
+            "Transaction occurred at an unusual time (1:00 AM), which is often associated with unauthorized access",
+            "Email domain score of 31.0, which may indicate a suspicious or less common domain",
+            "Transaction amount is within typical range, suggesting an attempt to avoid detection"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability and unusual timing suggest unauthorized access, typical of account takeovers. The email domain score further supports this, as it may indicate a compromised or fraudulent email account. However, the use of potentially stolen or synthetic identities could also explain these anomalies, hence Identity Fraud as an alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8251, indicating moderate confidence in fraud.",
+            "Transaction occurred late at night, which can be suspicious especially when combined with other anomalous features.",
+            "Email domain anomaly score of 31.0, which is significantly higher than typical values, suggesting potential fraud."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range, which does not raise immediate suspicion.",
+            "No mention of multiple anomalous PCA components, which would strongly indicate fraud."
+          ],
+          "fraud_likelihood": 0.83,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "The high fraud score combined with the anomalous email domain score."
+        },
+        "original": {
+          "transaction_id": 2996246.0,
+          "text": "Transaction Amount: $209.95 (typical range)\nTime: late night/early morning (1:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8250606060028076,
+          "amount": 209.95,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the time of the transaction as suspicious and correlates it with the fraud probability score.",
+          "It provides a clear summary of the risk factors and recommended actions for further investigation."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could include more context about the significance of the email domain score."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, providing a clear and actionable summary of the fraud risk associated with the transaction. It effectively highlights the key anomalies and suggests appropriate next steps for investigation, making it a strong resource for fraud analysts."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $26.82 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 37.0\nTime deltas: 8 available",
+        "ml_score": 0.8325666785240173,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an atypical time for legitimate transactions and the high fraud probability score exceeding the threshold.",
+          "anomalous_patterns": [
+            "Transaction occurred at 2:00 AM, which is an unusual time for legitimate transactions, increasing the likelihood of fraudulent activity.",
+            "The fraud probability score of 0.8326 is above the threshold of 0.8231, indicating a high likelihood of fraud.",
+            "The email domain feature value of 37.0 is atypical and may suggest an unusual or newly created email domain, which is often associated with fraudulent activities."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any recent changes in the account's email address. Additionally, review the account's transaction history for similar patterns or other anomalies, and contact the account holder to confirm the transaction's authenticity.",
+          "confidence": 0.833
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8326",
+            "Transaction occurred at an unusual time (2:00 AM), which is often associated with unauthorized access",
+            "Email domain anomaly score of 37.0, suggesting potential use of a compromised or unusual email",
+            "Transaction amount is typical, possibly to avoid detection, which is common in account takeovers"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability and unusual timing suggest unauthorized access, indicative of account takeover. The email domain anomaly further supports this. However, the use of potentially compromised identity details could also suggest identity fraud, hence the alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8326, above the threshold of 0.8231, indicating moderate confidence in fraud.",
+            "Transaction occurred late at night (2:00 AM), which is often associated with fraudulent activity, especially when combined with other anomalous features.",
+            "Email domain anomaly with a value of 37.0, which may indicate a suspicious or rarely used domain."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $26.82 falls within the typical range, suggesting it is not an unusually large or small transaction that might indicate fraud."
+          ],
+          "fraud_likelihood": 0.85,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.75,
+          "key_deciding_factor": "The combination of a high fraud score and late night timing with an anomalous email domain."
+        },
+        "original": {
+          "transaction_id": 3163188.0,
+          "text": "Transaction Amount: $26.82 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 37.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8325666785240173,
+          "amount": 26.818,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the unusual transaction time and the high fraud probability score.",
+          "It provides a clear risk summary and detailed anomalous patterns.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could briefly mention other potential factors that could contribute to fraud risk, such as transaction amount or frequency."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, providing a clear understanding of the fraud risk associated with the transaction. It effectively highlights key anomalies and offers actionable steps for further investigation."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $186.00 (typical range), round number\nTime: evening (20:00), weekday\nProduct: 4.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.9850797057151794,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score significantly above the threshold, indicating potential fraudulent activity.",
+          "anomalous_patterns": [
+            "The fraud probability score of 0.9851 is significantly higher than the threshold of 0.8231, suggesting a strong likelihood of fraud.",
+            "The transaction amount is a round number, which is often associated with fraudulent transactions as fraudsters tend to use round numbers for simplicity.",
+            "The transaction occurred in the evening (20:00) on a weekday, which may be outside the typical transaction time for this account, indicating unusual behavior.",
+            "The email domain score of 16.0 could suggest an unusual or newly created email domain, which is a common tactic used in fraudulent activities."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly. Additionally, investigate the email domain for any signs of recent creation or association with known fraudulent activities.",
+          "confidence": 0.9851
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.95,
+          "evidence": [
+            "High fraud probability score of 0.9851",
+            "Transaction amount is a round number, which can be indicative of automated or fraudulent activity",
+            "Unusual email domain score of 16.0, suggesting potential use of a suspicious or newly created email domain"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.75,
+          "reasoning": "The high fraud probability score and unusual email domain suggest that the transaction may involve a fraudulent identity. The round number transaction amount is often associated with automated or fraudulent transactions, which aligns with identity fraud. However, the possibility of account takeover cannot be ruled out, given the suspicious nature of the transaction and the potential for unauthorized access."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9851, indicating strong model confidence in fraudulent activity.",
+            "Round number transaction amount, which can be indicative of fraud as fraudsters often use round numbers for simplicity.",
+            "Anomalous email domain value of 16.0, which is outside typical ranges and may suggest a suspicious or newly created email domain."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $186.00 falls within the typical range for this account, suggesting normal spending behavior.",
+            "Evening transaction time at 20:00 on a weekday is not highly unusual for legitimate transactions."
+          ],
+          "fraud_likelihood": 0.95,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.9,
+          "key_deciding_factor": "The high fraud score combined with the anomalous email domain value."
+        },
+        "original": {
+          "transaction_id": 3013711.0,
+          "text": "Transaction Amount: $186.00 (typical range), round number\nTime: evening (20:00), weekday\nProduct: 4.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9850797057151794,
+          "amount": 186.0,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its implications.",
+          "It correctly notes the round number transaction amount as a potential indicator of fraud.",
+          "The timing of the transaction is appropriately flagged as unusual.",
+          "The recommendation for further investigation is clear and actionable."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could have included more context about typical transaction patterns for the specific account."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, providing a clear summary of the risks associated with the transaction. It effectively identifies key anomalies and offers actionable recommendations for further investigation, making it a strong response overall."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $25.42 (typical range)\nTime: evening (20:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.9926772117614746,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to an unusually high fraud probability score, significantly exceeding the threshold, despite the transaction amount being within the typical range.",
+          "anomalous_patterns": [
+            "The fraud probability score of 0.9927 is significantly higher than the threshold of 0.8231, indicating a strong likelihood of fraudulent activity.",
+            "The email domain feature value of 16.0 is atypical and may suggest an unusual or newly created email domain, which is often associated with fraudulent transactions.",
+            "The product feature value of 0.0 is unusual, potentially indicating a lack of product information or a non-standard product category, which can be a red flag for fraud."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and investigate the product details to ensure they align with typical transaction patterns. Additionally, reviewing the account's transaction history for similar anomalies could provide further insights.",
+          "confidence": 0.993
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.95,
+          "evidence": [
+            "High fraud probability score of 0.9927",
+            "Unusual email domain value of 16.0, which may indicate a synthetic or suspicious email address",
+            "Transaction amount of $25.42 is typical, suggesting an attempt to avoid detection",
+            "Evening transaction time could indicate an attempt to avoid scrutiny"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.7,
+          "reasoning": "The transaction's high fraud probability score and unusual email domain suggest identity fraud, possibly involving a synthetic identity or stolen credentials. The typical transaction amount and evening timing further support this classification. However, the possibility of account takeover cannot be ruled out, given the unauthorized nature implied by the fraud score and email domain anomaly."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9927, indicating strong model confidence in fraudulent activity.",
+            "Email domain anomaly with a z-score of 16.0, which is significantly outside the normal range and suggests potential fraud.",
+            "Product anomaly with a z-score of 0.0, which might indicate an unusual or suspicious product category."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $25.42 falls within the typical range, suggesting it is not unusually large or small.",
+            "Transaction occurred during a weekday evening, which is a common time for legitimate transactions."
+          ],
+          "fraud_likelihood": 0.99,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The extremely high fraud score and significant email domain anomaly"
+        },
+        "original": {
+          "transaction_id": 3185143.0,
+          "text": "Transaction Amount: $25.42 (typical range)\nTime: evening (20:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9926772117614746,
+          "amount": 25.419,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its significance.",
+          "It highlights specific anomalous patterns related to the email domain and product feature.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could briefly mention the time of the transaction as a potential factor, even if it is not explicitly flagged as suspicious."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive, accurate, and actionable, providing a clear summary of the risks and recommended actions for further investigation. It effectively communicates the reasons for flagging the transaction as fraudulent, making it a strong resource for fraud analysts."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $171.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: 4.0\nEmail domain: 54.0\nTime deltas: 8 available",
+        "ml_score": 0.967920422554016,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score significantly above the threshold, indicating potential fraudulent activity.",
+          "anomalous_patterns": [
+            "The transaction amount is a round number, which is often associated with fraudulent transactions as fraudsters tend to use round numbers for simplicity.",
+            "The transaction occurred in the evening on a weekday, which may not align with the typical spending patterns of the account holder.",
+            "The email domain associated with the transaction is unusual (54.0), which could indicate a temporary or disposable email address often used in fraudulent activities.",
+            "The fraud probability score of 0.9679 is significantly higher than the threshold of 0.8231, suggesting a strong likelihood of fraud."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any previous transactions associated with it. Additionally, review the account holder's typical transaction patterns to determine if the time and amount are consistent with their usual behavior.",
+          "confidence": 0.968
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.95,
+          "evidence": [
+            "High fraud probability score of 0.9679",
+            "Unusual email domain '54.0' which may indicate a synthetic or suspicious identity",
+            "Round transaction amount, which can be indicative of testing stolen or synthetic identities"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.7,
+          "reasoning": "The transaction's high fraud probability score and unusual email domain suggest the use of a stolen or synthetic identity, which aligns with Identity Fraud. The round transaction amount and typical range could indicate testing of a compromised account, suggesting Account Takeover as an alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9679, indicating strong model confidence in fraud.",
+            "Round number transaction amount, which can be indicative of fraud.",
+            "Anomalous email domain with a z-score of 54.0, suggesting unusual activity."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range for this account.",
+            "Evening transaction time on a weekday is not inherently suspicious."
+          ],
+          "fraud_likelihood": 0.95,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The high fraud score and anomalous email domain z-score."
+        },
+        "original": {
+          "transaction_id": 3024311.0,
+          "text": "Transaction Amount: $171.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: 4.0\nEmail domain: 54.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.967920422554016,
+          "amount": 171.0,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its implications.",
+          "It effectively highlights multiple suspicious patterns, such as the round number transaction amount and unusual email domain.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [],
+        "reasoning": "The AI-generated explanation is comprehensive, covering all relevant aspects of the transaction that contribute to its fraudulent classification. It is clear and structured, making it easy for a fraud investigator to understand and act upon the information provided."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $77.00 (typical range)\nTime: morning (7:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+        "ml_score": 0.8331185579299927,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score exceeding the threshold, indicating potential fraudulent activity.",
+          "anomalous_patterns": [
+            "The fraud probability score of 0.8331 is significantly above the threshold of 0.8231, suggesting a high likelihood of fraud.",
+            "The email domain feature value of 31.0 is atypical and may indicate a disposable or less secure email provider, which is often associated with fraudulent activities.",
+            "The product feature value of 4.0 could be linked to a high-risk product category, which is frequently targeted by fraudsters."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and investigate the product category associated with the transaction. Additionally, cross-reference this transaction with the customer's historical transaction patterns to identify any deviations.",
+          "confidence": 0.8331
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8331",
+            "Unusual email domain score of 31.0, which may indicate a suspicious or newly created email domain",
+            "Transaction amount is within typical range, suggesting an attempt to avoid detection"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The high fraud probability score and unusual email domain suggest that the transaction may involve a stolen or synthetic identity. The transaction amount being typical could indicate an attempt to blend in with normal activity. However, the possibility of account takeover cannot be ruled out, as unauthorized access could also explain the flagged transaction."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8331, above the threshold of 0.8231, indicating moderate confidence in fraud.",
+            "Anomalous email domain feature with a value of 31.0, which may suggest a suspicious or rarely used domain."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $77.00 falls within the typical range, suggesting normalcy.",
+            "Transaction occurred at 7:00 AM on a weekday, which is a common time for legitimate transactions."
+          ],
+          "fraud_likelihood": 0.83,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.75,
+          "key_deciding_factor": "The high fraud score combined with the anomalous email domain feature."
+        },
+        "original": {
+          "transaction_id": 3203570.0,
+          "text": "Transaction Amount: $77.00 (typical range)\nTime: morning (7:00), weekday\nProduct: 4.0\nEmail domain: 31.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8331185579299927,
+          "amount": 77.0,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its implications.",
+          "It highlights specific anomalous patterns related to the email domain and product category.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could provide more context on the significance of the time of day and day of the week in relation to fraud patterns."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive, accurate, and actionable, providing clear insights into the transaction's suspicious aspects and offering practical steps for further investigation. Minor gaps in completeness regarding temporal factors prevent a perfect score."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $18.48 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8549860715866089,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an atypical time for legitimate transactions and the presence of unusual product and email domain codes.",
+          "anomalous_patterns": [
+            "The transaction occurred at 2:00 AM, which is outside of normal business hours and may indicate unauthorized activity.",
+            "The product code is 0.0, which is unusual and may suggest an attempt to obfuscate the nature of the purchase.",
+            "The email domain code is 16.0, which is atypical and could indicate the use of a temporary or less secure email service."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder to confirm the purchase. Additionally, investigate the email domain and product code for any known associations with fraudulent activity.",
+          "confidence": 0.855
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8550",
+            "Transaction occurred at an unusual time (2:00 AM), which is often associated with fraudulent activity",
+            "Email domain anomaly score of 16.0, indicating potential use of a compromised or unusual email domain"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.15,
+          "reasoning": "The transaction's high fraud probability score and unusual timing suggest unauthorized access, typical of account takeovers. The email domain anomaly further supports this. However, the possibility of identity fraud exists if a stolen identity was used to access the account."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8550, above the threshold of 0.8231",
+            "Transaction occurred late at night (2:00 AM), which can be suspicious when combined with other anomalies",
+            "Email domain anomaly with a value of 16.0, which may indicate a disposable or rarely used domain"
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $18.48 is within the typical range, suggesting normal consumer behavior",
+            "No mention of multiple anomalous PCA components, which would strongly indicate fraud"
+          ],
+          "fraud_likelihood": 0.85,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "High fraud score combined with late night timing and email domain anomaly"
+        },
+        "original": {
+          "transaction_id": 3180121.0,
+          "text": "Transaction Amount: $18.48 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8549860715866089,
+          "amount": 18.481,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the time of the transaction as suspicious and explains why it is atypical.",
+          "It correctly highlights the unusual product code and email domain, providing context for their potential implications.",
+          "The recommended action is clear and actionable, guiding the fraud analyst on the next steps."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could include more detail on the significance of the 'time deltas' mentioned in the transaction data."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive, accurate, and actionable, providing a clear summary of the risks associated with the transaction. It effectively communicates the reasons for suspicion and offers practical steps for further investigation, though it could benefit from a slight expansion on the time deltas."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $44.37 (typical range)\nTime: late night/early morning (23:00), weekday\nProduct: 0.0\nEmail domain: 1.0\nTime deltas: 8 available",
+        "ml_score": 0.8841473460197449,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during an unusual time for typical transactions and the presence of anomalous patterns in the email domain and product category.",
+          "anomalous_patterns": [
+            "The transaction occurred at 23:00, which is outside the typical business hours and may indicate unusual activity.",
+            "The email domain is flagged with a score of 1.0, suggesting it is associated with known fraudulent activities or is atypical for the user's transaction history.",
+            "The product category is marked as 0.0, which may indicate an unrecognized or suspicious product type not typically purchased by the user."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and product category, and cross-reference with the user's historical transaction patterns to confirm if late-night transactions are common for this account.",
+          "confidence": 0.8841
+        },
+        "fraud_classification": {
+          "primary_classification": "Account Takeover",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8841",
+            "Transaction occurred at an unusual time (late night/early morning)",
+            "Email domain flagged as suspicious (1.0)",
+            "Multiple time deltas available, indicating potential unusual activity patterns"
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.65,
+          "reasoning": "The transaction's high fraud probability score and unusual timing suggest unauthorized access, typical of account takeovers. The flagged email domain and multiple time deltas further support this classification. However, the use of potentially suspicious email domains and the nature of the transaction could also indicate identity fraud, where stolen or synthetic identities are used."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8841, indicating moderate confidence in fraud.",
+            "Transaction occurred late at night (23:00), which can be suspicious when combined with other factors.",
+            "Email domain anomaly (1.0), which may suggest a disposable or unusual email provider."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $44.37 is within the typical range, suggesting normal consumer behavior.",
+            "No mention of multiple anomalous PCA components, which would strongly indicate fraud."
+          ],
+          "fraud_likelihood": 0.88,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "The high fraud score combined with the late-night timing and email domain anomaly."
+        },
+        "original": {
+          "transaction_id": 3085379.0,
+          "text": "Transaction Amount: $44.37 (typical range)\nTime: late night/early morning (23:00), weekday\nProduct: 0.0\nEmail domain: 1.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8841473460197449,
+          "amount": 44.366,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the unusual timing of the transaction as a potential red flag.",
+          "It correctly highlights the suspicious nature of the email domain and product category.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could provide more context on how the email domain score is determined."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and well-structured, accurately identifying key risk factors associated with the transaction. It provides clear guidance for further investigation, making it highly actionable."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $40.69 (typical range)\nTime: afternoon (17:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nUnusual count features (>95th pct): {'C1': 1676, 'C2': 2225, 'C4': 1011, 'C6': 1011, 'C7': 1012, 'C8': 1532, 'C10': 1697, 'C11': 1377, 'C12': 1377, 'C13': 1509, 'C14': 665}\nTime deltas: 8 available",
+        "ml_score": 0.8906314969062805,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to multiple count features exceeding the 95th percentile, indicating unusual activity patterns that deviate significantly from typical behavior.",
+          "anomalous_patterns": [
+            "Multiple count features (C1, C2, C4, C6, C7, C8, C10, C11, C12, C13, C14) exceed the 95th percentile, suggesting abnormal frequency or volume of transactions.",
+            "The transaction occurred at 17:00 on a weekend, which may not align with the user's typical transaction patterns.",
+            "The email domain feature is unusually high at 19.0, which could indicate a rare or suspicious domain usage."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly. Additionally, review the account's transaction history for similar patterns and check for any recent changes in account information or unusual login activities.",
+          "confidence": 0.891
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8906",
+            "Unusual count features exceeding the 95th percentile, indicating abnormal activity",
+            "Transaction amount is typical, suggesting an attempt to blend in with normal behavior"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The high fraud probability score and unusual count features suggest that the transaction may involve fraudulent activity. The typical transaction amount and timing during a weekend afternoon could indicate an attempt to mimic legitimate behavior, which is common in identity fraud cases. However, the possibility of account takeover cannot be ruled out due to the unusual activity patterns, hence it is considered as an alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8906, indicating moderate confidence in fraud.",
+            "Multiple unusual count features significantly above the 95th percentile, suggesting anomalous behavior.",
+            "Transaction occurred during the weekend, which can be associated with higher fraud risk."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount is within the typical range, which is not indicative of fraud by itself.",
+            "Transaction time is in the afternoon, which is not typically associated with fraudulent activity."
+          ],
+          "fraud_likelihood": 0.85,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.9,
+          "key_deciding_factor": "The presence of multiple unusual count features significantly above the 95th percentile."
+        },
+        "original": {
+          "transaction_id": 3032670.0,
+          "text": "Transaction Amount: $40.69 (typical range)\nTime: afternoon (17:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nUnusual count features (>95th pct): {'C1': 1676, 'C2': 2225, 'C4': 1011, 'C6': 1011, 'C7': 1012, 'C8': 1532, 'C10': 1697, 'C11': 1377, 'C12': 1377, 'C13': 1509, 'C14': 665}\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8906314969062805,
+          "amount": 40.693,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies multiple count features exceeding the 95th percentile, which is a key indicator of suspicious activity.",
+          "It clearly outlines the time of the transaction and its potential deviation from typical patterns.",
+          "The mention of the unusual email domain adds another layer of suspicion.",
+          "The recommended action is practical and provides clear steps for further investigation."
+        ],
+        "weaknesses": [],
+        "reasoning": "The AI-generated explanation is comprehensive, accurate, and actionable, addressing all relevant aspects of the transaction that contribute to its classification as fraudulent. It effectively communicates the risks and provides clear guidance for further investigation."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $123.30 (typical range)\nTime: afternoon (15:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nTime deltas: 8 available",
+        "ml_score": 0.8303231596946716,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score exceeding the threshold, combined with unusual patterns in the transaction metadata.",
+          "anomalous_patterns": [
+            "The transaction occurred during the weekend, which may be atypical for this account holder.",
+            "The email domain value of 19.0 is unusual and may indicate a non-standard or newly created email domain, which is often associated with fraudulent activities.",
+            "The product value of 0.0 suggests a lack of identifiable product information, which can be a red flag for fraudulent transactions."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any recent changes to the account's email address. Additionally, review the account's transaction history for similar patterns and contact the account holder to confirm the transaction's authenticity.",
+          "confidence": 0.8303
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8303",
+            "Unusual email domain value of 19.0, which may indicate a suspicious or newly created domain",
+            "Transaction amount is typical, suggesting an attempt to blend in with normal activity"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The high fraud probability score and unusual email domain suggest the use of a potentially fraudulent identity. The transaction amount is typical, which could be an attempt to avoid detection. However, the possibility of account takeover cannot be ruled out, as unauthorized access could also explain the suspicious email domain and transaction pattern."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8303, above the threshold of 0.8231, indicating moderate confidence in fraud.",
+            "Weekend transaction, which can sometimes be associated with fraudulent activity due to less oversight."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $123.30 is within the typical range, suggesting normal behavior.",
+            "Afternoon timing (15:00) is not typically associated with fraudulent activity, which often occurs late at night."
+          ],
+          "fraud_likelihood": 0.83,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.75,
+          "key_deciding_factor": "The fraud score being above the threshold, combined with weekend timing, suggests a moderate likelihood of fraud."
+        },
+        "original": {
+          "transaction_id": 3032078.0,
+          "text": "Transaction Amount: $123.30 (typical range)\nTime: afternoon (15:00), weekend\nProduct: 0.0\nEmail domain: 19.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8303231596946716,
+          "amount": 123.304,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and the unusual patterns associated with the transaction.",
+          "It provides specific details about the transaction that are relevant to assessing fraud risk.",
+          "The recommended actions are practical and actionable for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could include more context about the typical behavior of the account holder to enhance completeness."
+        ],
+        "reasoning": "The AI-generated explanation is accurate, clear, and actionable, providing a strong basis for further investigation. It effectively highlights the key anomalies and suggests relevant follow-up actions, though it could benefit from additional context regarding the account holder's typical transaction behavior."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $65.59 (typical range)\nTime: evening (19:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.9101260304450988,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to an unusually high fraud probability score and anomalies in the email domain and product category.",
+          "anomalous_patterns": [
+            "The fraud probability score of 0.9101 significantly exceeds the threshold of 0.8231, indicating a high likelihood of fraudulent activity.",
+            "The email domain feature value of 16.0 is atypical and may suggest the use of a rarely used or newly created email domain, which is often associated with fraudulent transactions.",
+            "The product feature value of 0.0 is unusual, potentially indicating an anomaly in the product category or a missing product description, which can be a red flag for fraud."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and investigate the product category for inconsistencies or errors. Additionally, reviewing the account's transaction history for similar patterns could provide further insights.",
+          "confidence": 0.9101
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.9101",
+            "Unusual email domain score of 16.0, indicating potential use of a suspicious or uncommon domain",
+            "Transaction amount is within typical range, suggesting an attempt to avoid detection"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The high fraud probability score and unusual email domain suggest the use of a potentially fraudulent identity, which aligns with Identity Fraud. The transaction amount being typical could indicate an attempt to blend in with normal activity. However, the possibility of Account Takeover cannot be ruled out, as unauthorized access could also explain the suspicious email domain and high fraud score."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.9101, indicating strong model confidence in fraudulent activity.",
+            "Anomalous email domain value of 16.0, which is unusual and may suggest a disposable or rarely used domain.",
+            "Product value of 0.0, which could indicate a non-standard or suspicious transaction type."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $65.59 falls within the typical range, suggesting it is not unusually large or small.",
+            "Evening transaction time at 19:00 on a weekday is not inherently suspicious and aligns with common consumer behavior."
+          ],
+          "fraud_likelihood": 0.91,
+          "assessment": "The transaction exhibits several indicators of potential fraud, including a high fraud score and anomalous features such as the email domain and product value. While the transaction amount and timing are typical, these alone are not sufficient to outweigh the strong fraud indicators.",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.95,
+          "key_deciding_factor": "The high fraud score combined with anomalous email domain and product values."
+        },
+        "original": {
+          "transaction_id": 3164502.0,
+          "text": "Transaction Amount: $65.59 (typical range)\nTime: evening (19:00), weekday\nProduct: 0.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.9101260304450988,
+          "amount": 65.588,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its implications.",
+          "It correctly highlights the anomalies in the email domain and product category.",
+          "The recommended actions are practical and relevant for further investigation."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could provide more context on the significance of the time of transaction."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, providing clear insights into the suspicious aspects of the transaction and actionable steps for investigation. The only minor gap is the lack of emphasis on the transaction time, which could also be relevant in assessing fraud risk."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $34.00 (typical range)\nTime: evening (19:00), weekend\nProduct: 4.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8772721886634827,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score exceeding the threshold, combined with unusual patterns in email domain usage and product purchase behavior.",
+          "anomalous_patterns": [
+            "The email domain '16.0' is atypical and may not correspond to a known or frequently used domain, suggesting potential use of a temporary or fraudulent email.",
+            "The product code '4.0' may not align with the user's typical purchase history, indicating a possible deviation from normal buying behavior.",
+            "The transaction occurred during the evening on a weekend, which can be a common time for fraudulent activities due to reduced monitoring."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and cross-reference it with known fraudulent domains. Additionally, review the user's purchase history to determine if the product code '4.0' is consistent with past transactions. Consider contacting the customer for verification if discrepancies are found.",
+          "confidence": 0.8773
+        },
+        "fraud_classification": {
+          "primary_classification": "Identity Fraud",
+          "confidence": 0.85,
+          "evidence": [
+            "High fraud probability score of 0.8773",
+            "Unusual email domain score of 16.0, indicating potential use of a suspicious or newly created email",
+            "Transaction amount of $34.00 is within typical range, suggesting an attempt to avoid detection",
+            "Evening and weekend transaction time, which can be indicative of fraudulent activity when legitimate users are less likely to monitor accounts"
+          ],
+          "alternative_classification": "Account Takeover",
+          "alternative_confidence": 0.65,
+          "reasoning": "The high fraud probability score and unusual email domain suggest the use of a potentially fraudulent identity. The transaction amount and timing further support this classification. However, the possibility of an account takeover exists due to the unauthorized nature of the transaction, but the evidence more strongly supports identity fraud."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8773, indicating moderate confidence in fraud.",
+            "Email domain anomaly with a z-score of 16.0, suggesting unusual activity.",
+            "Product anomaly with a z-score of 4.0, indicating atypical purchase behavior."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $34.00 falls within the typical range, suggesting normalcy.",
+            "Evening weekend timing is common for legitimate transactions and alone is weak evidence."
+          ],
+          "fraud_likelihood": 0.88,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "ESCALATE_AS_FRAUD",
+          "confidence": 0.9,
+          "key_deciding_factor": "Multiple anomalous PCA components with high z-scores"
+        },
+        "original": {
+          "transaction_id": 3215999.0,
+          "text": "Transaction Amount: $34.00 (typical range)\nTime: evening (19:00), weekend\nProduct: 4.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8772721886634827,
+          "amount": 34.0,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies the high fraud probability score and its implications.",
+          "It effectively highlights specific anomalous patterns related to the email domain and product code.",
+          "The recommended actions are practical and relevant for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could provide more context on the typical behavior of the user for a deeper understanding."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and accurate, providing clear insights into the suspicious nature of the transaction and actionable steps for investigation. It effectively communicates the risks involved while maintaining clarity and structure."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $100.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: 1.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8795992732048035,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to a high fraud probability score exceeding the threshold, combined with specific anomalies in the transaction details.",
+          "anomalous_patterns": [
+            "The transaction amount is a round number ($100.00), which is often associated with fraudulent activity as fraudsters tend to use round numbers for simplicity.",
+            "The transaction occurred in the evening (18:00) on a weekday, which may be outside the typical transaction time for this account, suggesting potential unauthorized access.",
+            "The email domain score is 16.0, which may indicate an unusual or newly created email domain, often used in fraudulent transactions.",
+            "The product score is 1.0, which could suggest a high-risk product category or a mismatch with the user's typical purchasing behavior."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the email domain and check for any recent changes to the account's email address. Additionally, review the account's transaction history for similar patterns and confirm with the account holder if this transaction was authorized.",
+          "confidence": 0.88
+        },
+        "fraud_classification": {
+          "primary_classification": "Legitimate",
+          "confidence": 0.6,
+          "evidence": [
+            "Transaction amount is typical and not suspiciously large or structured.",
+            "Time of transaction is during normal business hours.",
+            "Round number transaction is common in legitimate transactions."
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.4,
+          "reasoning": "The transaction amount and timing do not suggest structuring or layering. The high fraud probability score could indicate potential identity fraud, but without additional evidence such as mismatched identity details or unusual account activity, the transaction appears legitimate. The round number and typical amount suggest normal consumer behavior, but the high fraud probability score warrants consideration of identity fraud as an alternative classification."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8796, indicating moderate confidence in fraud.",
+            "Round number transaction amount, which can be a common pattern in fraudulent transactions.",
+            "Anomalous email domain value of 16.0, which may not align with typical user behavior."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $100.00 falls within the typical range, suggesting normal behavior.",
+            "Evening transaction time at 18:00 on a weekday is not highly unusual for legitimate transactions."
+          ],
+          "fraud_likelihood": 0.88,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "The high fraud score combined with the round number transaction amount and anomalous email domain."
+        },
+        "original": {
+          "transaction_id": 3028451.0,
+          "text": "Transaction Amount: $100.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: 1.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8795992732048035,
+          "amount": 100.0,
+          "ml_predicted": 1,
+          "category": "true_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies and explains the suspicious patterns associated with the transaction.",
+          "It provides a clear risk summary and detailed analysis of anomalies.",
+          "The recommended actions are practical and relevant for a fraud investigator."
+        ],
+        "weaknesses": [
+          "While the explanation is comprehensive, it could include more context about typical transaction behaviors for the account holder to enhance completeness."
+        ],
+        "reasoning": "The AI-generated explanation is comprehensive and well-structured, providing accurate and actionable insights for investigating the flagged transaction. It effectively highlights the key anomalies and offers practical steps for further verification, making it a strong resource for fraud analysts."
+      }
+    },
+    {
+      "prediction": {
+        "transaction_text": "Transaction Amount: $225.00 (typical range), round number\nTime: afternoon (17:00), weekend\nProduct: 2.0\nEmail domain: 16.0\nTime deltas: 8 available",
+        "ml_score": 0.8363304138183594,
+        "threshold": 0.8231,
+        "anomaly_explanation": {
+          "risk_summary": "The transaction is flagged as suspicious due to its occurrence during a high-risk time period and the presence of multiple anomalies in the transaction metadata.",
+          "anomalous_patterns": [
+            "The transaction occurred at 17:00 on a weekend, which is outside typical business hours and may indicate unusual activity.",
+            "The transaction amount is a round number ($225.00), which is often associated with fraudulent transactions as fraudsters tend to use round numbers for simplicity.",
+            "The email domain associated with the transaction is flagged with a high anomaly score (16.0), suggesting it may be linked to previously identified fraudulent activities.",
+            "The product code '2.0' is not typical for this account, indicating a potential mismatch or unauthorized purchase."
+          ],
+          "risk_level": "HIGH",
+          "recommended_action": "A fraud analyst should verify the legitimacy of the transaction by contacting the account holder directly. Additionally, review the account's transaction history for similar patterns and check the email domain against known fraudulent lists.",
+          "confidence": 0.8363
+        },
+        "fraud_classification": {
+          "primary_classification": "Legitimate",
+          "confidence": 0.6,
+          "evidence": [
+            "Transaction amount of $225.00 is within the typical range and not suspiciously high or low.",
+            "Round number transactions are common and not inherently indicative of fraud.",
+            "The transaction occurred in the afternoon on a weekend, which is not unusual for consumer behavior.",
+            "No specific indicators of structuring, layering, or identity fraud are present."
+          ],
+          "alternative_classification": "Identity Fraud",
+          "alternative_confidence": 0.4,
+          "reasoning": "The transaction was flagged with a high fraud probability score of 0.8363, suggesting potential fraud. However, the transaction details do not strongly align with typical fraud patterns such as structuring or layering. The lack of specific evidence pointing to identity fraud or account takeover, combined with the typical transaction amount and timing, suggests the transaction may be legitimate. The alternative classification of identity fraud is considered due to the high fraud probability score, but without stronger evidence, it remains a secondary possibility."
+        },
+        "fp_explanation": {
+          "evidence_for_fraud": [
+            "High fraud score of 0.8363, indicating moderate confidence in fraud.",
+            "Round number transaction amount, which can be a common pattern in fraudulent transactions.",
+            "Weekend transaction, which can sometimes correlate with fraudulent activity due to less oversight."
+          ],
+          "evidence_against_fraud": [
+            "Transaction amount of $225.00 falls within the typical range, suggesting normalcy.",
+            "Afternoon timing (17:00) is not typically associated with fraudulent activity, as late-night transactions are more suspicious."
+          ],
+          "fraud_likelihood": 0.84,
+          "assessment": "Balanced analysis of both sides",
+          "recommendation": "HOLD_FOR_REVIEW",
+          "confidence": 0.85,
+          "key_deciding_factor": "The high fraud score combined with the round number transaction amount and weekend timing."
+        },
+        "original": {
+          "transaction_id": 3009105.0,
+          "text": "Transaction Amount: $225.00 (typical range), round number\nTime: afternoon (17:00), weekend\nProduct: 2.0\nEmail domain: 16.0\nTime deltas: 8 available",
+          "is_fraud": 1,
+          "fraud_score": 0.8363304138183594,
+          "amount": 225.0,
+          "ml_predicted": 1,
+          "category": "false_positive"
+        }
+      },
+      "evaluation": {
+        "accuracy": 5,
+        "completeness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "overall": 5,
+        "strengths": [
+          "The explanation accurately identifies multiple suspicious patterns associated with the transaction.",
+          "It provides a comprehensive risk summary and detailed anomalous patterns.",
+          "The recommended action is clear and actionable for a fraud analyst."
+        ],
+        "weaknesses": [
+          "While the explanation is mostly clear, the use of technical terms like 'anomaly score' may require further clarification for non-experts."
+        ],
+        "reasoning": "The AI-generated explanation is thorough and well-structured, accurately identifying the key factors that contribute to the transaction's fraudulent nature. It provides a clear risk assessment and actionable steps for further investigation, making it a high-quality explanation overall."
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "dataset": "PaySim",
+  "n": 75,
+  "n_fp": 50,
+  "n_tp": 25,
+  "auroc": {
+    "raw_ml": {
+      "value": 0.8816,
+      "ci_95": [
+        0.6087,
+        0.9352
+      ]
+    },
+    "scoreaware_llm": {
+      "value": 0.5452,
+      "ci_95": [
+        0.4024,
+        0.5959
+      ]
+    },
+    "scoreblind_llm": {
+      "value": 0.6504,
+      "ci_95": [
+        0.3556,
+        0.7455
+      ]
+    },
+    "fusion_ml_plus_aware": {
+      "value": 0.7528,
+      "ci_95": [
+        0.5176,
+        0.8291
+      ]
+    },
+    "combiner_ml_plus_blind": {
+      "value": 0.6744,
+      "ci_95": [
+        0.3891,
+        0.7681
+      ]
+    }
+  },
+  "lr_test_llm_over_raw": {
+    "lr_stat": 0.0602,
+    "df": 1,
+    "p_value": 0.8061653149352297
+  },
+  "lr_test_raw_over_llm": {
+    "lr_stat": 27.9735,
+    "df": 1,
+    "p_value": 1.2298671669963568e-07
+  },
+  "tost_equivalence_003": {
+    "margin": 0.03,
+    "observed_diff": -0.1288,
+    "ci_90": [
+      -0.18237,
+      -0.02257
+    ],
+    "equivalence_within_margin": false
+  },
+  "normative_verdict": "score-blind LLM AUROC = 0.65; optimal combiner = 0.674 vs raw ML = 0.882"
+}

@@ -1,0 +1,27 @@
+{
+  "n_fp": 100,
+  "n_tp": 100,
+  "raw_ml": {
+    "fp_mean": 0.8922,
+    "tp_mean": 0.9529,
+    "delta": 0.0607,
+    "cohens_d": 1.198,
+    "p_value": 0.0
+  },
+  "llm_score_aware": {
+    "fp_mean": 0.8726,
+    "tp_mean": 0.9269,
+    "delta": 0.0543,
+    "cohens_d": 1.062,
+    "p_value": 0.0
+  },
+  "correlation": {
+    "pearson_r": 0.812,
+    "p_value": 0.0
+  },
+  "incremental_value": {
+    "llm_delta_minus_raw_delta": -0.0064,
+    "llm_d_minus_raw_d": -0.136,
+    "llm_adds_discrimination": false
+  }
+}

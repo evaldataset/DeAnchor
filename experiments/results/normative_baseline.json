@@ -1,0 +1,84 @@
+{
+  "n": 200,
+  "n_fp": 100,
+  "n_tp": 100,
+  "scores": {
+    "A_raw_ml_only": {
+      "auroc": 0.7875,
+      "ci_95": [
+        0.7201,
+        0.8525
+      ],
+      "effect": {
+        "delta": 0.0607,
+        "cohens_d": 1.198
+      }
+    },
+    "B_scoreaware_llm_only": {
+      "auroc": 0.727,
+      "ci_95": [
+        0.6559,
+        0.8021
+      ],
+      "effect": {
+        "delta": 0.0543,
+        "cohens_d": 1.062
+      },
+      "note": "what the LLM actually outputs when shown the score"
+    },
+    "C_optimal_combiner_ml_plus_blind_llm": {
+      "auroc": 0.7792,
+      "ci_95": [
+        0.6802,
+        0.8351
+      ],
+      "effect": {
+        "delta": 0.0349,
+        "cohens_d": 1.045
+      },
+      "note": "normative ceiling: logistic combiner of raw ML + score-BLIND LLM output"
+    },
+    "D_fusion_ml_plus_aware_llm": {
+      "auroc": 0.7861,
+      "ci_95": [
+        0.719,
+        0.8496
+      ],
+      "note": "empirical fusion with score-aware LLM (from prior analysis)"
+    },
+    "E_scoreblind_llm_only": {
+      "auroc": 0.4941,
+      "ci_95": [
+        0.3987,
+        0.576
+      ],
+      "effect": {
+        "delta": -0.0275,
+        "cohens_d": -0.165
+      },
+      "note": "the LLM's independent signal before seeing the score"
+    }
+  },
+  "comparisons": {
+    "B_vs_A": {
+      "auroc_diff": -0.0605,
+      "interpretation": "score-aware LLM vs raw ML alone"
+    },
+    "C_vs_A": {
+      "auroc_diff": -0.0083,
+      "interpretation": "optimal combiner vs raw ML alone --- does score-blind LLM contribute?"
+    },
+    "C_vs_B": {
+      "auroc_diff": 0.0522,
+      "interpretation": "optimal combiner vs score-aware LLM --- does LLM integrate its own evidence?"
+    }
+  },
+  "normative_conclusion": {
+    "raw_ml_auroc": 0.7875,
+    "optimal_ceiling_auroc": 0.7792,
+    "scoreaware_llm_auroc": 0.727,
+    "ceiling_minus_scoreaware": 0.0522,
+    "verdict": "optimal combiner EXCEEDS score-aware LLM",
+    "interpretation": "The LLM fails to integrate its own independent evidence: a simple logistic combiner using raw ML + the LLM's own score-blind output matches or exceeds the LLM's score-aware output."
+  }
+}

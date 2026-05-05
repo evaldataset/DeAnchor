@@ -1,0 +1,16 @@
+{
+  "manifest_name": "enriched_qwen",
+  "kind": "paired_score_aware_blind",
+  "source_file": "rich_features_raw.jsonl",
+  "n_records": 100,
+  "n_fp": 50,
+  "n_tp": 50,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "Qwen2.5-7B-Instruct",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "Synthetic merchant/device/history/velocity overlay on PaySim. Local Qwen-7B inference.",
+  "caveat": "Enrichment fields are randomly generated; not real production features."
+}

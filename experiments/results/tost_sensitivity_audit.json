@@ -1,0 +1,53 @@
+{
+  "experiment": "tost_margin_sensitivity",
+  "observed_diff": -0.00288,
+  "ci90": [
+    -0.01664,
+    0.0116
+  ],
+  "sensitivity_by_margin": {
+    "margin_0.01": {
+      "margin": 0.01,
+      "equivalence_established": false,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.02": {
+      "margin": 0.02,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.03": {
+      "margin": 0.03,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.04": {
+      "margin": 0.04,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.05": {
+      "margin": 0.05,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.07": {
+      "margin": 0.07,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    },
+    "margin_0.1": {
+      "margin": 0.1,
+      "equivalence_established": true,
+      "ci90_lower": -0.01664,
+      "ci90_upper": 0.0116
+    }
+  },
+  "min_equiv_margin": 0.02
+}

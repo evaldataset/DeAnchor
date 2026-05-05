@@ -1,0 +1,23 @@
+{
+  "DeepSeek-R1-14B": {
+    "model": "DeepSeek-R1-14B",
+    "error": "too few valid",
+    "n_valid": 0
+  },
+  "Gemma-2-9B": {
+    "model": "Gemma-2-9B",
+    "n": 100,
+    "auroc_raw_ml": 0.6976,
+    "auroc_scoreaware": 0.417,
+    "auroc_scoreblind": 0.624,
+    "auroc_fusion": 0.4817,
+    "lr_test_llm_over_ml": {
+      "chi2": 0.7292,
+      "p": 0.3931413327772789
+    },
+    "alpha_rich": 0.377,
+    "suppression": 0.207,
+    "verdict": "suppression"
+  },
+  "total_minutes": 46.2
+}

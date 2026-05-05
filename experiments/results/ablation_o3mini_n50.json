@@ -1,0 +1,11 @@
+{
+  "model": "o3-mini",
+  "n_valid": 50,
+  "aware_mean": 0.9217,
+  "blind_mean": 0.291,
+  "paired_shift": 0.6307,
+  "paired_t": 18.5304,
+  "paired_p": 8.840805837187068e-24,
+  "alpha": 1.0,
+  "score_correlation_r": 1.0
+}

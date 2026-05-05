@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "DeAnchor Paired LLM Response Dataset",
+  "description": "Approximately 3,500 LLM responses (~650 strict score-aware/score-blind paired matches; remainder condition variants and within-subject paired-by-design records) collected for the DeAnchor audit benchmark. Eight LLM families (GPT-4o, GPT-4o-mini, Qwen2.5-7B, Gemma-2-9B, Claude-Haiku-4.5, Gemini-2.5-flash, o3-mini, Gemini-2.5-pro thinking) on four feature regimes (IEEE-CIS, PaySim, enriched production-like, UCI-Adult-style) plus a synthetic medical stress test.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://anonymous.4open.science/r/deanchor-eval-2026/",
+  "version": "1.0",
+  "datePublished": "2026-05",
+  "creator": {
+    "@type": "Organization",
+    "name": "Anonymous (under double-blind review)"
+  },
+  "citeAs": "Anonymous. The DeAnchor Audit: A Reproducible Benchmark for Score-Conditioned Dependence in Hybrid ML+LLM Pipelines. NeurIPS 2026 Evaluations & Datasets Track (under review).",
+  "keywords": [
+    "LLM evaluation",
+    "hybrid ML+LLM pipeline",
+    "score anchoring",
+    "audit benchmark",
+    "fraud detection",
+    "controlled ablation",
+    "TOST equivalence",
+    "decision framework"
+  ],
+  "rai:dataCollection": "LLM responses were collected via the OpenAI, Anthropic, and Google APIs (and locally run Qwen2.5-7B-Instruct, Gemma-2-9B-it) between 2026-02 and 2026-04. Each transaction was prompted under matched score-aware and score-blind conditions with otherwise identical templates. Temperature 0.0 throughout; OpenAI seed=42 where supported.",
+  "rai:dataCollectionTimeframe": "2026-02 to 2026-04",
+  "rai:dataCollectionType": "API queries (OpenAI/Anthropic/Google) and local LLM inference (Qwen, Gemma).",
+  "rai:dataCollectionRawData": "Underlying transaction text is derived from public sources: IEEE-CIS Fraud Detection (Kaggle, 2019), PaySim (Lopez-Rojas et al., 2016). Enriched production-like, UCI-Adult-style, and medical scenarios are deterministically synthesized (random.Random(42)). No personal data are collected; all source datasets are pre-anonymized.",
+  "rai:dataAnnotationProtocol": "Each LLM response is automatically parsed for {fraud_likelihood, recommendation, confidence} fields. Responses with malformed JSON are recorded as parse_error=true and excluded from quantitative claims.",
+  "rai:dataAnnotationPlatform": "n/a (programmatic LLM API output, no human annotation).",
+  "rai:dataAnnotationAnalysis": "Inter-condition consistency assessed via 5 repeated runs at temperature 0.0 (Qwen2.5-7B, n=20): exact within-item variance = 0. Multi-seed (3 OpenAI seeds × 100 transactions, GPT-4o-mini): cross-seed shift SD = 0.023 on mean 0.084.",
+  "rai:dataPreprocessingProtocol": "JSON-extracted fl values are clipped to [0,1]; records missing both fl_aware and fl_blind are excluded from paired analyses.",
+  "rai:dataReleaseMaintenancePlan": "Hosted on the project's anonymized OpenReview/4open.science mirror under CC-BY-4.0; will migrate to a permanent academic mirror at camera-ready. Maintainers commit to publishing fixes for any reproducibility-blocking issues reported within 12 months.",
+  "rai:dataLimitations": "1) Public-feature dataset is anonymized; production features may yield different LLM behavior. 2) Reasoning models (o3-mini, Gemini-2.5-pro thinking) evaluated at n=30-50 paired; CIs are wide. 3) UCI-Adult-style profiles are synthetic; real UCI data is also released (n=98). 4) PaySim mixed-model row retained for transparency but not used in confirmatory claims; single-model row is canonical. 5) No human expert evaluation of explanation quality; LLM-as-Judge has +1.4 self-preference inflation.",
+  "rai:dataSocialImpact": "Positive: enables pre-deployment audits of hybrid ML+LLM pipelines marketed as 'independent review', reducing risk of false-confidence in score-mirroring outputs. Negative: methodology may be misused to certify pipelines after surface-level adversary-framing patches without addressing underlying score-conditioned dependence. Mitigation guidance is in the Intended Use appendix.",
+  "rai:dataBiases": "All four feature regimes over-represent fraud/credit-risk decisions in financial contexts; transferability to other domains (medical, legal, hiring) requires re-running the audit. The eight-LLM panel under-samples open-source small models (no Llama-3.x, no Mistral-7B in this release).",
+  "rai:dataUseCases": "Intended: (a) re-running the DeAnchor audit on subsets of interest; (b) auditing additional LLM families by re-collecting paired outputs on the released manifests; (c) meta-analysis of anchoring across model families. Not intended: training discriminative classifiers; deploying as a fraud-detection model; attribution of fraud to individuals.",
+  "rai:personalSensitiveInformation": "None. Source datasets are pre-anonymized public benchmarks. Synthetic data (UCI-style, medical, enriched merchant/device fields) are randomly generated and do not correspond to real individuals.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "deanchor-zip",
+      "name": "deanchor-eval-2026.zip",
+      "description": "Full code + data archive for the DeAnchor audit benchmark.",
+      "contentUrl": "https://anonymous.4open.science/r/deanchor-eval-2026/archive.zip",
+      "encodingFormat": "application/zip",
+      "sha256": "TBD-at-camera-ready"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "paired-llm-responses",
+      "name": "paired-llm-responses",
+      "description": "JSONL files in experiments/results/ containing paired score-aware/score-blind LLM outputs.",
+      "containedIn": { "@id": "deanchor-zip" },
+      "encodingFormat": "application/jsonlines",
+      "includes": "experiments/results/*.jsonl"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "audit-record",
+      "name": "audit-record",
+      "description": "One row per transaction-condition LLM response.",
+      "field": [
+        { "@type": "cr:Field", "@id": "transaction_id", "name": "transaction_id", "dataType": "sc:Text" },
+        {
+          "@type": "cr:Field",
+          "@id": "label",
+          "name": "label",
+          "description": "Ground-truth class (1 = fraud, 0 = legitimate).",
+          "dataType": "sc:Integer"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ml_score",
+          "name": "ml_score",
+          "description": "Upstream ML model fraud probability in [0,1].",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fl_aware",
+          "name": "fl_aware",
+          "description": "LLM fraud_likelihood when shown the ML score.",
+          "dataType": "sc:Float"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fl_blind",
+          "name": "fl_blind",
+          "description": "LLM fraud_likelihood when ML score is omitted.",
+          "dataType": "sc:Float"
+        },
+        { "@type": "cr:Field", "@id": "model_id", "name": "model_id", "dataType": "sc:Text" },
+        { "@type": "cr:Field", "@id": "temperature", "name": "temperature", "dataType": "sc:Float" },
+        { "@type": "cr:Field", "@id": "seed", "name": "seed", "dataType": "sc:Integer" },
+        { "@type": "cr:Field", "@id": "timestamp", "name": "timestamp", "dataType": "sc:DateTime" }
+      ]
+    }
+  ]
+}

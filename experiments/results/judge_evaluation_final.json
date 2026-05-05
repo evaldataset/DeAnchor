@@ -1,0 +1,59 @@
+{
+  "blind_evaluation": {
+    "coherence": {
+      "mean": 4.43,
+      "std_across_runs": 0.027,
+      "n": 90
+    },
+    "completeness": {
+      "mean": 3.9,
+      "std_across_runs": 0.0,
+      "n": 90
+    },
+    "clarity": {
+      "mean": 4.58,
+      "std_across_runs": 0.063,
+      "n": 90
+    },
+    "actionability": {
+      "mean": 4.02,
+      "std_across_runs": 0.016,
+      "n": 90
+    },
+    "overall": {
+      "mean": 4.02,
+      "std_across_runs": 0.016,
+      "n": 90
+    }
+  },
+  "gt_evaluation": {
+    "factual_accuracy": {
+      "mean": 3.32,
+      "std_across_runs": 0.031,
+      "n": 90
+    },
+    "completeness": {
+      "mean": 3.47,
+      "std_across_runs": 0.0,
+      "n": 90
+    },
+    "clarity": {
+      "mean": 4.38,
+      "std_across_runs": 0.016,
+      "n": 90
+    },
+    "actionability": {
+      "mean": 3.63,
+      "std_across_runs": 0.0,
+      "n": 90
+    },
+    "overall": {
+      "mean": 3.36,
+      "std_across_runs": 0.016,
+      "n": 90
+    }
+  },
+  "n_runs": 3,
+  "n_samples": 30,
+  "model": "gpt-4o-mini"
+}

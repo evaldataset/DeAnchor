@@ -1,0 +1,14 @@
+{
+  "model": "gpt-4o-mini",
+  "dataset": "paysim",
+  "n_total": 200,
+  "n_valid": 200,
+  "paired_shift_mean": 0.5578,
+  "paired_t": 30.7863,
+  "paired_p": 1.2877248295853093e-77,
+  "alpha": 1.0,
+  "auroc_raw_ml": 0.908,
+  "auroc_score_aware": 0.9078,
+  "auroc_score_blind": 0.5367,
+  "auroc_fusion": 0.9079
+}

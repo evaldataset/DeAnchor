@@ -1,0 +1,11 @@
+{
+  "model": "claude-haiku-4.5",
+  "n_valid": 50,
+  "aware_mean": 0.873,
+  "blind_mean": 0.3692,
+  "paired_shift": 0.5038,
+  "paired_t": 20.315,
+  "paired_p": 1.6255479829712075e-25,
+  "alpha": 0.9119,
+  "score_correlation_r": 0.7374
+}

@@ -1,0 +1,61 @@
+{
+  "n_tp": 25,
+  "n_fp": 25,
+  "by_method": {
+    "fl_base": {
+      "n_valid": 50,
+      "tp_mean": 0.9453,
+      "fp_mean": 0.8981,
+      "delta_tp_minus_fp": 0.0472,
+      "score_correlation_r": 1.0,
+      "score_correlation_p": 3.3445469381288617e-159
+    },
+    "fl_bayesian": {
+      "n_valid": 50,
+      "tp_mean": 0.9453,
+      "fp_mean": 0.8981,
+      "delta_tp_minus_fp": 0.0472,
+      "score_correlation_r": 1.0,
+      "score_correlation_p": 3.3445469381288617e-159,
+      "anchoring_reduction": 0.0
+    },
+    "fl_quantize": {
+      "n_valid": 50,
+      "tp_mean": 0.85,
+      "fp_mean": 0.85,
+      "delta_tp_minus_fp": 0.0,
+      "score_correlation_r": NaN,
+      "score_correlation_p": NaN,
+      "anchoring_reduction": NaN
+    },
+    "fl_adversary": {
+      "n_valid": 50,
+      "tp_mean": 0.332,
+      "fp_mean": 0.296,
+      "delta_tp_minus_fp": 0.036,
+      "score_correlation_r": 0.4135,
+      "score_correlation_p": 0.0028373615631199865,
+      "anchoring_reduction": 0.5865
+    },
+    "fl_precommit": {
+      "n_valid": 50,
+      "tp_mean": 0.9453,
+      "fp_mean": 0.8981,
+      "delta_tp_minus_fp": 0.0472,
+      "score_correlation_r": 1.0,
+      "score_correlation_p": 3.3445469381288617e-159,
+      "anchoring_reduction": 0.0
+    },
+    "fl_ensemble": {
+      "n_valid": 50,
+      "tp_mean": 0.9453,
+      "fp_mean": 0.8981,
+      "delta_tp_minus_fp": 0.0472,
+      "score_correlation_r": 1.0,
+      "score_correlation_p": 3.3445469381288617e-159,
+      "anchoring_reduction": 0.0
+    }
+  },
+  "best_mitigation": "fl_adversary",
+  "best_anchoring_reduction": 0.5865
+}

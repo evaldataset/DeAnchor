@@ -1,0 +1,30 @@
+{
+  "fp_reduction": {
+    "thresholds": {
+      "0.3": {
+        "fp_released": 1,
+        "tp_released": 3,
+        "fp_reduction_pct": 2.2,
+        "tp_error_pct": 5.5
+      },
+      "0.4": {
+        "fp_released": 10,
+        "tp_released": 13,
+        "fp_reduction_pct": 22.2,
+        "tp_error_pct": 23.6
+      },
+      "0.5": {
+        "fp_released": 37,
+        "tp_released": 36,
+        "fp_reduction_pct": 82.2,
+        "tp_error_pct": 65.5
+      }
+    }
+  },
+  "calibration": {
+    "ece_before": 0.3997,
+    "ece_after": 0.0824,
+    "calibrated_fp_mean": 0.396,
+    "calibrated_tp_mean": 0.602
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "n": 30,
+  "by_format": {
+    "decimal": {
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0576,
+      "fl_mean": 0.9144
+    },
+    "percent": {
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0577,
+      "fl_mean": 0.9144
+    },
+    "verbal": {
+      "n_valid": 30,
+      "score_correlation_r": 0.8991,
+      "delta_tp_minus_fp": 0.054,
+      "fl_mean": 0.8917
+    },
+    "ratio": {
+      "n_valid": 30,
+      "score_correlation_r": 0.9591,
+      "delta_tp_minus_fp": 0.06,
+      "fl_mean": 0.91
+    }
+  },
+  "r_mean": 0.9645,
+  "r_max_min_spread": 0.1009
+}

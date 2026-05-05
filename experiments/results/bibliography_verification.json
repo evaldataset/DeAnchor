@@ -1,0 +1,222 @@
+{
+  "n_bibitems": 40,
+  "n_cite_keys": 40,
+  "n_verified": 40,
+  "n_hallucinated": 0,
+  "n_discrepancy": 0,
+  "unused_bibitems": [],
+  "undefined_cite_keys": [],
+  "bibitems_missing_verification_record": [],
+  "verification_records_for_removed_bibitems": [],
+  "verification_methods_distribution": {
+    "semantic_scholar": 1,
+    "industry_source": 1,
+    "arxiv": 21,
+    "openalex": 16,
+    "url_head": 1
+  },
+  "by_bibkey": {
+    "nilson2023": {
+      "method": "industry_source",
+      "source": "Nilson Report",
+      "status": "VERIFIED",
+      "notes": "Industry report; not in academic indexes but real public source."
+    },
+    "bolton2002statistical": {
+      "method": "openalex",
+      "source": "Statistical Science 17(3):235-255 (2002)",
+      "status": "VERIFIED"
+    },
+    "xgboost2016": {
+      "method": "arxiv",
+      "source": "arXiv:1603.02754 (Chen, KDD 2016)",
+      "status": "VERIFIED"
+    },
+    "lightgbm2017": {
+      "method": "openalex",
+      "source": "Ke et al. NeurIPS 2017",
+      "status": "VERIFIED"
+    },
+    "shap2017": {
+      "method": "openalex",
+      "source": "Lundberg & Lee NeurIPS 2017",
+      "status": "VERIFIED"
+    },
+    "lime2016": {
+      "method": "openalex",
+      "source": "Ribeiro et al. KDD 2016",
+      "status": "VERIFIED"
+    },
+    "pumsirirat2018ae": {
+      "method": "openalex",
+      "source": "IJACSA 9(1):18-25 (2018)",
+      "status": "VERIFIED"
+    },
+    "jurgovsky2018lstm": {
+      "method": "semantic_scholar",
+      "source": "Expert Systems with Applications 100:234-245 (2018)",
+      "status": "VERIFIED"
+    },
+    "liu2021gnn": {
+      "method": "openalex",
+      "source": "Liu, Ao et al. WWW 2021",
+      "status": "VERIFIED"
+    },
+    "grinsztajn2022tree": {
+      "method": "arxiv",
+      "source": "arXiv:2207.08815",
+      "status": "VERIFIED"
+    },
+    "finbert2019": {
+      "method": "arxiv",
+      "source": "arXiv:1908.10063",
+      "status": "VERIFIED"
+    },
+    "finqa2021": {
+      "method": "arxiv",
+      "source": "arXiv:2109.00122",
+      "status": "VERIFIED"
+    },
+    "bloomberggpt2023": {
+      "method": "arxiv",
+      "source": "arXiv:2303.17564",
+      "status": "VERIFIED"
+    },
+    "fingpt2023": {
+      "method": "arxiv",
+      "source": "arXiv:2306.06031",
+      "status": "VERIFIED"
+    },
+    "li2023cfgpt": {
+      "method": "arxiv",
+      "source": "arXiv:2309.10654",
+      "status": "VERIFIED"
+    },
+    "rag2020": {
+      "method": "arxiv",
+      "source": "arXiv:2005.11401 (Lewis et al. NeurIPS 2020)",
+      "status": "VERIFIED"
+    },
+    "jones2022anchoring": {
+      "method": "openalex",
+      "source": "Jones & Steinhardt NeurIPS 2022",
+      "status": "VERIFIED"
+    },
+    "sharma2024sycophancy": {
+      "method": "arxiv",
+      "source": "arXiv:2310.13548 (M. Sharma et al., ICLR 2024)",
+      "status": "VERIFIED"
+    },
+    "wei2023sycophancy": {
+      "method": "arxiv",
+      "source": "arXiv:2308.03958",
+      "status": "VERIFIED"
+    },
+    "kadavath2022calibration": {
+      "method": "arxiv",
+      "source": "arXiv:2207.05221",
+      "status": "VERIFIED"
+    },
+    "zheng2023llmjudge": {
+      "method": "arxiv",
+      "source": "arXiv:2306.05685 (Zheng et al. NeurIPS 2023)",
+      "status": "VERIFIED"
+    },
+    "tversky1974judgment": {
+      "method": "openalex",
+      "source": "Science 185(4157):1124-1131 (1974)",
+      "status": "VERIFIED"
+    },
+    "ouyang2022rlhf": {
+      "method": "arxiv",
+      "source": "arXiv:2203.02155 (Ouyang et al. NeurIPS 2022)",
+      "status": "VERIFIED"
+    },
+    "creditcard2013": {
+      "method": "openalex",
+      "source": "Dal Pozzolo et al. ESWA 41(10):4915-4928 (2014)",
+      "status": "VERIFIED",
+      "notes": "Bibkey suffix 2013 is misleading; the entry text correctly cites 2014. Cosmetic only."
+    },
+    "paysim2016": {
+      "method": "openalex",
+      "source": "Lopez-Rojas et al. EMSS / Annual Simulation Symposium 2016",
+      "status": "VERIFIED"
+    },
+    "ieeecis2019": {
+      "method": "url_head",
+      "source": "https://www.kaggle.com/c/ieee-fraud-detection (HTTP 200)",
+      "status": "VERIFIED"
+    },
+    "imani2023mathprompter": {
+      "method": "arxiv",
+      "source": "arXiv:2303.05398",
+      "status": "VERIFIED"
+    },
+    "slack2023llmxai": {
+      "method": "openalex",
+      "source": "Slack et al. Nature Machine Intelligence 5:873-883 (2023); arXiv:2207.04154",
+      "status": "VERIFIED"
+    },
+    "xie2024finben": {
+      "method": "arxiv",
+      "source": "arXiv:2402.12659",
+      "status": "VERIFIED"
+    },
+    "hegselmann2023tabllm": {
+      "method": "arxiv",
+      "source": "arXiv:2210.10723 (AISTATS 2023)",
+      "status": "VERIFIED"
+    },
+    "tian2023calibration": {
+      "method": "arxiv",
+      "source": "arXiv:2305.14975 (EMNLP 2023)",
+      "status": "VERIFIED"
+    },
+    "pezeshkpour2023ordering": {
+      "method": "arxiv",
+      "source": "arXiv:2308.11483",
+      "status": "VERIFIED"
+    },
+    "bansal2021complementarity": {
+      "method": "openalex",
+      "source": "Bansal et al. CHI 2021",
+      "status": "VERIFIED"
+    },
+    "zhang2020trust": {
+      "method": "openalex",
+      "source": "Zhang, Liao, Bellamy FAT* 2020",
+      "status": "VERIFIED"
+    },
+    "madras2018defer": {
+      "method": "arxiv",
+      "source": "arXiv:1711.06664 (NeurIPS 2018)",
+      "status": "VERIFIED"
+    },
+    "mozannar2020defer": {
+      "method": "arxiv",
+      "source": "arXiv:2006.01862 (ICML 2020)",
+      "status": "VERIFIED"
+    },
+    "geifman2017selective": {
+      "method": "arxiv",
+      "source": "arXiv:1705.08500 (NeurIPS 2017)",
+      "status": "VERIFIED"
+    },
+    "schuirmann1987tost": {
+      "method": "openalex",
+      "source": "Journal of Pharmacokinetics and Biopharmaceutics 15(6):657-680 (1987)",
+      "status": "VERIFIED"
+    },
+    "vickers2006dca": {
+      "method": "openalex",
+      "source": "Medical Decision Making 26(6):565-574 (2006)",
+      "status": "VERIFIED"
+    },
+    "gebru2021datasheets": {
+      "method": "openalex",
+      "source": "Communications of the ACM 64(12):86-92 (2021)",
+      "status": "VERIFIED"
+    }
+  }
+}

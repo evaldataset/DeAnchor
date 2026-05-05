@@ -1,0 +1,11 @@
+{
+  "model": "gemini-2.5-pro-thinking",
+  "n_valid": 30,
+  "aware_mean": 0.9211,
+  "blind_mean": 0.4683,
+  "paired_shift": 0.4528,
+  "paired_t": 8.3667,
+  "paired_p": 3.1956350021587706e-09,
+  "alpha": 1.015,
+  "score_correlation_r": 0.9575
+}

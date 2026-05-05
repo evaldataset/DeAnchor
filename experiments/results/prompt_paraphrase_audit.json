@@ -1,0 +1,45 @@
+{
+  "n": 30,
+  "by_paraphrase": [
+    {
+      "paraphrase_id": 0,
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0576,
+      "fl_mean": 0.9144
+    },
+    {
+      "paraphrase_id": 1,
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0576,
+      "fl_mean": 0.9144
+    },
+    {
+      "paraphrase_id": 2,
+      "n_valid": 30,
+      "score_correlation_r": 0.5764,
+      "delta_tp_minus_fp": 0.1749,
+      "fl_mean": 0.6999
+    },
+    {
+      "paraphrase_id": 3,
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0576,
+      "fl_mean": 0.9144
+    },
+    {
+      "paraphrase_id": 4,
+      "n_valid": 30,
+      "score_correlation_r": 1.0,
+      "delta_tp_minus_fp": 0.0576,
+      "fl_mean": 0.9144
+    }
+  ],
+  "r_mean": 0.9153,
+  "r_std": 0.1695,
+  "r_max_min_spread": 0.4236,
+  "delta_mean": 0.0811,
+  "delta_std": 0.0469
+}

@@ -1,0 +1,13 @@
+{
+  "eval_set": "disjoint_test",
+  "model": "Qwen2.5-7B-Instruct (base, no LoRA)",
+  "n_fp": 25,
+  "n_tp": 25,
+  "n_parse_errors": 0,
+  "fp_mean": 0.768,
+  "tp_mean": 0.826,
+  "delta": 0.058,
+  "cohens_d": 0.7,
+  "p_value": 0.0202,
+  "test_type": "unpaired_permutation"
+}

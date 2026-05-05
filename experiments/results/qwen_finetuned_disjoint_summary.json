@@ -1,0 +1,13 @@
+{
+  "eval_set": "disjoint_test",
+  "split_source": "/home/suanlab/Projects/AIFin/fraud-detection/data/finetune/test_manifest.jsonl",
+  "n_fp": 25,
+  "n_tp": 25,
+  "fp_mean": 0.812,
+  "tp_mean": 0.806,
+  "delta": -0.006,
+  "cohens_d": -0.061,
+  "p_value": 0.8255,
+  "test_type": "unpaired_permutation",
+  "train_eval_contamination": "verified_zero (see split_manifest.json)"
+}

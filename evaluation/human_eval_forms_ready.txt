@@ -1,0 +1,926 @@
+======================================================================
+GOOGLE FORMS 설문 완성본 — 복사 붙여넣기용
+======================================================================
+
+Form Title: Evaluating AI-Generated Fraud Detection Explanations
+Form Description:
+This survey is part of an academic research study evaluating AI-generated 
+explanations for financial fraud detection.
+
+You will review 30 transactions flagged by a machine learning fraud 
+detection model, along with an AI-generated explanation for each.
+Rate each explanation on 5 dimensions (1-5 scale).
+
+Estimated time: 20-30 minutes
+All responses are anonymous. No right or wrong answers.
+
+Rating Scale:
+1 = Very Poor: Unhelpful or misleading
+2 = Poor: Some info but key aspects missing
+3 = Adequate: Reasonable but lacks specificity
+4 = Good: Specific and useful, minor issues only
+5 = Excellent: Immediately actionable for investigation
+
+======================================================================
+SECTION: Evaluator Background
+======================================================================
+
+Q. Primary professional area (Multiple choice, required)
+  - Financial fraud investigation / BSA / AML
+  - Financial data analysis
+  - ML/AI engineering
+  - Finance research / academia
+  - Data science (non-financial)
+  - Other
+
+Q. Experience in financial fraud detection (Multiple choice, required)
+  - No experience
+  - Less than 1 year
+  - 1-3 years
+  - 3-10 years
+  - 10+ years
+
+======================================================================
+SECTION: Transaction 1 / 30  [Q01]
+======================================================================
+
+ML Fraud Probability Score: 0.8384
+
+  Transaction Amount: $335.00 (typical range), round number
+  Time: evening (18:00), weekday
+  Product: W
+  Email domain: verizon.net
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is moderate, primarily due to the round number and the high fraud score. However, the timing and typical transaction amount provide some counter-evidence suggesting legitimacy.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8385
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 2 / 30  [Q02]
+======================================================================
+
+ML Fraud Probability Score: 0.9267
+
+  Transaction Amount: $23.20 (typical range)
+  Time: late night/early morning (0:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence against fraud is weak and does not outweigh the high fraud score provided by the ML model.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.9274
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 3 / 30  [Q03]
+======================================================================
+
+ML Fraud Probability Score: 0.8799
+
+  Transaction Amount: $117.00 (typical range), round number
+  Time: morning (9:00), weekday
+  Product: W
+  Email domain: aol.com
+  Time deltas: 7 available
+
+--- AI-Generated Explanation ---
+  The evidence against fraud is relatively strong, indicating that this transaction may be legitimate. However, the high fraud score from the ML model suggests caution.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8796
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 4 / 30  [Q04]
+======================================================================
+
+ML Fraud Probability Score: 0.9624
+
+  Transaction Amount: $22.75 (typical range)
+  Time: late night/early morning (3:00), weekend
+  Product: C
+  Email domain: hotmail.com
+  Unusual count features (>95th pct): {'C12': 2}
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score, late-night timing, and multiple anomalous features. However, the typical transaction amount and common email domain provide some counter-evidence.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.95
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 5 / 30  [Q05]
+======================================================================
+
+ML Fraud Probability Score: 0.8674
+
+  Transaction Amount: $50.00 (typical range)
+  Time: late night/early morning (22:00), weekday
+  Product: H
+  Email domain: hotmail.com
+  Time deltas: 1 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and the round number transaction amount. However, the typical range of the transaction amount and the use of a common email domain provide some counter-evidence. Overall, the high fraud score indicates a significant likelihood of fraud.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8674
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 6 / 30  [Q06]
+======================================================================
+
+ML Fraud Probability Score: 0.8800
+
+  Transaction Amount: $914.00 (extremely large (>3 std above average)), round number
+  Time: evening (18:00), weekday
+  Product: W
+  Email domain: comcast.net
+  Time deltas: 8 available
+
+--- AI-Generated Explanation ---
+  The evidence against fraud is relatively strong, indicating that this transaction may be legitimate. However, the high fraud score from the ML model suggests caution.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8796
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 7 / 30  [Q07]
+======================================================================
+
+ML Fraud Probability Score: 0.8305
+
+  Transaction Amount: $53.05 (typical range)
+  Time: late night/early morning (23:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence suggests a moderate likelihood of fraud due to the combination of late-night timing and multiple anomalous features, despite the typical transaction amount and common email domain.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.83
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 8 / 30  [Q08]
+======================================================================
+
+ML Fraud Probability Score: 0.9523
+
+  Transaction Amount: $56.55 (typical range)
+  Time: afternoon (17:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C1': 25, 'C2': 111, 'C4': 19, 'C6': 19, 'C7': 19, 'C8': 4, 'C10': 4, 'C11': 27, 'C12': 27}
+  Time deltas: 7 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and weekend timing, but the typical transaction amount and morning timing provide some counter-evidence.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.85
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 9 / 30  [Q09]
+======================================================================
+
+ML Fraud Probability Score: 0.8508
+
+  Transaction Amount: $60.90 (typical range)
+  Time: late night/early morning (2:00), weekday
+  Product: C
+  Email domain: hotmail.com
+  Unusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is moderate, primarily based on the ML model's score and the round number of the transaction. However, the timing and typical amount provide some counterbalance, suggesting that while there are indicators of potential fraud, they are not overwhelmingly strong.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8514
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 10 / 30  [Q10]
+======================================================================
+
+ML Fraud Probability Score: 0.8899
+
+  Transaction Amount: $300.00 (typical range), round number
+  Time: evening (18:00), weekend
+  Product: H
+  Email domain: anonymous.com
+  Time deltas: 1 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and the round number amount, but the typical amount and established email domain provide some counter-evidence. However, the overall indicators lean towards fraud.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud likelihood: 0.8897
+  Recommendation: N/A
+  Fraud Likelihood: N/A
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 11 / 30  [Q11]
+======================================================================
+
+ML Fraud Probability Score: 0.8545
+
+  Transaction Amount: $280.00 (typical range), round number
+  Time: afternoon (16:00), weekend
+  Product: W
+  Email domain: gmail.com
+  Time deltas: 7 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is moderate, but there are also reasonable explanations for the transaction's legitimacy. The round number and weekend timing raise flags, but the amount is typical and the timing is not late night.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8545
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 12 / 30  [Q12]
+======================================================================
+
+ML Fraud Probability Score: 0.9274
+
+  Transaction Amount: $48.49 (typical range)
+  Time: afternoon (16:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Time deltas: 2 available
+
+--- AI-Generated Explanation ---
+  The evidence against fraud is weak and does not outweigh the high fraud score provided by the ML model.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.9274
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 13 / 30  [Q13]
+======================================================================
+
+ML Fraud Probability Score: 0.9074
+
+  Transaction Amount: $150.00 (typical range), round number
+  Time: evening (19:00), weekday
+  Product: W
+  Email domain: gmail.com
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is compelling due to the high fraud score and the round number amount, but the typical range and timing provide some counterbalance.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 14 / 30  [Q14]
+======================================================================
+
+ML Fraud Probability Score: 0.9295
+
+  Transaction Amount: $149.09 (typical range)
+  Time: late night/early morning (22:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and high fraud score, but the typical transaction amount and common email domain provide some counterpoints.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 15 / 30  [Q15]
+======================================================================
+
+ML Fraud Probability Score: 0.8729
+
+  Transaction Amount: $108.50 (typical range)
+  Time: late night/early morning (23:00), weekend
+  Product: W
+  Email domain: gmail.com
+  Time deltas: 7 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and the high fraud score, but the typical transaction amount and common email domain provide some counterpoints.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8729
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 16 / 30  [Q16]
+======================================================================
+
+ML Fraud Probability Score: 0.9163
+
+  Transaction Amount: $140.50 (typical range)
+  Time: late night/early morning (23:00), weekend
+  Product: W
+  Email domain: gmail.com
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and late-night timing, but the typical transaction amount and common email domain provide some counter-evidence.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 17 / 30  [Q17]
+======================================================================
+
+ML Fraud Probability Score: 0.9716
+
+  Transaction Amount: $200.00 (typical range), round number
+  Time: morning (7:00), weekday
+  Product: H
+  Email domain: gmail.com
+  Time deltas: 1 available
+
+--- AI-Generated Explanation ---
+  While there are some indicators of potential fraud, the timing and typical transaction amount suggest legitimacy.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 18 / 30  [Q18]
+======================================================================
+
+ML Fraud Probability Score: 0.9323
+
+  Transaction Amount: $41.15 (typical range)
+  Time: morning (8:00), weekday
+  Product: C
+  Email domain: hotmail.com
+  Unusual count features (>95th pct): {'C8': 9, 'C10': 3, 'C12': 2}
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and unusual count features, while the evidence against fraud is weaker and does not sufficiently counter the fraud indicators.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 19 / 30  [Q19]
+======================================================================
+
+ML Fraud Probability Score: 0.9988
+
+  Transaction Amount: $83.74 (typical range)
+  Time: evening (20:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C8': 13, 'C10': 6, 'C12': 7}
+  Time deltas: 2 available
+
+--- AI-Generated Explanation ---
+  The evidence strongly leans towards fraud due to the high fraud score and multiple unusual count features, despite some indicators of legitimacy.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.95
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 20 / 30  [Q20]
+======================================================================
+
+ML Fraud Probability Score: 0.9988
+
+  Transaction Amount: $83.74 (typical range)
+  Time: afternoon (17:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C1': 33, 'C4': 5, 'C7': 5, 'C8': 26, 'C10': 9, 'C12': 12}
+  Time deltas: 2 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and unusual count features, while the evidence against fraud is weaker and does not sufficiently counter the fraud indicators.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.95
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 21 / 30  [Q21]
+======================================================================
+
+ML Fraud Probability Score: 0.9965
+
+  Transaction Amount: $14.14 (typical range)
+  Time: evening (18:00), weekday
+  Product: C
+  Email domain: hotmail.com
+  Unusual count features (>95th pct): {'C1': 132, 'C2': 174, 'C4': 33, 'C6': 33, 'C7': 33, 'C8': 77, 'C10': 37, 'C11': 83, 'C12': 83}
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong, particularly due to the high fraud score and the presence of multiple anomalous features. While there are some indicators of legitimacy, they do not outweigh the strong signals of potential fraud.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.99
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 22 / 30  [Q22]
+======================================================================
+
+ML Fraud Probability Score: 0.9444
+
+  Transaction Amount: $450.00 (above average), round number
+  Time: afternoon (14:00), weekday
+  Product: H
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C4': 3, 'C10': 3}
+  Time deltas: 1 available
+
+--- AI-Generated Explanation ---
+  The evidence suggests a higher likelihood of fraud due to the high transaction amount and unusual count features, despite the timing and email domain being less suspicious.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 23 / 30  [Q23]
+======================================================================
+
+ML Fraud Probability Score: 0.8732
+
+  Transaction Amount: $48.34 (typical range)
+  Time: late night/early morning (1:00), weekday
+  Product: C
+  Email domain: outlook.com
+  Time deltas: 3 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and the high fraud score, but the typical transaction amount and common email domain provide some counterpoints. Overall, the evidence leans towards fraud.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8732
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 24 / 30  [Q24]
+======================================================================
+
+ML Fraud Probability Score: 0.9981
+
+  Transaction Amount: $83.74 (typical range)
+  Time: evening (21:00), weekday
+  Product: C
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C1': 23, 'C4': 3, 'C7': 3, 'C8': 20, 'C10': 7, 'C12': 9}
+  Time deltas: 2 available
+
+--- AI-Generated Explanation ---
+  The evidence strongly leans towards fraud due to the high fraud score and multiple anomalous features, despite the typical transaction amount.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.95
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 25 / 30  [Q25]
+======================================================================
+
+ML Fraud Probability Score: 0.8222
+
+  Transaction Amount: $171.00 (typical range), round number
+  Time: late night/early morning (2:00), weekday
+  Product: W
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strengthened by the late-night timing and round number, but the typical transaction amount and available time deltas provide some counter-evidence.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8222
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 26 / 30  [Q26]
+======================================================================
+
+ML Fraud Probability Score: 0.8919
+
+  Transaction Amount: $146.00 (typical range), round number
+  Time: afternoon (16:00), weekday
+  Product: W
+  Email domain: gmail.com
+  Time deltas: 4 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is moderate, primarily based on the ML model's score and the round number of the transaction. However, the timing and typical amount suggest legitimacy.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8919
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 27 / 30  [Q27]
+======================================================================
+
+ML Fraud Probability Score: 0.8796
+
+  Transaction Amount: $97.00 (typical range)
+  Time: morning (10:00), weekday
+  Product: W
+  Email domain: yahoo.com
+  Time deltas: 7 available
+
+--- AI-Generated Explanation ---
+  The evidence against fraud is relatively strong, indicating that this transaction may be legitimate. However, the high fraud score from the ML model suggests caution.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.8796
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 28 / 30  [Q28]
+======================================================================
+
+ML Fraud Probability Score: 0.9996
+
+  Transaction Amount: $225.00 (typical range), round number
+  Time: late night/early morning (1:00), weekday
+  Product: R
+  Email domain: gmail.com
+  Unusual count features (>95th pct): {'C8': 3, 'C10': 3}
+  Time deltas: 1 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong, particularly due to the high fraud score and the unusual count features. While there are some points suggesting legitimacy, they do not outweigh the indicators of fraud.
+  Recommendation: ESCALATE_AS_FRAUD
+  Fraud Likelihood: 0.95
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 29 / 30  [Q29]
+======================================================================
+
+ML Fraud Probability Score: 0.9725
+
+  Transaction Amount: $48.34 (typical range)
+  Time: late night/early morning (1:00), weekday
+  Product: C
+  Email domain: outlook.com
+  Time deltas: 2 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and late-night timing, but the typical transaction amount and common email domain provide some counterbalance.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.85
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Transaction 30 / 30  [Q30]
+======================================================================
+
+ML Fraud Probability Score: 0.9739
+
+  Transaction Amount: $75.10 (typical range)
+  Time: late night/early morning (23:00), weekday
+  Product: C
+  Email domain: hotmail.com
+  Time deltas: 5 available
+
+--- AI-Generated Explanation ---
+  The evidence for fraud is strong due to the high fraud score and the timing of the transaction. However, the typical transaction amount and common email domain provide some counter-evidence.
+  Recommendation: HOLD_FOR_REVIEW
+  Fraud Likelihood: 0.95
+
+Q1. Coherence (1-5): Is the reasoning logical and internally consistent?
+Q2. Completeness (1-5): Does the explanation address all relevant aspects?
+Q3. Clarity (1-5): Is it clear, well-structured, and professional?
+Q4. Actionability (1-5): Does it provide useful guidance for investigation?
+Q5. Overall Quality (1-5): Overall, how useful is this explanation?
+Q6. Trust (Multiple choice): Would you trust this for a real investigation?
+    - Yes, fully
+    - Partially — would need to verify some claims
+    - No — would start from scratch
+Q7. Comments (Optional, long text)
+
+======================================================================
+SECTION: Final Questions
+======================================================================
+
+Q. Compared to SHAP feature attributions (e.g., 'Feature X = 0.42,
+   SHAP: +0.31'), how do you rate AI narrative explanations?
+  - Narrative is much better
+  - Narrative is slightly better
+  - About the same
+  - SHAP is slightly better
+  - SHAP is much better
+  - Cannot compare (unfamiliar with SHAP)
+
+Q. Any additional comments? (Optional, long text)

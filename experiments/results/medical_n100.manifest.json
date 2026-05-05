@@ -1,0 +1,16 @@
+{
+  "manifest_name": "medical_n100",
+  "kind": "synthetic_medical_pilot",
+  "source_file": "medical_n100_raw.jsonl",
+  "n_records": 200,
+  "n_fp": null,
+  "n_tp": null,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "Synthetic medical risk scenarios. n=100 expansion of the n=30 pilot.",
+  "caveat": "Synthetic. Stress-test only."
+}

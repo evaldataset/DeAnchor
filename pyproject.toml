@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deanchor"
+version = "0.1.0"
+description = "Score Anchoring in LLM-Augmented Fraud Detection"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = [
+    "ml_baseline*",
+    "llm_explainer*",
+    "evaluation*",
+    "transaction_converter*",
+    "rag*",
+    "experiments*",
+    "scripts*",
+]

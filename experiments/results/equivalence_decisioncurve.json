@@ -1,0 +1,243 @@
+{
+  "tost_equivalence_margin_003": {
+    "margin": 0.03,
+    "observed_diff": -0.0014,
+    "bootstrap_mean_diff": -0.00288,
+    "ci_90": [
+      -0.01664,
+      0.0116
+    ],
+    "ci_95": [
+      -0.01881,
+      0.01433
+    ],
+    "equivalence_within_margin": true,
+    "prop_bootstrap_nonequiv": 0.0015,
+    "note": "Equivalence established at margin=0.030 if 90% CI is entirely within (-margin, +margin). Current CI: [-0.0166, 0.0116]."
+  },
+  "tost_equivalence_margin_005": {
+    "margin": 0.05,
+    "observed_diff": -0.0014,
+    "bootstrap_mean_diff": -0.00288,
+    "ci_90": [
+      -0.01664,
+      0.0116
+    ],
+    "ci_95": [
+      -0.01881,
+      0.01433
+    ],
+    "equivalence_within_margin": true,
+    "prop_bootstrap_nonequiv": 0.0,
+    "note": "Equivalence established at margin=0.050 if 90% CI is entirely within (-margin, +margin). Current CI: [-0.0166, 0.0116]."
+  },
+  "decision_curve": {
+    "prevalence_0.035": {
+      "pt_0.20": {
+        "raw_ml": -0.20625,
+        "llm_fl": -0.20625,
+        "fusion": -0.20625,
+        "treat_all": -0.20625,
+        "treat_none": 0.0
+      },
+      "pt_0.30": {
+        "raw_ml": -0.37857,
+        "llm_fl": -0.37857,
+        "fusion": -0.37857,
+        "treat_all": -0.37857,
+        "treat_none": 0.0
+      },
+      "pt_0.40": {
+        "raw_ml": -0.60833,
+        "llm_fl": -0.60833,
+        "fusion": -0.60833,
+        "treat_all": -0.60833,
+        "treat_none": 0.0
+      },
+      "pt_0.50": {
+        "raw_ml": -0.24465,
+        "llm_fl": -0.1706,
+        "fusion": -0.1406,
+        "treat_all": -0.93,
+        "treat_none": 0.0
+      },
+      "pt_0.60": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -1.4125,
+        "treat_none": 0.0
+      },
+      "pt_0.70": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -2.21667,
+        "treat_none": 0.0
+      }
+    },
+    "prevalence_0.100": {
+      "pt_0.20": {
+        "raw_ml": -0.125,
+        "llm_fl": -0.125,
+        "fusion": -0.125,
+        "treat_all": -0.125,
+        "treat_none": 0.0
+      },
+      "pt_0.30": {
+        "raw_ml": -0.28571,
+        "llm_fl": -0.28571,
+        "fusion": -0.28571,
+        "treat_all": -0.28571,
+        "treat_none": 0.0
+      },
+      "pt_0.40": {
+        "raw_ml": -0.5,
+        "llm_fl": -0.5,
+        "fusion": -0.5,
+        "treat_all": -0.5,
+        "treat_none": 0.0
+      },
+      "pt_0.50": {
+        "raw_ml": -0.179,
+        "llm_fl": -0.116,
+        "fusion": -0.086,
+        "treat_all": -0.8,
+        "treat_none": 0.0
+      },
+      "pt_0.60": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -1.25,
+        "treat_none": 0.0
+      },
+      "pt_0.70": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -2.0,
+        "treat_none": 0.0
+      }
+    },
+    "prevalence_0.300": {
+      "pt_0.20": {
+        "raw_ml": 0.125,
+        "llm_fl": 0.125,
+        "fusion": 0.125,
+        "treat_all": 0.125,
+        "treat_none": 0.0
+      },
+      "pt_0.30": {
+        "raw_ml": -0.0,
+        "llm_fl": -0.0,
+        "fusion": -0.0,
+        "treat_all": -0.0,
+        "treat_none": 0.0
+      },
+      "pt_0.40": {
+        "raw_ml": -0.16667,
+        "llm_fl": -0.16667,
+        "fusion": -0.16667,
+        "treat_all": -0.16667,
+        "treat_none": 0.0
+      },
+      "pt_0.50": {
+        "raw_ml": 0.023,
+        "llm_fl": 0.052,
+        "fusion": 0.082,
+        "treat_all": -0.4,
+        "treat_none": 0.0
+      },
+      "pt_0.60": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -0.75,
+        "treat_none": 0.0
+      },
+      "pt_0.70": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -1.33333,
+        "treat_none": 0.0
+      }
+    },
+    "prevalence_0.500": {
+      "pt_0.20": {
+        "raw_ml": 0.375,
+        "llm_fl": 0.375,
+        "fusion": 0.375,
+        "treat_all": 0.375,
+        "treat_none": 0.0
+      },
+      "pt_0.30": {
+        "raw_ml": 0.28571,
+        "llm_fl": 0.28571,
+        "fusion": 0.28571,
+        "treat_all": 0.28571,
+        "treat_none": 0.0
+      },
+      "pt_0.40": {
+        "raw_ml": 0.16667,
+        "llm_fl": 0.16667,
+        "fusion": 0.16667,
+        "treat_all": 0.16667,
+        "treat_none": 0.0
+      },
+      "pt_0.50": {
+        "raw_ml": 0.225,
+        "llm_fl": 0.22,
+        "fusion": 0.25,
+        "treat_all": 0.0,
+        "treat_none": 0.0
+      },
+      "pt_0.60": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -0.25,
+        "treat_none": 0.0
+      },
+      "pt_0.70": {
+        "raw_ml": 0.0,
+        "llm_fl": 0.0,
+        "fusion": 0.0,
+        "treat_all": -0.66667,
+        "treat_none": 0.0
+      }
+    }
+  },
+  "max_net_benefit_advantage": {
+    "max_llm_over_raw_ml_advantage": 0.07405,
+    "max_fusion_over_raw_ml_advantage": 0.10405,
+    "best_llm_context": [
+      "prevalence_0.035",
+      "pt_0.50",
+      {
+        "raw_ml": -0.24465,
+        "llm_fl": -0.1706,
+        "fusion": -0.1406,
+        "treat_all": -0.93,
+        "treat_none": 0.0
+      }
+    ],
+    "best_fusion_context": [
+      "prevalence_0.035",
+      "pt_0.50",
+      {
+        "raw_ml": -0.24465,
+        "llm_fl": -0.1706,
+        "fusion": -0.1406,
+        "treat_all": -0.93,
+        "treat_none": 0.0
+      }
+    ]
+  },
+  "interpretation": {
+    "tost_003": "At margin=0.03, equivalence established",
+    "tost_005": "At margin=0.05, equivalence established",
+    "decision_curve": "Some operating points favor fusion; see detail"
+  }
+}

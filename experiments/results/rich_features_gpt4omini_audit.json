@@ -1,0 +1,14 @@
+{
+  "model": "GPT-4o-mini",
+  "n": 100,
+  "auroc_raw_ml": 0.6976,
+  "auroc_scoreaware": 0.3703,
+  "auroc_scoreblind": 0.5446,
+  "auroc_fusion": 0.3884,
+  "lr_test": {
+    "chi2": 2.3132,
+    "p": 0.1282775121915949
+  },
+  "alpha_rich": 0.5339,
+  "suppression": 0.1743
+}

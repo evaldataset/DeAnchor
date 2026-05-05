@@ -1,0 +1,24 @@
+{
+  "claude_haiku_4_5": {
+    "model": "claude-haiku-4.5",
+    "n_valid": 50,
+    "aware_mean": 0.873,
+    "blind_mean": 0.3692,
+    "paired_shift": 0.5038,
+    "paired_t": 20.315,
+    "paired_p": 1.6255479829712075e-25,
+    "alpha": 0.9119,
+    "score_correlation_r": 0.7374
+  },
+  "gemini_2_5_flash": {
+    "model": "gemini-2.5-flash",
+    "n_valid": 50,
+    "aware_mean": 0.9442,
+    "blind_mean": 0.513,
+    "paired_shift": 0.4312,
+    "paired_t": 13.1969,
+    "paired_p": 9.438303852847245e-18,
+    "alpha": 1.055,
+    "score_correlation_r": 0.8684
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "experiment": "base_rate_priming",
+  "n_tp": 25,
+  "n_fp": 25,
+  "tp_normal_mean": 0.15,
+  "tp_primed_mean": 0.498,
+  "tp_paired_diff_mean": 0.348,
+  "tp_paired_diff_p": 9.787986007419147e-11,
+  "fp_normal_mean": 0.8981,
+  "fp_primed_mean": 0.8981,
+  "interpretation": "Bayesian_asymmetry_supported"
+}

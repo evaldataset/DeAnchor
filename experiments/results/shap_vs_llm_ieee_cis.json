@@ -1,0 +1,222 @@
+{
+  "summary": {
+    "shap_mean_score": 4.2,
+    "llm_mean_score": 2.7,
+    "preference": {
+      "A": 30
+    },
+    "n_comparisons": 30
+  },
+  "comparisons": [
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear breakdown of factors increasing and decreasing fraud risk, which is more actionable for investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions that detail how various factors contribute to the fraud risk, which is more actionable for investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides a detailed breakdown of factors influencing the fraud risk, allowing for a more nuanced understanding of the transaction's risk profile.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and quantifies their impact on the fraud risk score, making it more actionable for the investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and quantifies their impact on the fraud risk score, making it more actionable for the investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions that quantify the factors influencing the fraud risk, making it more actionable for further investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear breakdown of factors increasing and decreasing fraud risk, which is more actionable for investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on fraud risk, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions with SHAP values that quantify their impact on the fraud risk, making it more actionable for the investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and quantifies their impact on fraud risk, making it more actionable for the investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature contributions and their impact on the fraud risk score, which is more actionable for investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on fraud risk, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for further investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear fraud score, which are more actionable for assessing risk compared to the vague narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature contributions to the fraud risk score, allowing for a more detailed understanding of the factors influencing the transaction's risk.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear breakdown of factors increasing and decreasing fraud risk, which is more actionable for investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on fraud risk, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 5,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and quantifies their impact on fraud risk, making it more actionable for the investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on fraud risk, which is more actionable for investigation than the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and quantifies their impact on fraud risk, making it more actionable for the investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear fraud score, which are more actionable for assessing risk compared to the general narrative in Explanation B.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 2,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and a clear breakdown of factors increasing and decreasing fraud risk, which is more actionable for investigation.",
+      "category": "false_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud score, which is more actionable for further investigation.",
+      "category": "true_positive"
+    },
+    {
+      "explanation_a_score": 4,
+      "explanation_b_score": 3,
+      "preferred": "A",
+      "reason": "Explanation A provides specific feature attributions and their impact on the fraud risk score, which is more actionable for further investigation.",
+      "category": "false_positive"
+    }
+  ]
+}

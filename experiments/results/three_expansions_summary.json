@@ -1,0 +1,47 @@
+{
+  "medical": {
+    "error": "too few valid pairs",
+    "n_valid": 3
+  },
+  "paysim_expanded": {
+    "label": "paysim_expanded_qwen",
+    "n": 200,
+    "auroc_raw_ml": 0.8836,
+    "auroc_scoreaware_llm": 0.6246,
+    "auroc_scoreblind_llm": 0.6764,
+    "auroc_fusion": 0.6543,
+    "auroc_combiner_ml_blind": 0.6955,
+    "lr_test_llm_over_ml": {
+      "chi2": 14.1962,
+      "p": 0.00016470300767212898
+    },
+    "tost_003_equivalence": false,
+    "tost_ci90": [
+      -0.25715,
+      0.01861
+    ],
+    "normative_verdict": "suppression"
+  },
+  "rich_features": {
+    "label": "rich_features_qwen",
+    "n": 100,
+    "auroc_raw_ml": 0.6976,
+    "auroc_scoreaware_llm": 0.4237,
+    "auroc_scoreblind_llm": 0.6165,
+    "auroc_fusion": 0.513,
+    "auroc_combiner_ml_blind": 0.6299,
+    "lr_test_llm_over_ml": {
+      "chi2": 2.2081,
+      "p": 0.13729023815394303
+    },
+    "tost_003_equivalence": false,
+    "tost_ci90": [
+      -0.31802,
+      -0.03605
+    ],
+    "normative_verdict": "suppression",
+    "paired_shift_mean": 0.2428,
+    "alpha_rich": 0.2441
+  },
+  "total_minutes": 1267.4
+}

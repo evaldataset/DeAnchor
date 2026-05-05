@@ -1,0 +1,50 @@
+{
+  "medical": {
+    "domain": "medical_cardiovascular",
+    "model": "GPT-4o-mini",
+    "n": 30,
+    "alpha": 0.3535,
+    "paired_shift_mean": 0.2955,
+    "paired_shift_p": 0.00015468926823389612,
+    "blind_delta": 0.7267,
+    "aware_delta": 0.0471,
+    "auroc_blind": 1.0,
+    "auroc_aware": 0.4444
+  },
+  "paired_staged": {
+    "n": 100,
+    "model": "GPT-4o-mini",
+    "standard_delta": 0.0455,
+    "staged_delta": 0.0451,
+    "improvement_pct": -0.8,
+    "auroc_standard": 0.7125,
+    "auroc_staged": 0.7125,
+    "paired_diff_p": 0.04464497702875954
+  },
+  "rich_features": {
+    "model": "GPT-4o-mini",
+    "n": 100,
+    "auroc_raw_ml": 0.6976,
+    "auroc_scoreaware": 0.3703,
+    "auroc_scoreblind": 0.5446,
+    "auroc_fusion": 0.3884,
+    "lr_test": {
+      "chi2": 2.3132,
+      "p": 0.1282775121915949
+    },
+    "alpha_rich": 0.5339,
+    "suppression": 0.1743
+  },
+  "gpt4o_ablation": {
+    "model": "GPT-4o",
+    "n": 50,
+    "mean_shift": 0.5981,
+    "shift_ci95": [
+      0.2845,
+      0.7671
+    ],
+    "shift_p": 2.331644231714213e-31,
+    "alpha": 0.6479
+  },
+  "total_minutes": 21.2
+}

@@ -1,0 +1,40 @@
+{
+  "n_tp": 25,
+  "fake_score": 0.15,
+  "by_prior": {
+    "prior_1": {
+      "n_valid": 25,
+      "mean_fl": 0.15
+    },
+    "prior_10": {
+      "n_valid": 25,
+      "mean_fl": 0.15
+    },
+    "prior_30": {
+      "n_valid": 25,
+      "mean_fl": 0.15
+    },
+    "prior_50": {
+      "n_valid": 25,
+      "mean_fl": 0.15
+    },
+    "prior_70": {
+      "n_valid": 25,
+      "mean_fl": 0.15
+    },
+    "prior_90": {
+      "n_valid": 25,
+      "mean_fl": 0.18
+    }
+  },
+  "spearman_prior_vs_fl": {
+    "rho": 0.6547,
+    "p": 0.15830242337545783
+  },
+  "range": {
+    "min_fl": 0.15,
+    "max_fl": 0.18,
+    "delta": 0.03
+  },
+  "interpretation": "weak_prior_response"
+}

@@ -1,0 +1,10 @@
+{
+  "n": 100,
+  "model": "GPT-4o-mini",
+  "standard_delta": 0.0455,
+  "staged_delta": 0.0451,
+  "improvement_pct": -0.8,
+  "auroc_standard": 0.7125,
+  "auroc_staged": 0.7125,
+  "paired_diff_p": 0.04464497702875954
+}

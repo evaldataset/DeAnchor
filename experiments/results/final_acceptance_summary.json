@@ -1,0 +1,136 @@
+{
+  "uci_adult": {
+    "domain": "uci_adult_income",
+    "model": "GPT-4o-mini",
+    "n": 100,
+    "ml_baseline_auroc": 0.97,
+    "auroc_raw_ml": 0.9468,
+    "auroc_scoreaware": 0.9644,
+    "auroc_scoreblind": 0.9994,
+    "auroc_fusion": 0.9644,
+    "auroc_combiner": 0.9992,
+    "lr_test": {
+      "chi2": 7.0697,
+      "p": 0.00783974312126956
+    },
+    "alpha": 0.0569,
+    "suppression": 0.035,
+    "verdict": "suppression"
+  },
+  "mechanism": {
+    "experiment": "base_rate_priming",
+    "n_tp": 25,
+    "n_fp": 25,
+    "tp_normal_mean": 0.15,
+    "tp_primed_mean": 0.498,
+    "tp_paired_diff_mean": 0.348,
+    "tp_paired_diff_p": 9.787986007419147e-11,
+    "fp_normal_mean": 0.8981,
+    "fp_primed_mean": 0.8981,
+    "interpretation": "Bayesian_asymmetry_supported"
+  },
+  "medical_n100": {
+    "domain": "medical_cardiovascular",
+    "model": "GPT-4o-mini",
+    "n": 100,
+    "alpha": 0.0083,
+    "paired_shift_mean": 0.0069,
+    "paired_shift_p": 0.09372761941045057,
+    "auroc_blind": 1.0,
+    "auroc_aware": 1.0,
+    "blind_delta": 0.72,
+    "aware_delta": 0.7638
+  },
+  "multiseed": {
+    "experiment": "multi_seed_controlled_ablation",
+    "n_seeds": 3,
+    "n_per_seed": 100,
+    "per_seed": {
+      "seed_42": {
+        "n_valid": 100,
+        "mean_shift": 0.0872,
+        "alpha": 0.094,
+        "ci95": [
+          -0.2995,
+          0.6693
+        ]
+      },
+      "seed_123": {
+        "n_valid": 100,
+        "mean_shift": 0.1105,
+        "alpha": 0.1193,
+        "ci95": [
+          -0.2947,
+          0.6929
+        ]
+      },
+      "seed_7": {
+        "n_valid": 100,
+        "mean_shift": 0.0538,
+        "alpha": 0.058,
+        "ci95": [
+          -0.3,
+          0.6693
+        ]
+      }
+    },
+    "across_seed_mean_shift": 0.0838,
+    "across_seed_std_shift": 0.0233,
+    "across_seed_mean_alpha": 0.0904,
+    "across_seed_std_alpha": 0.0252
+  },
+  "tost_sensitivity": {
+    "experiment": "tost_margin_sensitivity",
+    "observed_diff": -0.00288,
+    "ci90": [
+      -0.01664,
+      0.0116
+    ],
+    "sensitivity_by_margin": {
+      "margin_0.01": {
+        "margin": 0.01,
+        "equivalence_established": false,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.02": {
+        "margin": 0.02,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.03": {
+        "margin": 0.03,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.04": {
+        "margin": 0.04,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.05": {
+        "margin": 0.05,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.07": {
+        "margin": 0.07,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      },
+      "margin_0.1": {
+        "margin": 0.1,
+        "equivalence_established": true,
+        "ci90_lower": -0.01664,
+        "ci90_upper": 0.0116
+      }
+    },
+    "min_equiv_margin": 0.02
+  },
+  "total_minutes": 19.4
+}

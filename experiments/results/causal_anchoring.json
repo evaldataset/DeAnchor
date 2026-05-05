@@ -1,0 +1,6 @@
+{
+  "fp_real_fl": 0.292,
+  "fp_fake_high_fl": 0.281,
+  "tp_real_fl": 0.355,
+  "tp_fake_low_fl": 0.106
+}

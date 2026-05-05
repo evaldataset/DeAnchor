@@ -1,0 +1,29 @@
+# Files excluded from public-release tarball (used by `git archive` and packaging).
+# These are internal/legacy/scratch files that should NOT ship to reviewers.
+
+archive/             export-ignore
+experiments/results/_smoke/   export-ignore
+**/__pycache__/      export-ignore
+*.pyc                export-ignore
+.env                 export-ignore
+.env.*               export-ignore
+/tmp/                export-ignore
+
+# Internal audit & review documents (keep in repo for development, exclude from release)
+AUDIT.md             export-ignore
+CHECK.md             export-ignore
+REVIEW.md            export-ignore
+REVIEW2.md           export-ignore
+REVISION.md          export-ignore
+VALID.md             export-ignore
+
+# Editor / IDE state
+.vscode/             export-ignore
+.idea/               export-ignore
+*.swp                export-ignore
+.DS_Store            export-ignore
+
+# Large stale artifacts
+data/raw/            export-ignore
+*.pkl                export-ignore
+*.pt                 export-ignore

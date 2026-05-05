@@ -1,0 +1,16 @@
+{
+  "manifest_name": "llm_input_paysim_100",
+  "kind": "paired_score_aware_blind",
+  "source_file": "llm_input_paysim_100.jsonl",
+  "n_records": 200,
+  "n_fp": 100,
+  "n_tp": 100,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "Paired score-aware/score-blind sample. Used for paysim_singlemodel single-model replication.",
+  "caveat": "Original PaySim n=200 expansion (paysim_expanded_*) mixes models; the single-model artifact is paysim_singlemodel_raw.jsonl"
+}

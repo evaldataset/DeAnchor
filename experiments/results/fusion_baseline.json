@@ -1,0 +1,57 @@
+{
+  "n": 200,
+  "n_fp": 100,
+  "n_tp": 100,
+  "auroc": {
+    "raw_ml_only": 0.7875,
+    "llm_fl_only": 0.727,
+    "raw_ml_plus_llm_fl": 0.7861
+  },
+  "group_stats": {
+    "raw_ml_only": {
+      "fp_mean": 0.4845,
+      "tp_mean": 0.5157,
+      "delta": 0.0312,
+      "cohens_d": 1.152,
+      "n_fp": 100,
+      "n_tp": 100
+    },
+    "llm_fl_only": {
+      "fp_mean": 0.4872,
+      "tp_mean": 0.5125,
+      "delta": 0.0253,
+      "cohens_d": 1.02,
+      "n_fp": 100,
+      "n_tp": 100
+    },
+    "raw_ml_plus_llm_fl": {
+      "fp_mean": 0.4742,
+      "tp_mean": 0.5257,
+      "delta": 0.0515,
+      "cohens_d": 1.17,
+      "n_fp": 100,
+      "n_tp": 100
+    }
+  },
+  "likelihood_ratio_test": {
+    "does_llm_fl_add_over_raw_ml": {
+      "ll_full": -108.8132,
+      "ll_reduced": -109.876,
+      "lr_stat": 2.1256,
+      "df": 1,
+      "p_value": 0.14485506153195327
+    },
+    "does_raw_ml_add_over_llm_fl": {
+      "ll_full": -108.8132,
+      "ll_reduced": -114.7998,
+      "lr_stat": 11.9732,
+      "df": 1,
+      "p_value": 0.0005397148063102097
+    }
+  },
+  "pearson_raw_vs_llm": 0.8116,
+  "interpretation": {
+    "incremental_llm_over_raw": "NO \u2014 LR test p > 0.05",
+    "incremental_raw_over_llm": "YES \u2014 LR test p <= 0.05"
+  }
+}

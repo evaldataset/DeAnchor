@@ -1,0 +1,15 @@
+{
+  "manifest_name": "medical_pilot_n30",
+  "kind": "synthetic_medical_pilot",
+  "source_file": "medical_local_raw.jsonl",
+  "n_records": 60,
+  "n_fp": null,
+  "n_tp": null,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "Original n=30 medical pilot."
+}

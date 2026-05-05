@@ -1,0 +1,51 @@
+{
+  "n": 30,
+  "n_paraphrases": 5,
+  "by_paraphrase": [
+    {
+      "paraphrase_id": 0,
+      "n_valid": 30,
+      "r_obs": 1.0,
+      "ci_95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "paraphrase_id": 1,
+      "n_valid": 30,
+      "r_obs": 1.0,
+      "ci_95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "paraphrase_id": 2,
+      "n_valid": 30,
+      "r_obs": 0.5764,
+      "ci_95": [
+        0.3908,
+        0.7463
+      ]
+    },
+    {
+      "paraphrase_id": 3,
+      "n_valid": 30,
+      "r_obs": 1.0,
+      "ci_95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "paraphrase_id": 4,
+      "n_valid": 30,
+      "r_obs": 1.0,
+      "ci_95": [
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_name": "uci_adult_synthetic",
+  "kind": "synthetic_profiles",
+  "source_file": "uci_adult_raw.jsonl",
+  "n_records": 200,
+  "n_fp": null,
+  "n_tp": null,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "UCI-Adult-style profiles generated deterministically (random.Random(42)) for the controlled audit. Real GradientBoosting baseline trained on these synthetic profiles.",
+  "caveat": "Profiles are NOT from the real UCI Adult Census; see CHECK.md B.3.5 and paper \u00a75 caveat. A real-data re-run is the next K.2 G.2 task."
+}

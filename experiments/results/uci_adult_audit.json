@@ -1,0 +1,18 @@
+{
+  "domain": "uci_adult_income",
+  "model": "GPT-4o-mini",
+  "n": 100,
+  "ml_baseline_auroc": 0.97,
+  "auroc_raw_ml": 0.9468,
+  "auroc_scoreaware": 0.9644,
+  "auroc_scoreblind": 0.9994,
+  "auroc_fusion": 0.9644,
+  "auroc_combiner": 0.9992,
+  "lr_test": {
+    "chi2": 7.0697,
+    "p": 0.00783974312126956
+  },
+  "alpha": 0.0569,
+  "suppression": 0.035,
+  "verdict": "suppression"
+}

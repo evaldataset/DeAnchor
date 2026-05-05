@@ -1,0 +1,12 @@
+{
+  "domain": "medical_cardiovascular",
+  "model": "GPT-4o-mini",
+  "n": 100,
+  "alpha": 0.0083,
+  "paired_shift_mean": 0.0069,
+  "paired_shift_p": 0.09372761941045057,
+  "auroc_blind": 1.0,
+  "auroc_aware": 1.0,
+  "blind_delta": 0.72,
+  "aware_delta": 0.7638
+}

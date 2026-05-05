@@ -1,0 +1,42 @@
+{
+  "method": "Holm-Bonferroni",
+  "n_tests": 5,
+  "results": [
+    {
+      "family": "gpt-4o-mini",
+      "p_raw": 0.0,
+      "p_holm": 0.0,
+      "rank": 1,
+      "significant_05": true
+    },
+    {
+      "family": "claude-haiku-4.5",
+      "p_raw": 1.6255479829712075e-25,
+      "p_holm": 6.50219193188483e-25,
+      "rank": 2,
+      "significant_05": true
+    },
+    {
+      "family": "gemini-2.5-flash",
+      "p_raw": 9.438303852847245e-18,
+      "p_holm": 2.831491155854174e-17,
+      "rank": 3,
+      "significant_05": true
+    },
+    {
+      "family": "o3-mini",
+      "p_raw": 2.9079843194368755e-17,
+      "p_holm": 5.815968638873751e-17,
+      "rank": 4,
+      "significant_05": true
+    },
+    {
+      "family": "gemini-2.5-pro-thinking",
+      "p_raw": 3.1956350021587706e-09,
+      "p_holm": 3.1956350021587706e-09,
+      "rank": 5,
+      "significant_05": true
+    }
+  ],
+  "all_significant_at_0.05": true
+}

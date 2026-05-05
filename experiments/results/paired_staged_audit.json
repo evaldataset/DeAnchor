@@ -1,0 +1,20 @@
+{
+  "n": 100,
+  "n_fp": 45,
+  "n_tp": 55,
+  "standard": {
+    "fp_mean": 0.8194,
+    "tp_mean": 0.8939,
+    "delta": 0.0744,
+    "auroc": 0.6925
+  },
+  "staged": {
+    "fp_mean": 0.8766,
+    "tp_mean": 0.9321,
+    "delta": 0.0555,
+    "auroc": 0.7004
+  },
+  "paired_diff_mean": 0.0467,
+  "paired_diff_p": 2.94583970801317e-09,
+  "staged_improvement_pct": -25.4
+}

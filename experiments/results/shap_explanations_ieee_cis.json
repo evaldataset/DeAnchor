@@ -1,0 +1,752 @@
+[
+  {
+    "sample_idx": 441391,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.838371217250824,
+    "transaction_text": "Transaction Amount: $335.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: W\nEmail domain: verizon.net\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8384\n\nFACTORS INCREASING FRAUD RISK:\n  - D2 = 0.00 (SHAP: +0.647, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.529, increases fraud risk)\n  - TransactionAmt = 335.00 (SHAP: +0.430, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C14 = 3.00 (SHAP: -0.487, decreases fraud risk)\n  - D10 = 286.00 (SHAP: -0.439, decreases fraud risk)\n  - P_emaildomain = 49.00 (SHAP: -0.399, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "D2": 0.6473712921142578,
+      "card6": 0.5292971730232239,
+      "TransactionAmt": 0.42999961972236633,
+      "C9": 0.42441326379776,
+      "D3": 0.3016158938407898
+    }
+  },
+  {
+    "sample_idx": 264818,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9266539216041564,
+    "transaction_text": "Transaction Amount: $23.20 (typical range)\nTime: late night/early morning (0:00), weekday\nProduct: C\nEmail domain: gmail.com\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9267\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.165, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.619, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.435, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionAmt = 23.20 (SHAP: -0.482, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.380, decreases fraud risk)\n  - card1 = 3867.00 (SHAP: -0.149, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.1646322011947632,
+      "C13": 0.6190682053565979,
+      "card6": 0.43463122844696045,
+      "card3": 0.3352251648902893,
+      "D5": 0.2732279300689697
+    }
+  },
+  {
+    "sample_idx": 137974,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8799142837524414,
+    "transaction_text": "Transaction Amount: $117.00 (typical range), round number\nTime: morning (9:00), weekday\nProduct: W\nEmail domain: aol.com\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8799\n\nFACTORS INCREASING FRAUD RISK:\n  - card6 = 1.00 (SHAP: +0.643, increases fraud risk)\n  - hour = 9.00 (SHAP: +0.640, increases fraud risk)\n  - C6 = 3.00 (SHAP: +0.400, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - P_emaildomain = 2.00 (SHAP: -0.307, decreases fraud risk)\n  - card1 = 15066.00 (SHAP: -0.249, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.244, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card6": 0.6429399251937866,
+      "hour": 0.6400344967842102,
+      "C6": 0.3995557725429535,
+      "C11": 0.3563106060028076,
+      "D3": 0.3028471767902374
+    }
+  },
+  {
+    "sample_idx": 564974,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.962372362613678,
+    "transaction_text": "Transaction Amount: $22.75 (typical range)\nTime: late night/early morning (3:00), weekend\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C12': 2}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9624\n\nFACTORS INCREASING FRAUD RISK:\n  - C8 = 2.00 (SHAP: +0.646, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.468, increases fraud risk)\n  - card3 = 185.00 (SHAP: +0.334, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionAmt = 22.75 (SHAP: -0.307, decreases fraud risk)\n  - P_emaildomain = 19.00 (SHAP: -0.185, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.167, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C8": 0.6459195017814636,
+      "C13": 0.46777188777923584,
+      "card3": 0.33388954401016235,
+      "C1": 0.30471447110176086,
+      "card1": 0.2849428951740265
+    }
+  },
+  {
+    "sample_idx": 540681,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8673742413520813,
+    "transaction_text": "Transaction Amount: $50.00 (typical range)\nTime: late night/early morning (22:00), weekday\nProduct: H\nEmail domain: hotmail.com\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.8674\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.143, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.701, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.385, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.442, decreases fraud risk)\n  - addr1 = 469.00 (SHAP: -0.261, decreases fraud risk)\n  - TransactionAmt = 50.00 (SHAP: -0.203, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.1425340175628662,
+      "C13": 0.700979471206665,
+      "card6": 0.3851704001426697,
+      "card1": 0.27890098094940186,
+      "C5": 0.27282941341400146
+    }
+  },
+  {
+    "sample_idx": 514020,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8799926042556763,
+    "transaction_text": "Transaction Amount: $914.00 (extremely large (>3 std above average)), round number\nTime: evening (18:00), weekday\nProduct: W\nEmail domain: comcast.net\nTime deltas: 8 available",
+    "shap_explanation": "ML Fraud Score: 0.8800\n\nFACTORS INCREASING FRAUD RISK:\n  - TransactionAmt = 914.00 (SHAP: +1.267, increases fraud risk)\n  - D2 = 2.00 (SHAP: +0.552, increases fraud risk)\n  - D3 = 2.00 (SHAP: +0.322, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card6 = 2.00 (SHAP: -0.213, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.199, decreases fraud risk)\n  - C11 = 1.00 (SHAP: -0.158, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "TransactionAmt": 1.2673527002334595,
+      "D2": 0.5522379875183105,
+      "D3": 0.3219055235385895,
+      "C13": 0.25466403365135193,
+      "log_amount": 0.24926365911960602
+    }
+  },
+  {
+    "sample_idx": 38806,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8305021524429321,
+    "transaction_text": "Transaction Amount: $53.05 (typical range)\nTime: late night/early morning (23:00), weekday\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.8305\n\nFACTORS INCREASING FRAUD RISK:\n  - C13 = 1.00 (SHAP: +0.519, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.485, increases fraud risk)\n  - C4 = 2.00 (SHAP: +0.474, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card1 = 16062.00 (SHAP: -0.435, decreases fraud risk)\n  - addr1 = 130.00 (SHAP: -0.415, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.359, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C13": 0.5190639495849609,
+      "card6": 0.48535317182540894,
+      "C4": 0.47358694672584534,
+      "D5": 0.2705378234386444,
+      "C5": 0.2641703486442566
+    }
+  },
+  {
+    "sample_idx": 153025,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.952256679534912,
+    "transaction_text": "Transaction Amount: $56.55 (typical range)\nTime: afternoon (17:00), weekday\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C1': 25, 'C2': 111, 'C4': 19, 'C6': 19, 'C7': 19, 'C8': 4, 'C10': 4, 'C11': 27, 'C12': 27}\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.9523\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 25.00 (SHAP: +2.131, increases fraud risk)\n  - C6 = 19.00 (SHAP: +0.397, increases fraud risk)\n  - C12 = 27.00 (SHAP: +0.339, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C14 = 9.00 (SHAP: -0.819, decreases fraud risk)\n  - C13 = 17.00 (SHAP: -0.811, decreases fraud risk)\n  - card1 = 15885.00 (SHAP: -0.497, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 2.1309797763824463,
+      "C6": 0.3971199095249176,
+      "C12": 0.33854246139526367,
+      "C11": 0.27721768617630005,
+      "card3": 0.22340549528598785
+    }
+  },
+  {
+    "sample_idx": 241778,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8507681488990784,
+    "transaction_text": "Transaction Amount: $60.90 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8508\n\nFACTORS INCREASING FRAUD RISK:\n  - C4 = 2.00 (SHAP: +0.575, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.518, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.513, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 2.00 (SHAP: -0.281, decreases fraud risk)\n  - P_emaildomain = 19.00 (SHAP: -0.164, decreases fraud risk)\n  - C8 = 1.00 (SHAP: -0.146, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C4": 0.574783980846405,
+      "card6": 0.5179692506790161,
+      "C13": 0.5131364464759827,
+      "C11": 0.2732183039188385,
+      "C5": 0.24762678146362305
+    }
+  },
+  {
+    "sample_idx": 252288,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8898791670799255,
+    "transaction_text": "Transaction Amount: $300.00 (typical range), round number\nTime: evening (18:00), weekend\nProduct: H\nEmail domain: anonymous.com\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.8899\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.038, increases fraud risk)\n  - TransactionAmt = 300.00 (SHAP: +0.613, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.607, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - P_emaildomain = 1.00 (SHAP: -0.590, decreases fraud risk)\n  - card1 = 16659.00 (SHAP: -0.422, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.352, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.0379236936569214,
+      "TransactionAmt": 0.6126331686973572,
+      "C13": 0.6074755787849426,
+      "ProductCD": 0.33551979064941406,
+      "TransactionDT": 0.3073071241378784
+    }
+  },
+  {
+    "sample_idx": 404510,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.863828182220459,
+    "transaction_text": "Transaction Amount: $138.97 (typical range)\nTime: late night/early morning (2:00), weekend\nProduct: C\nEmail domain: gmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8638\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.312, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.686, increases fraud risk)\n  - R_emaildomain = 16.00 (SHAP: +0.280, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.416, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.221, decreases fraud risk)\n  - card1 = 3154.00 (SHAP: -0.170, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.3119765520095825,
+      "C13": 0.6855658292770386,
+      "R_emaildomain": 0.27976906299591064,
+      "C5": 0.24556545913219452,
+      "card3": 0.23270173370838165
+    }
+  },
+  {
+    "sample_idx": 405571,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8602454662322998,
+    "transaction_text": "Transaction Amount: $48.46 (typical range)\nTime: afternoon (15:00), weekend\nProduct: C\nEmail domain: hotmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8602\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.191, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.613, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.394, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.401, decreases fraud risk)\n  - P_emaildomain = 19.00 (SHAP: -0.193, decreases fraud risk)\n  - amount_decimal = 0.46 (SHAP: -0.160, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.1911406517028809,
+      "C13": 0.6129388809204102,
+      "card6": 0.39426589012145996,
+      "ProductCD": 0.28785866498947144,
+      "C5": 0.27113598585128784
+    }
+  },
+  {
+    "sample_idx": 266929,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.97207909822464,
+    "transaction_text": "Transaction Amount: $31.18 (typical range)\nTime: evening (19:00), weekday\nProduct: C\nEmail domain: anonymous.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.9721\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.093, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.617, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.475, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.314, decreases fraud risk)\n  - TransactionAmt = 31.18 (SHAP: -0.201, decreases fraud risk)\n  - C11 = 1.00 (SHAP: -0.095, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.0931254625320435,
+      "C13": 0.6165077686309814,
+      "card6": 0.4747040271759033,
+      "ProductCD": 0.3375149667263031,
+      "card2": 0.2724766731262207
+    }
+  },
+  {
+    "sample_idx": 276361,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9718493223190308,
+    "transaction_text": "Transaction Amount: $500.00 (above average), round number\nTime: evening (18:00), weekday\nProduct: R\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 5, 'C8': 10, 'C10': 8}\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.9718\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 13.00 (SHAP: +1.764, increases fraud risk)\n  - C8 = 10.00 (SHAP: +0.747, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.726, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - R_emaildomain = 1.00 (SHAP: -1.655, decreases fraud risk)\n  - ProductCD = 2.00 (SHAP: -0.424, decreases fraud risk)\n  - card2 = 555.00 (SHAP: -0.319, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.764180302619934,
+      "C8": 0.7470693588256836,
+      "C13": 0.7255924940109253,
+      "C6": 0.6974541544914246,
+      "C4": 0.5153045654296875
+    }
+  },
+  {
+    "sample_idx": 479008,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8417251706123352,
+    "transaction_text": "Transaction Amount: $28.90 (typical range)\nTime: evening (21:00), weekday\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8417\n\nFACTORS INCREASING FRAUD RISK:\n  - card6 = 1.00 (SHAP: +0.412, increases fraud risk)\n  - D2 = 2.00 (SHAP: +0.370, increases fraud risk)\n  - C4 = 2.00 (SHAP: +0.288, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 2.00 (SHAP: -0.552, decreases fraud risk)\n  - D4 = 287.00 (SHAP: -0.416, decreases fraud risk)\n  - C14 = 2.00 (SHAP: -0.295, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card6": 0.4119889438152313,
+      "D2": 0.37048375606536865,
+      "C4": 0.2877748906612396,
+      "C5": 0.20088224112987518,
+      "card3": 0.20021145045757294
+    }
+  },
+  {
+    "sample_idx": 118818,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9943143725395204,
+    "transaction_text": "Transaction Amount: $161.78 (typical range)\nTime: evening (20:00), weekend\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C8': 6, 'C10': 4, 'C12': 8}\nTime deltas: 6 available",
+    "shap_explanation": "ML Fraud Score: 0.9943\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 8.00 (SHAP: +1.917, increases fraud risk)\n  - C14 = 0.00 (SHAP: +0.932, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.869, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 2319331.00 (SHAP: -0.995, decreases fraud risk)\n  - D3 = 0.00 (SHAP: -0.362, decreases fraud risk)\n  - C2 = 15.00 (SHAP: -0.082, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.916623830795288,
+      "C14": 0.9321057796478271,
+      "C13": 0.8685755133628845,
+      "C8": 0.617690920829773,
+      "C11": 0.5922268629074097
+    }
+  },
+  {
+    "sample_idx": 398456,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8319600224494934,
+    "transaction_text": "Transaction Amount: $37.40 (typical range)\nTime: late night/early morning (3:00), weekday\nProduct: C\nEmail domain: gmail.com\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8320\n\nFACTORS INCREASING FRAUD RISK:\n  - C13 = 1.00 (SHAP: +0.472, increases fraud risk)\n  - D2 = 1.00 (SHAP: +0.417, increases fraud risk)\n  - card3 = 185.00 (SHAP: +0.377, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.526, decreases fraud risk)\n  - TransactionAmt = 37.40 (SHAP: -0.268, decreases fraud risk)\n  - C11 = 1.00 (SHAP: -0.251, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C13": 0.47150447964668274,
+      "D2": 0.41714581847190857,
+      "card3": 0.37710896134376526,
+      "C8": 0.37384507060050964,
+      "card1": 0.2665897011756897
+    }
+  },
+  {
+    "sample_idx": 318960,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8430431485176086,
+    "transaction_text": "Transaction Amount: $83.00 (typical range)\nTime: evening (20:00), weekday\nProduct: W\nEmail domain: gmail.com\nTime deltas: 8 available",
+    "shap_explanation": "ML Fraud Score: 0.8430\n\nFACTORS INCREASING FRAUD RISK:\n  - C9 = 4.00 (SHAP: +0.802, increases fraud risk)\n  - card2 = 490.00 (SHAP: +0.291, increases fraud risk)\n  - D2 = 24.00 (SHAP: +0.211, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C13 = 7.00 (SHAP: -0.219, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.190, decreases fraud risk)\n  - D10 = 25.00 (SHAP: -0.153, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C9": 0.8020568490028381,
+      "card2": 0.2905063331127167,
+      "D2": 0.2114676982164383,
+      "D15": 0.20143909752368927,
+      "C5": 0.1939505934715271
+    }
+  },
+  {
+    "sample_idx": 563835,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9493858218193054,
+    "transaction_text": "Transaction Amount: $59.00 (typical range)\nTime: evening (21:00), weekday\nProduct: W\nEmail domain: msn.com\nTime deltas: 8 available",
+    "shap_explanation": "ML Fraud Score: 0.9494\n\nFACTORS INCREASING FRAUD RISK:\n  - card1 = 6457.00 (SHAP: +0.744, increases fraud risk)\n  - C2 = 5.00 (SHAP: +0.568, increases fraud risk)\n  - C11 = 2.00 (SHAP: +0.357, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C13 = 38.00 (SHAP: -0.649, decreases fraud risk)\n  - D1 = 178.00 (SHAP: -0.232, decreases fraud risk)\n  - D15 = 200.00 (SHAP: -0.122, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card1": 0.7443270683288574,
+      "C2": 0.5676211714744568,
+      "C11": 0.35663196444511414,
+      "card2": 0.34059473872184753,
+      "P_emaildomain": 0.2672509551048279
+    }
+  },
+  {
+    "sample_idx": 123853,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.970916509628296,
+    "transaction_text": "Transaction Amount: $100.00 (typical range), round number\nTime: late night/early morning (2:00), weekday\nProduct: R\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C8': 3, 'C10': 3}\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.9709\n\nFACTORS INCREASING FRAUD RISK:\n  - C13 = 0.00 (SHAP: +1.017, increases fraud risk)\n  - C14 = 0.00 (SHAP: +0.956, increases fraud risk)\n  - C1 = 4.00 (SHAP: +0.826, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card2 = 100.00 (SHAP: -0.717, decreases fraud risk)\n  - ProductCD = 2.00 (SHAP: -0.649, decreases fraud risk)\n  - TransactionAmt = 100.00 (SHAP: -0.337, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C13": 1.0170040130615234,
+      "C14": 0.956309974193573,
+      "C1": 0.8255323767662048,
+      "C11": 0.5096683502197266,
+      "C2": 0.40273723006248474
+    }
+  },
+  {
+    "sample_idx": 161368,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9959347248077391,
+    "transaction_text": "Transaction Amount: $800.00 (very large (>2 std above average)), round number\nTime: afternoon (14:00), weekday\nProduct: R\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 3, 'C10': 3}\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.9959\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 5.00 (SHAP: +1.182, increases fraud risk)\n  - C14 = 0.00 (SHAP: +1.156, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.984, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - ProductCD = 2.00 (SHAP: -0.327, decreases fraud risk)\n  - addr1 = 512.00 (SHAP: -0.221, decreases fraud risk)\n  - hour = 14.00 (SHAP: -0.136, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.1819696426391602,
+      "C14": 1.1557886600494385,
+      "C13": 0.9842990636825562,
+      "C4": 0.48144087195396423,
+      "C11": 0.46164631843566895
+    }
+  },
+  {
+    "sample_idx": 131852,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.868584930896759,
+    "transaction_text": "Transaction Amount: $100.00 (typical range), round number\nTime: late night/early morning (5:00), weekday\nProduct: H\nEmail domain: anonymous.com\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.8686\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.003, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.805, increases fraud risk)\n  - C11 = 3.00 (SHAP: +0.507, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - P_emaildomain = 1.00 (SHAP: -0.791, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.312, decreases fraud risk)\n  - card1 = 15066.00 (SHAP: -0.193, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.002579927444458,
+      "C13": 0.8051944375038147,
+      "C11": 0.5071187019348145,
+      "C6": 0.29023557901382446,
+      "card6": 0.2762518525123596
+    }
+  },
+  {
+    "sample_idx": 524063,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8832346796989441,
+    "transaction_text": "Transaction Amount: $280.00 (typical range), round number\nTime: morning (11:00), weekend\nProduct: W\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8832\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +0.764, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.592, increases fraud risk)\n  - C9 = 3.00 (SHAP: +0.338, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 13779395.00 (SHAP: -0.358, decreases fraud risk)\n  - addr1 = 123.00 (SHAP: -0.307, decreases fraud risk)\n  - C4 = 0.00 (SHAP: -0.294, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 0.7637673616409302,
+      "C13": 0.5921306610107422,
+      "C9": 0.33809253573417664,
+      "TransactionAmt": 0.3296360373497009,
+      "C5": 0.2897976338863373
+    }
+  },
+  {
+    "sample_idx": 232371,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9719233512878418,
+    "transaction_text": "Transaction Amount: $20.42 (typical range)\nTime: evening (18:00), weekday\nProduct: C\nEmail domain: anonymous.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.9719\n\nFACTORS INCREASING FRAUD RISK:\n  - card6 = 1.00 (SHAP: +0.729, increases fraud risk)\n  - P_emaildomain = 1.00 (SHAP: +0.584, increases fraud risk)\n  - card2 = 361.00 (SHAP: +0.496, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.286, decreases fraud risk)\n  - amount_decimal = 0.42 (SHAP: -0.170, decreases fraud risk)\n  - C2 = 1.00 (SHAP: -0.121, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card6": 0.7289700508117676,
+      "P_emaildomain": 0.5843612551689148,
+      "card2": 0.49647510051727295,
+      "card1": 0.37508201599121094,
+      "TransactionDT": 0.35279157757759094
+    }
+  },
+  {
+    "sample_idx": 429979,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9976611137390136,
+    "transaction_text": "Transaction Amount: $40.70 (typical range)\nTime: evening (19:00), weekend\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C1': 223, 'C2': 232, 'C4': 57, 'C6': 57, 'C7': 57, 'C8': 108, 'C10': 70, 'C11': 105, 'C12': 105, 'C14': 21}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9977\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 223.00 (SHAP: +3.211, increases fraud risk)\n  - C8 = 108.00 (SHAP: +1.015, increases fraud risk)\n  - C12 = 105.00 (SHAP: +0.755, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C14 = 21.00 (SHAP: -0.819, decreases fraud risk)\n  - C13 = 23.00 (SHAP: -0.354, decreases fraud risk)\n  - D4 = 250.00 (SHAP: -0.262, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 3.2109785079956055,
+      "C8": 1.0150694847106934,
+      "C12": 0.7549118399620056,
+      "C11": 0.6164819598197937,
+      "C2": 0.45312100648880005
+    }
+  },
+  {
+    "sample_idx": 8267,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9591484665870668,
+    "transaction_text": "Transaction Amount: $633.92 (very large (>2 std above average))\nTime: evening (21:00), weekday\nProduct: W\nEmail domain: hotmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.9591\n\nFACTORS INCREASING FRAUD RISK:\n  - TransactionAmt = 633.92 (SHAP: +0.626, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.593, increases fraud risk)\n  - TransactionDT = 250589.00 (SHAP: +0.486, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - is_round_amount = 0.00 (SHAP: -0.218, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.206, decreases fraud risk)\n  - C11 = 1.00 (SHAP: -0.094, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "TransactionAmt": 0.6264082789421082,
+      "card6": 0.5928122401237488,
+      "TransactionDT": 0.485932856798172,
+      "addr1": 0.26860085129737854,
+      "C5": 0.26505255699157715
+    }
+  },
+  {
+    "sample_idx": 47238,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8856998085975647,
+    "transaction_text": "Transaction Amount: $554.00 (above average), round number\nTime: late night/early morning (23:00), weekend\nProduct: W\nEmail domain: gmail.com\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8857\n\nFACTORS INCREASING FRAUD RISK:\n  - TransactionAmt = 554.00 (SHAP: +0.637, increases fraud risk)\n  - D2 = 1.00 (SHAP: +0.562, increases fraud risk)\n  - C5 = 0.00 (SHAP: +0.272, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 1120659.00 (SHAP: -0.282, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.272, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.252, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "TransactionAmt": 0.6368524432182312,
+      "D2": 0.561661958694458,
+      "C5": 0.27154168486595154,
+      "D3": 0.2442958503961563,
+      "D1": 0.21220256388187408
+    }
+  },
+  {
+    "sample_idx": 49527,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8357422947883606,
+    "transaction_text": "Transaction Amount: $226.00 (typical range), round number\nTime: afternoon (16:00), weekend\nProduct: W\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.8357\n\nFACTORS INCREASING FRAUD RISK:\n  - D2 = 2.00 (SHAP: +0.732, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.528, increases fraud risk)\n  - D3 = 1.00 (SHAP: +0.344, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 1184044.00 (SHAP: -0.449, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.232, decreases fraud risk)\n  - card1 = 15066.00 (SHAP: -0.213, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "D2": 0.7323305010795593,
+      "card6": 0.527981162071228,
+      "D3": 0.34445467591285706,
+      "C13": 0.3331551253795624,
+      "C5": 0.22716476023197174
+    }
+  },
+  {
+    "sample_idx": 232519,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9993488192558287,
+    "transaction_text": "Transaction Amount: $77.34 (typical range)\nTime: evening (18:00), weekday\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C1': 29, 'C2': 40, 'C4': 8, 'C7': 8, 'C8': 7, 'C10': 4, 'C12': 14}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9993\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 29.00 (SHAP: +2.344, increases fraud risk)\n  - C14 = 0.00 (SHAP: +0.975, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.824, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C7 = 8.00 (SHAP: -0.176, decreases fraud risk)\n  - is_round_amount = 0.00 (SHAP: -0.083, decreases fraud risk)\n  - card5 = 224.00 (SHAP: -0.075, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 2.344391345977783,
+      "C14": 0.9745707511901855,
+      "C13": 0.8240466713905334,
+      "C11": 0.543013334274292,
+      "C8": 0.45336613059043884
+    }
+  },
+  {
+    "sample_idx": 217434,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8576371073722839,
+    "transaction_text": "Transaction Amount: $73.41 (typical range)\nTime: evening (18:00), weekday\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C4': 8, 'C7': 8, 'C8': 8, 'C10': 6, 'C12': 10}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.8576\n\nFACTORS INCREASING FRAUD RISK:\n  - C8 = 8.00 (SHAP: +0.701, increases fraud risk)\n  - C1 = 6.00 (SHAP: +0.661, increases fraud risk)\n  - C6 = 8.00 (SHAP: +0.464, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - D1 = 549.00 (SHAP: -1.077, decreases fraud risk)\n  - C14 = 2.00 (SHAP: -0.286, decreases fraud risk)\n  - C7 = 8.00 (SHAP: -0.153, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C8": 0.7013534903526306,
+      "C1": 0.6609758734703064,
+      "C6": 0.4644598662853241,
+      "C11": 0.2631374001502991,
+      "C13": 0.2613334655761719
+    }
+  },
+  {
+    "sample_idx": 158928,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8969976305961609,
+    "transaction_text": "Transaction Amount: $42.56 (typical range)\nTime: afternoon (16:00), weekday\nProduct: C\nEmail domain: hotmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8970\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.218, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.672, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.482, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.404, decreases fraud risk)\n  - card1 = 16746.00 (SHAP: -0.278, decreases fraud risk)\n  - D15 = 0.00 (SHAP: -0.215, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.2180407047271729,
+      "C13": 0.6722589731216431,
+      "card6": 0.4824985861778259,
+      "ProductCD": 0.33537572622299194,
+      "C5": 0.3158048093318939
+    }
+  },
+  {
+    "sample_idx": 577247,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8778432011604309,
+    "transaction_text": "Transaction Amount: $76.99 (typical range)\nTime: evening (18:00), weekday\nProduct: C\nEmail domain: anonymous.com\nUnusual count features (>95th pct): {'C8': 6}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.8778\n\nFACTORS INCREASING FRAUD RISK:\n  - C8 = 6.00 (SHAP: +0.561, increases fraud risk)\n  - C1 = 4.00 (SHAP: +0.559, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.305, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - P_emaildomain = 1.00 (SHAP: -0.479, decreases fraud risk)\n  - R_emaildomain = 1.00 (SHAP: -0.396, decreases fraud risk)\n  - card2 = 130.00 (SHAP: -0.304, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C8": 0.5607943534851074,
+      "C1": 0.5585895776748657,
+      "C13": 0.3052019476890564,
+      "card3": 0.30203673243522644,
+      "card6": 0.2578037679195404
+    }
+  },
+  {
+    "sample_idx": 353441,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8950183987617493,
+    "transaction_text": "Transaction Amount: $44.11 (typical range)\nTime: late night/early morning (22:00), weekday\nProduct: C\nUnusual count features (>95th pct): {'C12': 2}\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8950\n\nFACTORS INCREASING FRAUD RISK:\n  - C13 = 1.00 (SHAP: +0.510, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.366, increases fraud risk)\n  - D2 = 3.00 (SHAP: +0.346, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 2.00 (SHAP: -0.320, decreases fraud risk)\n  - TransactionAmt = 44.11 (SHAP: -0.158, decreases fraud risk)\n  - C6 = 1.00 (SHAP: -0.125, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C13": 0.5096312761306763,
+      "card6": 0.36565160751342773,
+      "D2": 0.34600725769996643,
+      "C11": 0.273444801568985,
+      "C8": 0.2622615098953247
+    }
+  },
+  {
+    "sample_idx": 145947,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8394747972488403,
+    "transaction_text": "Transaction Amount: $25.65 (typical range)\nTime: evening (19:00), weekend\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C12': 2}\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8395\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.091, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.808, increases fraud risk)\n  - C4 = 2.00 (SHAP: +0.415, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionAmt = 25.65 (SHAP: -0.312, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.267, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.214, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.0906144380569458,
+      "C13": 0.8084909915924072,
+      "C4": 0.41522854566574097,
+      "C5": 0.2713584005832672,
+      "C12": 0.21472741663455963
+    }
+  },
+  {
+    "sample_idx": 263098,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8601177334785461,
+    "transaction_text": "Transaction Amount: $59.00 (typical range)\nTime: morning (6:00), weekday\nProduct: W\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C1': 146, 'C2': 124, 'C5': 212, 'C6': 90, 'C9': 93, 'C11': 99, 'C13': 733, 'C14': 128}\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8601\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 146.00 (SHAP: +1.854, increases fraud risk)\n  - C6 = 90.00 (SHAP: +0.581, increases fraud risk)\n  - D2 = 1.00 (SHAP: +0.579, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C13 = 733.00 (SHAP: -1.173, decreases fraud risk)\n  - C14 = 128.00 (SHAP: -0.626, decreases fraud risk)\n  - card2 = 194.00 (SHAP: -0.341, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.8543370962142944,
+      "C6": 0.5810225009918213,
+      "D2": 0.5787755250930786,
+      "C2": 0.4262368381023407,
+      "D3": 0.3846737742424011
+    }
+  },
+  {
+    "sample_idx": 541633,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9326759576797484,
+    "transaction_text": "Transaction Amount: $30.25 (typical range)\nTime: morning (6:00), weekday\nProduct: C\nEmail domain: gmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.9327\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.184, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.642, increases fraud risk)\n  - hour = 6.00 (SHAP: +0.430, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.442, decreases fraud risk)\n  - TransactionAmt = 30.25 (SHAP: -0.346, decreases fraud risk)\n  - card1 = 16095.00 (SHAP: -0.312, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.1836650371551514,
+      "C13": 0.6422424912452698,
+      "hour": 0.42987388372421265,
+      "card6": 0.4256604313850403,
+      "card3": 0.3486126959323883
+    }
+  },
+  {
+    "sample_idx": 225880,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.8413524627685547,
+    "transaction_text": "Transaction Amount: $400.00 (above average), round number\nTime: evening (19:00), weekend\nProduct: R\nEmail domain: hotmail.com\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.8414\n\nFACTORS INCREASING FRAUD RISK:\n  - TransactionAmt = 400.00 (SHAP: +0.792, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.449, increases fraud risk)\n  - C11 = 2.00 (SHAP: +0.317, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card1 = 16661.00 (SHAP: -0.570, decreases fraud risk)\n  - P_emaildomain = 19.00 (SHAP: -0.298, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.247, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "TransactionAmt": 0.7923561930656433,
+      "C13": 0.44920891523361206,
+      "C11": 0.3173236548900604,
+      "R_emaildomain": 0.3158494532108307,
+      "TransactionDT": 0.27485567331314087
+    }
+  },
+  {
+    "sample_idx": 230135,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.9382050037384032,
+    "transaction_text": "Transaction Amount: $171.00 (typical range), round number\nTime: late night/early morning (1:00), weekday\nProduct: W\nEmail domain: yahoo.com\nTime deltas: 8 available",
+    "shap_explanation": "ML Fraud Score: 0.9382\n\nFACTORS INCREASING FRAUD RISK:\n  - D2 = 1.00 (SHAP: +0.880, increases fraud risk)\n  - card6 = 1.00 (SHAP: +0.534, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.384, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.217, decreases fraud risk)\n  - card2 = 583.00 (SHAP: -0.203, decreases fraud risk)\n  - C6 = 1.00 (SHAP: -0.189, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "D2": 0.8797356486320496,
+      "card6": 0.533948540687561,
+      "C13": 0.38369470834732056,
+      "D3": 0.3338052034378052,
+      "TransactionDT": 0.26222795248031616
+    }
+  },
+  {
+    "sample_idx": 280620,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.9775384068489076,
+    "transaction_text": "Transaction Amount: $56.43 (typical range)\nTime: late night/early morning (0:00), weekday\nProduct: C\nEmail domain: outlook.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C10': 3, 'C12': 4}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9775\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 8.00 (SHAP: +1.818, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.954, increases fraud risk)\n  - C4 = 2.00 (SHAP: +0.620, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card2 = 103.00 (SHAP: -0.756, decreases fraud risk)\n  - TransactionDT = 6827277.00 (SHAP: -0.454, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.205, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.8178266286849976,
+      "C13": 0.9539728760719299,
+      "C4": 0.6203628182411194,
+      "C8": 0.5054540634155273,
+      "C11": 0.3382616639137268
+    }
+  },
+  {
+    "sample_idx": 234357,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.826304018497467,
+    "transaction_text": "Transaction Amount: $49.00 (typical range)\nTime: late night/early morning (2:00), weekday\nProduct: W\nEmail domain: yahoo.com\nTime deltas: 7 available",
+    "shap_explanation": "ML Fraud Score: 0.8263\n\nFACTORS INCREASING FRAUD RISK:\n  - D2 = 1.00 (SHAP: +0.636, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.446, increases fraud risk)\n  - C11 = 2.00 (SHAP: +0.335, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.285, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.268, decreases fraud risk)\n  - card2 = 555.00 (SHAP: -0.208, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "D2": 0.6358597278594971,
+      "C13": 0.44638219475746155,
+      "C11": 0.3348829746246338,
+      "D1": 0.2581080198287964,
+      "D3": 0.23956678807735443
+    }
+  },
+  {
+    "sample_idx": 44525,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8597525358200073,
+    "transaction_text": "Transaction Amount: $92.00 (typical range)\nTime: morning (9:00), weekend\nProduct: W\nEmail domain: yahoo.com\nTime deltas: 8 available",
+    "shap_explanation": "ML Fraud Score: 0.8598\n\nFACTORS INCREASING FRAUD RISK:\n  - card6 = 1.00 (SHAP: +0.653, increases fraud risk)\n  - hour = 9.00 (SHAP: +0.521, increases fraud risk)\n  - D3 = 0.00 (SHAP: +0.321, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 1071720.00 (SHAP: -0.298, decreases fraud risk)\n  - C1 = 1.00 (SHAP: -0.222, decreases fraud risk)\n  - C6 = 1.00 (SHAP: -0.137, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card6": 0.6533362865447998,
+      "hour": 0.5208491086959839,
+      "D3": 0.3209244906902313,
+      "C5": 0.2350543737411499,
+      "C11": 0.2123028188943863
+    }
+  },
+  {
+    "sample_idx": 566122,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9930588006973268,
+    "transaction_text": "Transaction Amount: $46.73 (typical range)\nTime: afternoon (17:00), weekend\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C8': 3, 'C10': 4, 'C12': 2}\nTime deltas: 6 available",
+    "shap_explanation": "ML Fraud Score: 0.9931\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 9.00 (SHAP: +2.026, increases fraud risk)\n  - C8 = 3.00 (SHAP: +0.749, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.698, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - D4 = 153.00 (SHAP: -0.369, decreases fraud risk)\n  - P_emaildomain = 19.00 (SHAP: -0.161, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.121, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 2.0262420177459717,
+      "C8": 0.7494189143180847,
+      "C13": 0.698007345199585,
+      "C4": 0.6345927715301514,
+      "C5": 0.26868000626564026
+    }
+  },
+  {
+    "sample_idx": 232335,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.951647162437439,
+    "transaction_text": "Transaction Amount: $200.00 (typical range), round number\nTime: evening (18:00), weekday\nProduct: R\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 2}\nTime deltas: 1 available",
+    "shap_explanation": "ML Fraud Score: 0.9516\n\nFACTORS INCREASING FRAUD RISK:\n  - C13 = 1.00 (SHAP: +0.615, increases fraud risk)\n  - C4 = 2.00 (SHAP: +0.554, increases fraud risk)\n  - C8 = 2.00 (SHAP: +0.386, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - ProductCD = 2.00 (SHAP: -0.393, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.352, decreases fraud risk)\n  - card5 = 197.00 (SHAP: -0.139, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C13": 0.6146817803382874,
+      "C4": 0.5542904138565063,
+      "C8": 0.38589930534362793,
+      "TransactionAmt": 0.3135780096054077,
+      "card6": 0.3125028908252716
+    }
+  },
+  {
+    "sample_idx": 110164,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9935680031776428,
+    "transaction_text": "Transaction Amount: $139.22 (typical range)\nTime: late night/early morning (23:00), weekday\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C8': 3, 'C10': 3, 'C12': 2}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9936\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 7.00 (SHAP: +1.809, increases fraud risk)\n  - C14 = 0.00 (SHAP: +1.046, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.829, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionDT = 2156771.00 (SHAP: -0.892, decreases fraud risk)\n  - C9 = 0.00 (SHAP: -0.059, decreases fraud risk)\n  - is_round_amount = 0.00 (SHAP: -0.043, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.8089262247085571,
+      "C14": 1.0456264019012451,
+      "C13": 0.8293654918670654,
+      "C8": 0.340066134929657,
+      "C5": 0.23258468508720398
+    }
+  },
+  {
+    "sample_idx": 289916,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.9393986463546752,
+    "transaction_text": "Transaction Amount: $11.36 (typical range)\nTime: afternoon (17:00), weekend\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C8': 7, 'C10': 5, 'C12': 5}\nTime deltas: 6 available",
+    "shap_explanation": "ML Fraud Score: 0.9394\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 6.00 (SHAP: +1.437, increases fraud risk)\n  - C8 = 7.00 (SHAP: +0.898, increases fraud risk)\n  - C11 = 5.00 (SHAP: +0.376, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - D4 = 452.00 (SHAP: -0.489, decreases fraud risk)\n  - TransactionDT = 7147545.00 (SHAP: -0.275, decreases fraud risk)\n  - TransactionAmt = 11.36 (SHAP: -0.234, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 1.4367197751998901,
+      "C8": 0.8975993394851685,
+      "C11": 0.37623822689056396,
+      "C5": 0.27312004566192627,
+      "C14": 0.2597273886203766
+    }
+  },
+  {
+    "sample_idx": 40376,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8481371402740479,
+    "transaction_text": "Transaction Amount: $26.88 (typical range)\nTime: afternoon (14:00), weekday\nProduct: C\nEmail domain: hotmail.com\nUnusual count features (>95th pct): {'C1': 1407, 'C2': 1901, 'C4': 795, 'C6': 795, 'C7': 796, 'C8': 1204, 'C10': 1353, 'C11': 1084, 'C12': 1084, 'C13': 1164, 'C14': 511}\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8481\n\nFACTORS INCREASING FRAUD RISK:\n  - C1 = 1407.00 (SHAP: +2.706, increases fraud risk)\n  - C8 = 1204.00 (SHAP: +0.736, increases fraud risk)\n  - D5 = 0.00 (SHAP: +0.499, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C13 = 1164.00 (SHAP: -1.561, decreases fraud risk)\n  - C14 = 511.00 (SHAP: -1.471, decreases fraud risk)\n  - TransactionDT = 1002651.00 (SHAP: -0.639, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C1": 2.705714225769043,
+      "C8": 0.7363318204879761,
+      "D5": 0.499362051486969,
+      "C12": 0.4841599464416504,
+      "C11": 0.4545772969722748
+    }
+  },
+  {
+    "sample_idx": 196116,
+    "is_fraud": 1,
+    "category": "true_positive",
+    "fraud_score": 0.93395733833313,
+    "transaction_text": "Transaction Amount: $74.27 (typical range)\nTime: late night/early morning (0:00), weekday\nProduct: C\nEmail domain: gmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.9340\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.312, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.663, increases fraud risk)\n  - ProductCD = 0.00 (SHAP: +0.361, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.401, decreases fraud risk)\n  - D15 = 0.00 (SHAP: -0.228, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.208, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.3117932081222534,
+      "C13": 0.6626200675964355,
+      "ProductCD": 0.36065757274627686,
+      "TransactionDT": 0.2881638705730438,
+      "C5": 0.27535057067871094
+    }
+  },
+  {
+    "sample_idx": 178511,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.9167282581329346,
+    "transaction_text": "Transaction Amount: $30.20 (typical range)\nTime: late night/early morning (23:00), weekday\nProduct: C\nEmail domain: gmail.com\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9167\n\nFACTORS INCREASING FRAUD RISK:\n  - card6 = 1.00 (SHAP: +0.594, increases fraud risk)\n  - card3 = 185.00 (SHAP: +0.349, increases fraud risk)\n  - TransactionDT = 3887960.00 (SHAP: +0.332, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - TransactionAmt = 30.20 (SHAP: -0.367, decreases fraud risk)\n  - C1 = 2.00 (SHAP: -0.201, decreases fraud risk)\n  - C11 = 1.00 (SHAP: -0.188, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "card6": 0.5935289263725281,
+      "card3": 0.34858888387680054,
+      "TransactionDT": 0.3318915367126465,
+      "C13": 0.31728604435920715,
+      "R_emaildomain": 0.292966365814209
+    }
+  },
+  {
+    "sample_idx": 425500,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.8923616409301758,
+    "transaction_text": "Transaction Amount: $22.81 (typical range)\nTime: afternoon (15:00), weekend\nProduct: C\nEmail domain: gmail.com\nTime deltas: 4 available",
+    "shap_explanation": "ML Fraud Score: 0.8924\n\nFACTORS INCREASING FRAUD RISK:\n  - C14 = 0.00 (SHAP: +1.342, increases fraud risk)\n  - C13 = 0.00 (SHAP: +0.648, increases fraud risk)\n  - card3 = 185.00 (SHAP: +0.358, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - C1 = 1.00 (SHAP: -0.420, decreases fraud risk)\n  - TransactionAmt = 22.81 (SHAP: -0.385, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.196, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C14": 1.3419418334960938,
+      "C13": 0.6483522057533264,
+      "card3": 0.35792019963264465,
+      "C5": 0.29836782813072205,
+      "R_emaildomain": 0.2099805325269699
+    }
+  },
+  {
+    "sample_idx": 524654,
+    "is_fraud": 0,
+    "category": "false_positive",
+    "fraud_score": 0.9889397025108336,
+    "transaction_text": "Transaction Amount: $53.86 (typical range)\nTime: afternoon (16:00), weekend\nProduct: C\nEmail domain: gmail.com\nUnusual count features (>95th pct): {'C4': 2, 'C7': 2, 'C8': 6, 'C10': 4, 'C12': 5}\nTime deltas: 5 available",
+    "shap_explanation": "ML Fraud Score: 0.9889\n\nFACTORS INCREASING FRAUD RISK:\n  - C8 = 6.00 (SHAP: +0.936, increases fraud risk)\n  - C13 = 1.00 (SHAP: +0.674, increases fraud risk)\n  - C1 = 4.00 (SHAP: +0.663, increases fraud risk)\n\nFACTORS DECREASING FRAUD RISK:\n  - card2 = 440.00 (SHAP: -0.333, decreases fraud risk)\n  - TransactionDT = 13796560.00 (SHAP: -0.196, decreases fraud risk)\n  - card6 = 2.00 (SHAP: -0.184, decreases fraud risk)\n\nOverall: 5 features increase risk, 5 features decrease risk.",
+    "top_features": {
+      "C8": 0.9358982443809509,
+      "C13": 0.6741109490394592,
+      "C1": 0.6633847951889038,
+      "C4": 0.5520650744438171,
+      "C11": 0.4554186165332794
+    }
+  }
+]

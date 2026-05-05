@@ -1,0 +1,12 @@
+{
+  "domain": "medical_risk",
+  "alpha": 0.078,
+  "with_score": {
+    "FP": 0.274,
+    "TP": 0.869
+  },
+  "without_score": {
+    "FP": 0.189,
+    "TP": 0.819
+  }
+}

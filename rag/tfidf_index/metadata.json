@@ -1,0 +1,871 @@
+[
+  {
+    "id": "SEC-0001",
+    "title": "SEC Charges Investment Adviser with Structuring Cash Deposits to Evade Reporting",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Structuring",
+    "amounts": [
+      "$8,000",
+      "$9,900",
+      "$1.8 million",
+      "$10,000"
+    ],
+    "regulations": [
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act",
+      "31 USC 5324"
+    ]
+  },
+  {
+    "id": "SEC-0002",
+    "title": "SEC Charges Broker-Dealer with Layering Scheme in Equity Markets",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Layering, Market Manipulation",
+    "amounts": [
+      "$3.2 million"
+    ],
+    "regulations": [
+      "Section 9(a)(2) Exchange Act",
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5"
+    ]
+  },
+  {
+    "id": "SEC-0003",
+    "title": "SEC Obtains Final Judgment Against Identity Fraud Ring Targeting Brokerage Accounts",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Identity Fraud, Account Takeover",
+    "amounts": [
+      "$4.7 million"
+    ],
+    "regulations": [
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act"
+    ]
+  },
+  {
+    "id": "SEC-0004",
+    "title": "Corporate Executive Charged with Insider Trading Ahead of Merger Announcement",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Insider Trading",
+    "amounts": [
+      "$2.8 billion",
+      "$340,000",
+      "$620,000"
+    ],
+    "regulations": [
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "Section 14(e) Exchange Act"
+    ]
+  },
+  {
+    "id": "SEC-0005",
+    "title": "SEC Halts Pump-and-Dump Scheme Promoted Through Social Media",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Pump & Dump, Market Manipulation",
+    "amounts": [
+      "$0.10",
+      "$8.5 million"
+    ],
+    "regulations": [
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5"
+    ]
+  },
+  {
+    "id": "SEC-0006",
+    "title": "FinCEN Assesses Civil Penalty Against Bank for BSA Violations in Structuring Detection",
+    "source": "FinCEN Enforcement Action",
+    "year": "2023",
+    "fraud_types": "Structuring, Money Laundering, Layering",
+    "amounts": [
+      "$15 million",
+      "$200 million",
+      "$10,000"
+    ],
+    "regulations": [
+      "31 USC 5318",
+      "31 CFR 1020.320",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0007",
+    "title": "Former Bank Employee Charged with Account Takeover and Unauthorized Transfers",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Account Takeover, Insider Trading",
+    "amounts": [
+      "$2.3 million",
+      "$5,000"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1344 Bank Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0008",
+    "title": "International Money Laundering Network Using Shell Companies and Crypto Exchanges",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Money Laundering, Layering",
+    "amounts": [
+      "$50 million"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "31 USC 5311 BSA"
+    ]
+  },
+  {
+    "id": "SEC-0009",
+    "title": "SEC Charges Fund Manager with Misappropriation Through Round-Trip Transactions",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Ponzi Scheme, Layering",
+    "amounts": [
+      "$12 million"
+    ],
+    "regulations": [
+      "Section 206 Investment Advisers Act",
+      "Section 17(a) Securities Act"
+    ]
+  },
+  {
+    "id": "SEC-0010",
+    "title": "Credit Card Fraud Ring Using Synthetic Identities for Cash Advances",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Identity Fraud, Structuring",
+    "amounts": [
+      "$6.2 million"
+    ],
+    "regulations": [
+      "18 USC 1029 Fraud with Access Devices",
+      "18 USC 1028 Identity Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0011",
+    "title": "Legitimate Business Transaction Cleared After Investigation of Large Wire Transfer",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$890,000",
+      "$280,000",
+      "$310,000",
+      "$300,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0012",
+    "title": "Legitimate Payroll Processing Flagged Due to Round-Number Transfers",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$9,500",
+      "$10,000",
+      "$237.50"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0013",
+    "title": "Restaurant Chain Owner Charged with Structuring Cash Deposits from Business Proceeds",
+    "source": "FinCEN Enforcement Action",
+    "year": "2024",
+    "fraud_types": "Structuring",
+    "amounts": [
+      "$7,500",
+      "$9,800",
+      "$15,000",
+      "$4.2 million",
+      "$10,000"
+    ],
+    "regulations": [
+      "31 USC 5324",
+      "26 USC 7201 Tax Evasion"
+    ]
+  },
+  {
+    "id": "SEC-0014",
+    "title": "Smurfing Network Charged with Structuring Over $9 Million Through Multiple Banks",
+    "source": "DOJ Criminal Complaint",
+    "year": "2023",
+    "fraud_types": "Structuring, Money Laundering",
+    "amounts": [
+      "$9.3 million",
+      "$3,000",
+      "$9,000",
+      "$1.4 million"
+    ],
+    "regulations": [
+      "31 USC 5324",
+      "18 USC 1956 Money Laundering"
+    ]
+  },
+  {
+    "id": "SEC-0015",
+    "title": "Used Car Dealership Penalized for Structuring Wire Transfers to Avoid Reporting",
+    "source": "FinCEN Enforcement Action",
+    "year": "2024",
+    "fraud_types": "Structuring",
+    "amounts": [
+      "$2.1 million",
+      "$10,000",
+      "$8,200",
+      "$6.9 million",
+      "$22,000",
+      "$7,500",
+      "$7,000",
+      "$500,000"
+    ],
+    "regulations": [
+      "31 USC 5324",
+      "31 CFR 1020.220",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0016",
+    "title": "Foreign National Convicted of Structuring Cash Withdrawals to Fund Human Smuggling",
+    "source": "DOJ Criminal Complaint",
+    "year": "2022",
+    "fraud_types": "Structuring",
+    "amounts": [
+      "$4,000",
+      "$9,500",
+      "$2.6 million"
+    ],
+    "regulations": [
+      "31 USC 5324",
+      "8 USC 1324 Human Smuggling"
+    ]
+  },
+  {
+    "id": "SEC-0017",
+    "title": "Check Cashing Business Penalized for Systematic Structuring of Deposits",
+    "source": "FinCEN Enforcement Action",
+    "year": "2023",
+    "fraud_types": "Structuring",
+    "amounts": [
+      "$3.8 million",
+      "$10,000",
+      "$22 million",
+      "$30,000"
+    ],
+    "regulations": [
+      "31 USC 5324",
+      "31 USC 5313",
+      "31 CFR 1020.410",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0018",
+    "title": "SEC Charges Three Shell Companies Used in Trade-Based Money Laundering Scheme",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Layering, Money Laundering",
+    "amounts": [
+      "$78 million",
+      "$12.3 million"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "31 USC 5318 BSA",
+      "Section 17(a) Securities Act"
+    ]
+  },
+  {
+    "id": "SEC-0019",
+    "title": "Crypto Exchange Operators Indicted for Operating Unlicensed Money Transmitting Business",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Layering, Money Laundering",
+    "amounts": [
+      "$45 million"
+    ],
+    "regulations": [
+      "18 USC 1960 Unlicensed Money Transmitting",
+      "18 USC 1956 Money Laundering"
+    ]
+  },
+  {
+    "id": "SEC-0020",
+    "title": "SEC Charges Hedge Fund with Layered Transactions to Conceal Related-Party Dealings",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Layering",
+    "amounts": [
+      "$28 million",
+      "$6.4 million"
+    ],
+    "regulations": [
+      "Section 206 Investment Advisers Act",
+      "Section 17(a) Securities Act",
+      "Rule 10b-5"
+    ]
+  },
+  {
+    "id": "SEC-0021",
+    "title": "FinCEN Identifies Layering Pattern in Correspondent Banking Used for Sanctions Evasion",
+    "source": "FinCEN Enforcement Action",
+    "year": "2025",
+    "fraud_types": "Layering, Money Laundering",
+    "amounts": [
+      "$320 million",
+      "$28 million"
+    ],
+    "regulations": [
+      "31 USC 5318 BSA",
+      "OFAC Sanctions",
+      "31 CFR 1010.610"
+    ]
+  },
+  {
+    "id": "SEC-0022",
+    "title": "Real Estate Developers Charged with Layering Scheme Using Multiple LLCs",
+    "source": "DOJ Criminal Complaint",
+    "year": "2023",
+    "fraud_types": "Layering, Money Laundering",
+    "amounts": [
+      "$34 million"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1344 Bank Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0023",
+    "title": "Synthetic Identity Fraud Ring Creates 800 Fictitious Persons for Credit Applications",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Identity Fraud",
+    "amounts": [
+      "$14 million"
+    ],
+    "regulations": [
+      "18 USC 1028 Identity Fraud",
+      "18 USC 1029 Access Device Fraud",
+      "18 USC 1344 Bank Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0024",
+    "title": "Identity Theft Ring Exploits Data Breach to Open Fraudulent Bank Accounts",
+    "source": "DOJ Criminal Complaint",
+    "year": "2023",
+    "fraud_types": "Identity Fraud, Account Takeover",
+    "amounts": [
+      "$7.8 million"
+    ],
+    "regulations": [
+      "18 USC 1028 Identity Fraud",
+      "18 USC 1030 Computer Fraud",
+      "18 USC 1344 Bank Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0025",
+    "title": "FinCEN Penalizes Online Lender for Inadequate Identity Verification Controls",
+    "source": "FinCEN Enforcement Action",
+    "year": "2024",
+    "fraud_types": "Identity Fraud",
+    "amounts": [
+      "$4.5 million",
+      "$18 million"
+    ],
+    "regulations": [
+      "31 USC 5318 BSA",
+      "31 CFR 1010.220 CIP",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0026",
+    "title": "Tax Refund Fraud Scheme Using Stolen Identities of Military Personnel",
+    "source": "DOJ Criminal Complaint",
+    "year": "2022",
+    "fraud_types": "Identity Fraud",
+    "amounts": [
+      "$5,200",
+      "$5.7 million",
+      "$3.8 million"
+    ],
+    "regulations": [
+      "18 USC 1028 Identity Fraud",
+      "18 USC 1343 Wire Fraud",
+      "26 USC 7206 Tax Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0027",
+    "title": "Business Email Compromise Ring Uses Synthetic Identities to Redirect Corporate Payments",
+    "source": "DOJ Criminal Complaint",
+    "year": "2025",
+    "fraud_types": "Identity Fraud, Wire Fraud",
+    "amounts": [
+      "$11.2 million",
+      "$2.1 million"
+    ],
+    "regulations": [
+      "18 USC 1028 Identity Fraud",
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1030 Computer Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0028",
+    "title": "Phishing Campaign Targets Online Banking Customers Leading to $3.4 Million in Losses",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Account Takeover",
+    "amounts": [
+      "$3.4 million"
+    ],
+    "regulations": [
+      "18 USC 1030 Computer Fraud",
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1028A Aggravated Identity Theft"
+    ]
+  },
+  {
+    "id": "SEC-0029",
+    "title": "SIM Swap Fraud Ring Drains Cryptocurrency Accounts of High-Net-Worth Individuals",
+    "source": "DOJ Criminal Complaint",
+    "year": "2023",
+    "fraud_types": "Account Takeover",
+    "amounts": [
+      "$19.5 million",
+      "$500",
+      "$2,000"
+    ],
+    "regulations": [
+      "18 USC 1030 Computer Fraud",
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1028A Aggravated Identity Theft"
+    ]
+  },
+  {
+    "id": "SEC-0030",
+    "title": "Brokerage Employee Exploits Internal Access to Execute Unauthorized Trades in Client Accounts",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Account Takeover",
+    "amounts": [
+      "$890,000",
+      "$3.2 million"
+    ],
+    "regulations": [
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "18 USC 1343 Wire Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0031",
+    "title": "Call Center Scam Operation Takes Over Elderly Victims' Bank Accounts",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Account Takeover",
+    "amounts": [
+      "$8.7 million",
+      "$20,700"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1028A Aggravated Identity Theft",
+      "18 USC 2328 Elder Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0032",
+    "title": "IT Contractor Charged with Account Takeover Using Stolen Corporate Credentials",
+    "source": "DOJ Criminal Complaint",
+    "year": "2025",
+    "fraud_types": "Account Takeover",
+    "amounts": [
+      "$4.1 million",
+      "$1.3 million"
+    ],
+    "regulations": [
+      "18 USC 1030 Computer Fraud",
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1028A Aggravated Identity Theft"
+    ]
+  },
+  {
+    "id": "SEC-0033",
+    "title": "SEC Charges Pharmaceutical Executive and Tipping Chain of Five Traders",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Insider Trading",
+    "amounts": [
+      "$4.8 million",
+      "$180,000",
+      "$1.9 million"
+    ],
+    "regulations": [
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "Section 21A Exchange Act"
+    ]
+  },
+  {
+    "id": "SEC-0034",
+    "title": "Investment Banker Charged with Insider Trading in Eight M&A Transactions",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Insider Trading",
+    "amounts": [
+      "$7.3 million"
+    ],
+    "regulations": [
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "Rule 10b5-1"
+    ]
+  },
+  {
+    "id": "SEC-0035",
+    "title": "Corporate Accountant Trades on Advance Knowledge of Earnings Shortfall",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Insider Trading",
+    "amounts": [
+      "$1.1 million",
+      "$420,000"
+    ],
+    "regulations": [
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "Rule 10b5-1"
+    ]
+  },
+  {
+    "id": "SEC-0036",
+    "title": "Real Estate Money Laundering Through All-Cash Luxury Property Purchases",
+    "source": "FinCEN Enforcement Action",
+    "year": "2024",
+    "fraud_types": "Money Laundering",
+    "amounts": [
+      "$92 million"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "FinCEN Geographic Targeting Order",
+      "31 CFR 1010.380"
+    ]
+  },
+  {
+    "id": "SEC-0037",
+    "title": "Cryptocurrency Mixing Service Operator Charged with Money Laundering Conspiracy",
+    "source": "DOJ Criminal Complaint",
+    "year": "2025",
+    "fraud_types": "Money Laundering",
+    "amounts": [
+      "$600 million",
+      "$180 million"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "18 USC 1960 Unlicensed Money Transmitting"
+    ]
+  },
+  {
+    "id": "SEC-0038",
+    "title": "FinCEN Penalizes Correspondent Bank for Processing Suspicious Transactions from High-Risk Jurisdictions",
+    "source": "FinCEN Enforcement Action",
+    "year": "2023",
+    "fraud_types": "Money Laundering",
+    "amounts": [
+      "$42 million",
+      "$2.8 billion",
+      "$120 million"
+    ],
+    "regulations": [
+      "31 USC 5318 BSA",
+      "31 CFR 1010.610",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0039",
+    "title": "Funnel Account Scheme Launders Drug Proceeds Through Nationwide Network",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Money Laundering, Structuring",
+    "amounts": [
+      "$67 million",
+      "$500",
+      "$1,500"
+    ],
+    "regulations": [
+      "18 USC 1956 Money Laundering",
+      "21 USC 846 Drug Conspiracy",
+      "31 USC 5324"
+    ]
+  },
+  {
+    "id": "SEC-0040",
+    "title": "Casino Penalized for Failing to Report Suspicious Gambling Activity Linked to Money Laundering",
+    "source": "FinCEN Enforcement Action",
+    "year": "2023",
+    "fraud_types": "Money Laundering",
+    "amounts": [
+      "$8.5 million",
+      "$1.2 billion",
+      "$500,000"
+    ],
+    "regulations": [
+      "31 USC 5318 BSA",
+      "31 CFR 1021.320",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0041",
+    "title": "Seasonal Business Deposit Pattern Cleared After Investigation of Structuring Alert",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$6,000",
+      "$9,800",
+      "$378,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0042",
+    "title": "International Wire Transfers for Tuition Payments Cleared After Enhanced Review",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$245,000",
+      "$25,000",
+      "$55,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0043",
+    "title": "Cryptocurrency Trading Activity Cleared After Compliance Investigation",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$1.2 million",
+      "$1.35 million",
+      "$150,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0044",
+    "title": "Estate Distribution Transfers Cleared After Alert for Unusual Account Activity",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$1.8 million",
+      "$120,000",
+      "$450,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0045",
+    "title": "Medical Practice Deposit Pattern Investigated and Cleared",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$8,900",
+      "$374,000",
+      "$10,000",
+      "$5,000",
+      "$12,000"
+    ],
+    "regulations": []
+  },
+  {
+    "id": "SEC-0046",
+    "title": "Business Email Compromise Scheme Targets Corporate Treasury Departments",
+    "source": "DOJ Criminal Complaint",
+    "year": "2024",
+    "fraud_types": "Wire Fraud",
+    "amounts": [
+      "$23 million",
+      "$821,000",
+      "$4.2 million"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1349 Conspiracy",
+      "18 USC 1028A Aggravated Identity Theft"
+    ]
+  },
+  {
+    "id": "SEC-0047",
+    "title": "Attorney Charged with Wire Fraud for Diverting Client Settlement Funds",
+    "source": "DOJ Criminal Complaint",
+    "year": "2023",
+    "fraud_types": "Wire Fraud",
+    "amounts": [
+      "$16.4 million",
+      "$5.8 million"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1349 Conspiracy"
+    ]
+  },
+  {
+    "id": "SEC-0048",
+    "title": "Romance Scam Network Defrauds Victims Through Wire Transfers and Gift Cards",
+    "source": "DOJ Criminal Complaint",
+    "year": "2025",
+    "fraud_types": "Wire Fraud",
+    "amounts": [
+      "$12.5 million",
+      "$62,500",
+      "$5,000",
+      "$680,000"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1349 Conspiracy",
+      "18 USC 1028A Aggravated Identity Theft"
+    ]
+  },
+  {
+    "id": "SEC-0049",
+    "title": "SEC Charges Operator of $150 Million Ponzi Scheme Targeting Retirement Investors",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Ponzi Scheme, Investment Fraud",
+    "amounts": [
+      "$150 million",
+      "$4.5 million",
+      "$8 million"
+    ],
+    "regulations": [
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5",
+      "Section 206 Investment Advisers Act"
+    ]
+  },
+  {
+    "id": "SEC-0050",
+    "title": "Affinity Fraud Scheme Targets Religious Community with Fake Cryptocurrency Investment",
+    "source": "SEC Litigation Release",
+    "year": "2023",
+    "fraud_types": "Investment Fraud, Ponzi Scheme",
+    "amounts": [
+      "$35 million",
+      "$25 million"
+    ],
+    "regulations": [
+      "Section 17(a) Securities Act",
+      "Section 5 Securities Act",
+      "Section 10(b) Exchange Act"
+    ]
+  },
+  {
+    "id": "SEC-0051",
+    "title": "SEC Halts Fraudulent Private Placement Offering Promising Oil and Gas Returns",
+    "source": "SEC Litigation Release",
+    "year": "2022",
+    "fraud_types": "Investment Fraud",
+    "amounts": [
+      "$28 million",
+      "$4 million",
+      "$24 million"
+    ],
+    "regulations": [
+      "Section 5 Securities Act",
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act",
+      "Rule 10b-5"
+    ]
+  },
+  {
+    "id": "SEC-0052",
+    "title": "PPP Loan Fraud Ring Submits Fraudulent Applications Using Stolen Business Identities",
+    "source": "DOJ Criminal Complaint",
+    "year": "2022",
+    "fraud_types": "Wire Fraud, Identity Fraud",
+    "amounts": [
+      "$9.2 million"
+    ],
+    "regulations": [
+      "18 USC 1343 Wire Fraud",
+      "18 USC 1344 Bank Fraud",
+      "18 USC 1028 Identity Fraud"
+    ]
+  },
+  {
+    "id": "SEC-0053",
+    "title": "SEC Charges Crypto Token Issuer with Unregistered Securities Offering and Fraud",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Investment Fraud",
+    "amounts": [
+      "$42 million",
+      "$30 million"
+    ],
+    "regulations": [
+      "Section 5 Securities Act",
+      "Section 17(a) Securities Act",
+      "Section 10(b) Exchange Act"
+    ]
+  },
+  {
+    "id": "SEC-0054",
+    "title": "Money Services Business Penalized for Processing Transactions for Unlicensed Operators",
+    "source": "FinCEN Enforcement Action",
+    "year": "2023",
+    "fraud_types": "Money Laundering",
+    "amounts": [
+      "$6.2 million",
+      "$48 million"
+    ],
+    "regulations": [
+      "31 USC 5330",
+      "18 USC 1960 Unlicensed Money Transmitting",
+      "Bank Secrecy Act"
+    ]
+  },
+  {
+    "id": "SEC-0055",
+    "title": "Legitimate Venture Capital Distribution Cleared After Wire Transfer Alert",
+    "source": "SEC Litigation Release",
+    "year": "2024",
+    "fraud_types": "Legitimate",
+    "amounts": [
+      "$6.4 million",
+      "$180,000",
+      "$1.2 million",
+      "$6.5 million",
+      "$50,000"
+    ],
+    "regulations": []
+  }
+]

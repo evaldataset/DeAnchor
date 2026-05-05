@@ -1,0 +1,84 @@
+{
+  "n_per_bucket": 17,
+  "n_total": 51,
+  "by_method": {
+    "fl_base": {
+      "n_valid": 51,
+      "score_correlation_r": 1.0,
+      "fl_mean": 0.5234
+    },
+    "fl_bayesian": {
+      "n_valid": 51,
+      "score_correlation_r": 0.8961,
+      "fl_mean": 0.6529
+    },
+    "fl_quantize": {
+      "n_valid": 51,
+      "score_correlation_r": 0.9845,
+      "fl_mean": 0.4578
+    },
+    "fl_adversary": {
+      "n_valid": 51,
+      "score_correlation_r": 0.2576,
+      "fl_mean": 0.2686
+    }
+  },
+  "by_method_x_bucket": {
+    "fl_base": {
+      "LOW": {
+        "n": 17,
+        "fl_mean": 0.15
+      },
+      "MED": {
+        "n": 17,
+        "fl_mean": 0.5
+      },
+      "HIGH": {
+        "n": 17,
+        "fl_mean": 0.9203
+      }
+    },
+    "fl_bayesian": {
+      "LOW": {
+        "n": 17,
+        "fl_mean": 0.5
+      },
+      "MED": {
+        "n": 17,
+        "fl_mean": 0.5382
+      },
+      "HIGH": {
+        "n": 17,
+        "fl_mean": 0.9203
+      }
+    },
+    "fl_quantize": {
+      "LOW": {
+        "n": 17,
+        "fl_mean": 0.1176
+      },
+      "MED": {
+        "n": 17,
+        "fl_mean": 0.4059
+      },
+      "HIGH": {
+        "n": 17,
+        "fl_mean": 0.85
+      }
+    },
+    "fl_adversary": {
+      "LOW": {
+        "n": 17,
+        "fl_mean": 0.2412
+      },
+      "MED": {
+        "n": 17,
+        "fl_mean": 0.25
+      },
+      "HIGH": {
+        "n": 17,
+        "fl_mean": 0.3147
+      }
+    }
+  }
+}

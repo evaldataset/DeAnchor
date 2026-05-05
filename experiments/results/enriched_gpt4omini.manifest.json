@@ -1,0 +1,15 @@
+{
+  "manifest_name": "enriched_gpt4omini",
+  "kind": "paired_score_aware_blind",
+  "source_file": "rich_features_gpt4omini_raw.jsonl",
+  "n_records": 100,
+  "n_fp": 50,
+  "n_tp": 50,
+  "sampling_seed": 42,
+  "sampling_method": "stratified by label",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "license": "CC-BY-4.0",
+  "generation_command": "see scripts/generate_llm_inputs.py and experiments/run_*",
+  "note": "Same enriched audit as enriched_qwen but with GPT-4o-mini."
+}

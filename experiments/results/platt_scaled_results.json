@@ -1,0 +1,31 @@
+{
+  "n": 200,
+  "raw": {
+    "ece": 0.3997,
+    "fp_mean": 0.8726,
+    "tp_mean": 0.9269,
+    "delta": 0.0543
+  },
+  "calibrated": {
+    "ece": 0.1329,
+    "fp_mean": 0.397,
+    "tp_mean": 0.601,
+    "delta": 0.2041
+  },
+  "per_fold_ece_raw": [
+    0.4003,
+    0.3941,
+    0.3983,
+    0.4,
+    0.4061
+  ],
+  "per_fold_ece_calibrated": [
+    0.1594,
+    0.2514,
+    0.0984,
+    0.232,
+    0.0938
+  ],
+  "per_fold_ece_calibrated_mean": 0.167,
+  "per_fold_ece_calibrated_std": 0.0655
+}

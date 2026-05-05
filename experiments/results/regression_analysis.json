@@ -1,0 +1,42 @@
+{
+  "simple_analysis": {
+    "shift": 0.491,
+    "cohens_d": 4.0647,
+    "p_value": 0.0
+  },
+  "regression": {
+    "intercept": {
+      "coefficient": -0.5072,
+      "ci_lower": -0.9087,
+      "ci_upper": -0.0896,
+      "significant": true
+    },
+    "score_present": {
+      "coefficient": 0.4854,
+      "ci_lower": 0.0959,
+      "ci_upper": 0.8695,
+      "significant": true
+    },
+    "ml_score": {
+      "coefficient": 1.0218,
+      "ci_lower": 0.5584,
+      "ci_upper": 1.4591,
+      "significant": true
+    },
+    "is_fraud": {
+      "coefficient": -0.0073,
+      "ci_lower": -0.0338,
+      "ci_upper": 0.02,
+      "significant": false
+    },
+    "score_x_ml": {
+      "coefficient": 0.006,
+      "ci_lower": -0.4118,
+      "ci_upper": 0.432,
+      "significant": false
+    },
+    "r_squared": 0.8976
+  },
+  "n_observations": 200,
+  "n_transactions": 100
+}

@@ -1,0 +1,21 @@
+{
+  "label": "rich_features_qwen",
+  "n": 100,
+  "auroc_raw_ml": 0.6976,
+  "auroc_scoreaware_llm": 0.4237,
+  "auroc_scoreblind_llm": 0.6165,
+  "auroc_fusion": 0.513,
+  "auroc_combiner_ml_blind": 0.6299,
+  "lr_test_llm_over_ml": {
+    "chi2": 2.2081,
+    "p": 0.13729023815394303
+  },
+  "tost_003_equivalence": false,
+  "tost_ci90": [
+    -0.31802,
+    -0.03605
+  ],
+  "normative_verdict": "suppression",
+  "paired_shift_mean": 0.2428,
+  "alpha_rich": 0.2441
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "multi_seed_controlled_ablation",
+  "n_seeds": 3,
+  "n_per_seed": 100,
+  "per_seed": {
+    "seed_42": {
+      "n_valid": 100,
+      "mean_shift": 0.0872,
+      "alpha": 0.094,
+      "ci95": [
+        -0.2995,
+        0.6693
+      ]
+    },
+    "seed_123": {
+      "n_valid": 100,
+      "mean_shift": 0.1105,
+      "alpha": 0.1193,
+      "ci95": [
+        -0.2947,
+        0.6929
+      ]
+    },
+    "seed_7": {
+      "n_valid": 100,
+      "mean_shift": 0.0538,
+      "alpha": 0.058,
+      "ci95": [
+        -0.3,
+        0.6693
+      ]
+    }
+  },
+  "across_seed_mean_shift": 0.0838,
+  "across_seed_std_shift": 0.0233,
+  "across_seed_mean_alpha": 0.0904,
+  "across_seed_std_alpha": 0.0252
+}

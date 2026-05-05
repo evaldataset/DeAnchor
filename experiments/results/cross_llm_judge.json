@@ -1,0 +1,245 @@
+{
+  "results": [
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 2,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 4,
+      "completeness": 4,
+      "clarity": 4,
+      "actionability": 3,
+      "overall": 4,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 2,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 2,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 4,
+      "completeness": 4,
+      "clarity": 4,
+      "actionability": 3,
+      "overall": 4,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 2,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 2,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 2,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 1,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 4,
+      "completeness": 4,
+      "clarity": 4,
+      "actionability": 3,
+      "overall": 4,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 4,
+      "completeness": 4,
+      "clarity": 4,
+      "actionability": 4,
+      "overall": 4,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 1,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 2,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 1,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 2,
+      "actionability": 1,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 4,
+      "completeness": 4,
+      "clarity": 4,
+      "actionability": 3,
+      "overall": 3.8,
+      "category": "true_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 2,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 2,
+      "category": "false_positive"
+    },
+    {
+      "coherence": 3,
+      "completeness": 3,
+      "clarity": 3,
+      "actionability": 2,
+      "overall": 3,
+      "category": "true_positive"
+    }
+  ],
+  "judge_model": "Qwen2.5-7B-Instruct"
+}

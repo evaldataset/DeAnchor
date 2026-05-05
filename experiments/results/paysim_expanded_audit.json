@@ -1,0 +1,19 @@
+{
+  "label": "paysim_expanded_qwen",
+  "n": 200,
+  "auroc_raw_ml": 0.8836,
+  "auroc_scoreaware_llm": 0.6246,
+  "auroc_scoreblind_llm": 0.6764,
+  "auroc_fusion": 0.6543,
+  "auroc_combiner_ml_blind": 0.6955,
+  "lr_test_llm_over_ml": {
+    "chi2": 14.1962,
+    "p": 0.00016470300767212898
+  },
+  "tost_003_equivalence": false,
+  "tost_ci90": [
+    -0.25715,
+    0.01861
+  ],
+  "normative_verdict": "suppression"
+}

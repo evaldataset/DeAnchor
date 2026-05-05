@@ -1,0 +1,17 @@
+{
+  "domain": "uci_adult_real",
+  "model": "gpt-4o-mini",
+  "n": 98,
+  "ml_baseline_auroc": 0.9179,
+  "auroc_raw_ml": 0.8771,
+  "auroc_scoreaware": 0.825,
+  "auroc_scoreblind": 0.4315,
+  "auroc_fusion": 0.8729,
+  "lr_test": {
+    "chi2": 1.8181,
+    "p": 0.1775355372958528
+  },
+  "alpha": 1.3853,
+  "suppression": -0.3935,
+  "verdict": "rational"
+}

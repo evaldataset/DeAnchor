@@ -1,0 +1,2911 @@
+{
+  "results": [
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 2,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity and actionable insights, while Approach A provides solid analysis but lacks the narrative context, and Approach B is less useful due to inaccuracies.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 0,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive analysis by combining quantitative evidence with clarity, while Approach A offers solid insights, and Approach B lacks sufficient evidence and clarity.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 1,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, while Approach A provides strong evidence but lacks clarity, and Approach B offers weak evidence overall.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 2,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clear feature attribution, enhancing both clarity and actionability, while Approach A provides strong quantitative insights but lacks the narrative context.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 3,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative SHAP data with qualitative insights, providing a comprehensive and actionable analysis.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 4,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity and actionable insights, while Approach A provides solid evidence but lacks some clarity, and Approach B is weak in usefulness and trustworthiness.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 5,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive combination of quantitative evidence and qualitative insights, making it the most reliable and actionable.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 6,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with qualitative insights, providing a comprehensive analysis, while Approach A offers solid quantitative data but lacks the narrative context, and Approach B is less reliable due to inaccuracies.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 7,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 8,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 2,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity and actionable insights, while Approach A provides solid quantitative analysis, and Approach B lacks accuracy and detail.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 9,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "A",
+        "C",
+        "B"
+      ],
+      "brief_rationale": "Approach A provides the most precise quantitative evidence, while Approach C effectively combines quantitative and qualitative insights, leaving Approach B as the least reliable.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 10,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity and actionable insights, making it the most robust option.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 11,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 2,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity and actionable insights, while Approach A provides solid quantitative analysis, and Approach B lacks precision and contains inaccuracies.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 12,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity, making it the most useful and actionable, while Approach A provides solid evidence but lacks some clarity, and Approach B is less reliable due to its narrative nature.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 13,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with a narrative, providing a comprehensive analysis that enhances trust and actionability.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 14,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with clarity, making it the most reliable and actionable, while Approach B lacks precision and trustworthiness.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 15,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 2,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with SHAP analysis, providing the most comprehensive and actionable insights, while Approach B lacks accuracy and clarity.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 16,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with a narrative, providing the most comprehensive and actionable insights.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 17,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative evidence with narrative, providing a comprehensive and trustworthy analysis, while Approach A offers solid insights but lacks the narrative context, and Approach B is less actionable and trustworthy.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 18,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 4
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative SHAP analysis with contextual insights, providing the most comprehensive and actionable evaluation.",
+      "persona": "Senior Analyst (15yr)",
+      "sample_idx": 19,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, making it the most useful and clear, while Approach A provides solid information but lacks clarity, and Approach B, while clear, is less actionable.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 0,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, providing the clearest and most actionable information.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 1,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and actionable, while Approach A provides solid detail but lacks clarity, and Approach B offers limited actionable insights.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 2,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 4,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "B",
+        "A"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and actionable, while Approach B provides clear narratives, and Approach A, though informative, lacks the depth of the other two.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 3,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 4,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "B",
+        "A"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, making it the most useful and actionable.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 4,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines the strengths of both SHAP and LLM, providing a comprehensive and clear analysis that is actionable and trustworthy.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 5,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, offering the most comprehensive understanding of the flagged transaction.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 6,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, making it the most comprehensive and actionable.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 7,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 4,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "B",
+        "A"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and actionable for evaluating fraud risk.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 8,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and clear understanding of the fraud risk.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 9,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and clear understanding of the transaction.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 10,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive understanding of the fraud risk.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 11,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear insights by combining quantitative and qualitative evidence, making it the most useful for decision-making.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 12,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and clear for decision-making.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 13,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, making it the most comprehensive and actionable.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 14,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 4,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "B",
+        "A"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and actionable.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 15,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and actionable insights, while Approach B suffers from inaccuracies.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 16,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 2,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and actionable insights, while Approach B lacks sufficient detail.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 17,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 4,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "B",
+        "A"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, making it the most comprehensive and actionable, while Approach B provides a clear narrative but lacks some detail.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 18,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the transaction.",
+      "persona": "Junior Analyst (2yr)",
+      "sample_idx": 19,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and structured analysis, combining quantitative and qualitative evidence, while Approach A offers a solid but less actionable breakdown, and Approach B lacks clarity and depth.",
+      "persona": "Compliance Officer",
+      "sample_idx": 0,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and structured analysis, combining quantitative and qualitative insights, making it the most useful and trustworthy.",
+      "persona": "Compliance Officer",
+      "sample_idx": 1,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive analysis combining quantitative and qualitative insights, enhancing its overall effectiveness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 2,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 4,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and clear analysis combining quantitative and qualitative insights, making it the most useful and actionable.",
+      "persona": "Compliance Officer",
+      "sample_idx": 3,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive and defensible analysis.",
+      "persona": "Compliance Officer",
+      "sample_idx": 4,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear evidence, combining quantitative and qualitative assessments, making it the most useful for regulatory filings.",
+      "persona": "Compliance Officer",
+      "sample_idx": 5,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and structured analysis combining quantitative and qualitative evidence, enhancing its usefulness and clarity.",
+      "persona": "Compliance Officer",
+      "sample_idx": 6,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative evidence, providing a comprehensive and clear analysis that enhances trust and actionability.",
+      "persona": "Compliance Officer",
+      "sample_idx": 7,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative evidence, providing a comprehensive and clear analysis that enhances trust and actionability.",
+      "persona": "Compliance Officer",
+      "sample_idx": 8,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and clear analysis combining quantitative and qualitative evidence, enhancing its overall effectiveness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 9,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative evidence, providing a comprehensive and clear assessment of fraud risk.",
+      "persona": "Compliance Officer",
+      "sample_idx": 10,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and clear analysis combining quantitative and qualitative evidence, enhancing its overall effectiveness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 11,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive, clear, and actionable analysis combining quantitative and qualitative insights, making it the most effective for regulatory filings.",
+      "persona": "Compliance Officer",
+      "sample_idx": 12,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and structured analysis, combining quantitative and qualitative evidence, enhancing both clarity and trust.",
+      "persona": "Compliance Officer",
+      "sample_idx": 13,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and structured analysis that combines quantitative and qualitative insights, enhancing its overall effectiveness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 14,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and structured analysis, combining quantitative and qualitative insights, enhancing overall clarity and trust.",
+      "persona": "Compliance Officer",
+      "sample_idx": 15,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and structured analysis combining quantitative and qualitative evidence, enhancing its overall effectiveness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 16,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative evidence effectively, enhancing overall clarity and trustworthiness.",
+      "persona": "Compliance Officer",
+      "sample_idx": 17,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 4,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive and structured analysis combining quantitative and qualitative insights, enhancing overall clarity and actionability.",
+      "persona": "Compliance Officer",
+      "sample_idx": 18,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 3,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear evidence, combining quantitative and qualitative insights, making it the most useful for regulatory filings.",
+      "persona": "Compliance Officer",
+      "sample_idx": 19,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, offering the highest usefulness and clarity for decision-making.",
+      "persona": "Team Lead",
+      "sample_idx": 0,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive analysis combining quantitative and qualitative insights, making it the most useful and actionable.",
+      "persona": "Team Lead",
+      "sample_idx": 1,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 5
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 5,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, making it the most useful and actionable, while Approach A provides strong quantitative evidence but lacks the narrative context of Approach C.",
+      "persona": "Team Lead",
+      "sample_idx": 2,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 3,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable understanding of the flagged transaction.",
+      "persona": "Team Lead",
+      "sample_idx": 4,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable assessment.",
+      "persona": "Team Lead",
+      "sample_idx": 5,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 6,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable understanding of the flagged transaction.",
+      "persona": "Team Lead",
+      "sample_idx": 7,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive and actionable assessment of the fraud risk.",
+      "persona": "Team Lead",
+      "sample_idx": 8,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 9,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the fraud risk.",
+      "persona": "Team Lead",
+      "sample_idx": 10,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear insights, combining quantitative and qualitative evidence, making it the most actionable and trustworthy.",
+      "persona": "Team Lead",
+      "sample_idx": 11,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear evidence, combining quantitative and qualitative insights, making it the most useful for decision-making.",
+      "persona": "Team Lead",
+      "sample_idx": 12,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the fraud risk.",
+      "persona": "Team Lead",
+      "sample_idx": 13,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, providing the highest clarity and actionability.",
+      "persona": "Team Lead",
+      "sample_idx": 14,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive understanding of the fraud risk.",
+      "persona": "Team Lead",
+      "sample_idx": 15,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 16,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 17,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Team Lead",
+      "sample_idx": 18,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the transaction's risk.",
+      "persona": "Team Lead",
+      "sample_idx": 19,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Risk Manager",
+      "sample_idx": 0,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides a comprehensive view combining quantitative and qualitative insights, making it the most useful and actionable.",
+      "persona": "Risk Manager",
+      "sample_idx": 1,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable assessment of fraud risk.",
+      "persona": "Risk Manager",
+      "sample_idx": 2,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, enhancing overall understanding and decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 3,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the fraud risk.",
+      "persona": "Risk Manager",
+      "sample_idx": 4,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 2,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 2
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, providing the most comprehensive and actionable assessment.",
+      "persona": "Risk Manager",
+      "sample_idx": 5,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive and actionable analysis, while Approach A offers solid quantitative evidence but lacks clarity in actionability, and Approach B is less useful overall.",
+      "persona": "Risk Manager",
+      "sample_idx": 6,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the fraud risk.",
+      "persona": "Risk Manager",
+      "sample_idx": 7,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the fraud risk.",
+      "persona": "Risk Manager",
+      "sample_idx": 8,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear analysis, combining quantitative and qualitative insights, making it the most useful for decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 9,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Risk Manager",
+      "sample_idx": 10,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 4,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive insights by combining quantitative SHAP data with qualitative narrative, enhancing both actionability and trust.",
+      "persona": "Risk Manager",
+      "sample_idx": 11,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear insights, combining quantitative and qualitative evidence, making it the most useful for decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 12,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C provides the most comprehensive and clear insights, combining quantitative and qualitative evidence, making it the most actionable and trustworthy.",
+      "persona": "Risk Manager",
+      "sample_idx": 13,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive view that enhances decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 14,
+      "category": "false_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 4,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Risk Manager",
+      "sample_idx": 15,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 4,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 3,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive and actionable analysis.",
+      "persona": "Risk Manager",
+      "sample_idx": 16,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing the most comprehensive understanding of the transaction.",
+      "persona": "Risk Manager",
+      "sample_idx": 17,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights effectively, providing the highest overall value for decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 18,
+      "category": "true_positive"
+    },
+    {
+      "approach_a": {
+        "usefulness": 4,
+        "clarity": 4,
+        "actionability": 3,
+        "trust": 4
+      },
+      "approach_b": {
+        "usefulness": 3,
+        "clarity": 3,
+        "actionability": 2,
+        "trust": 3
+      },
+      "approach_c": {
+        "usefulness": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "trust": 5
+      },
+      "ranking": [
+        "C",
+        "A",
+        "B"
+      ],
+      "brief_rationale": "Approach C combines quantitative and qualitative insights, providing a comprehensive view that enhances decision-making.",
+      "persona": "Risk Manager",
+      "sample_idx": 19,
+      "category": "true_positive"
+    }
+  ],
+  "personas": [
+    "Senior Analyst (15yr)",
+    "Junior Analyst (2yr)",
+    "Compliance Officer",
+    "Team Lead",
+    "Risk Manager"
+  ]
+}

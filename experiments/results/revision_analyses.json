@@ -1,0 +1,123 @@
+{
+  "fusion_auroc_ci": {
+    "raw_ml": {
+      "auroc": 0.7875,
+      "ci_95": [
+        0.7201,
+        0.8525
+      ]
+    },
+    "llm_fl": {
+      "auroc": 0.727,
+      "ci_95": [
+        0.6624,
+        0.8024
+      ]
+    },
+    "fusion": {
+      "auroc": 0.7861,
+      "ci_95": [
+        0.721,
+        0.8566
+      ]
+    },
+    "auroc_diff_fusion_minus_raw": {
+      "mean": -0.0029,
+      "ci_95": [
+        -0.0182,
+        0.0154
+      ]
+    }
+  },
+  "disagreement_region": {
+    "moderate": {
+      "n": 27,
+      "n_fp": 19,
+      "n_tp": 8,
+      "ml_score_range": "[0.70, 0.85)",
+      "raw_ml": {
+        "delta": -0.0008,
+        "auroc": 0.4737
+      },
+      "llm_fl": {
+        "delta": -0.001,
+        "auroc": 0.4474
+      },
+      "pearson_ml_fl": 0.9936
+    },
+    "high-score": {
+      "n": 173,
+      "n_fp": 81,
+      "n_tp": 92,
+      "ml_score_range": "[0.85, 1.01)",
+      "raw_ml": {
+        "delta": 0.0579,
+        "auroc": 0.8305
+      },
+      "llm_fl": {
+        "delta": 0.0539,
+        "auroc": 0.7527
+      },
+      "pearson_ml_fl": 0.7637
+    }
+  },
+  "prevalence_aware": {
+    "balanced_50_50": {
+      "raw_ml_auroc": 0.8015,
+      "llm_fl_auroc": 0.74,
+      "raw_ml_auroc_ci": [
+        0.7356,
+        0.8652
+      ]
+    },
+    "realistic_10pct_tp": {
+      "raw_ml_auroc": 0.8008,
+      "llm_fl_auroc": 0.7419,
+      "raw_ml_auroc_ci": [
+        0.6594,
+        0.9087
+      ]
+    },
+    "realistic_30pct_tp": {
+      "raw_ml_auroc": 0.801,
+      "llm_fl_auroc": 0.7407,
+      "raw_ml_auroc_ci": [
+        0.721,
+        0.8728
+      ]
+    }
+  },
+  "paired_controlled_ablation": {
+    "n_paired": 100,
+    "mean_shift": 0.491,
+    "se": 0.0121,
+    "t_stat": 40.647,
+    "p_value": 0.0,
+    "ci_95": [
+      0.4673,
+      0.5147
+    ],
+    "fp_mean_shift": 0.4842,
+    "tp_mean_shift": 0.4966,
+    "label_interaction": {
+      "fp_n": 45,
+      "tp_n": 55,
+      "diff": 0.0123
+    }
+  },
+  "partial_correlation": {
+    "partial_r_ml_fl_controlling_label": 0.7525,
+    "r2_ml_only": 0.6588,
+    "r2_label_only": 0.2217,
+    "r2_both": 0.6625,
+    "incremental_r2_label_over_ml": 0.0037,
+    "incremental_r2_ml_over_label": 0.4407
+  },
+  "minimum_detectable_effect": {
+    "n": 200,
+    "alpha": 0.05,
+    "power": 0.8,
+    "min_detectable_d": 0.396,
+    "note": "fusion AUROC diff of 0.002 is far below detectable threshold; absence of significance does not imply equivalence"
+  }
+}
