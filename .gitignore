@@ -1,13 +1,25 @@
+# Virtual environment
+.venv/
+
+# Data files (large)
+data/raw/
+data/processed/*.parquet
+*.csv
+
+# Model files
+ml_baseline/models/
+rag/chroma_db/
+rag/tfidf_index/
+
+# Experiment outputs (regenerable)
+experiments/results/*.jsonl
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
-*.swp
-.DS_Store
-.venv/
-.env*
 .pytest_cache/
-.idea/
+
+# IDE
 .vscode/
-*.log
-data/raw/
-paper/
+.idea/

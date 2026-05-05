@@ -1,17 +1,17 @@
 {
   "domain": "uci_adult_real",
   "model": "gpt-4o-mini",
-  "n": 98,
+  "n": 99,
   "ml_baseline_auroc": 0.9179,
-  "auroc_raw_ml": 0.8771,
-  "auroc_scoreaware": 0.825,
-  "auroc_scoreblind": 0.4315,
-  "auroc_fusion": 0.8729,
+  "auroc_raw_ml": 0.8778,
+  "auroc_scoreaware": 0.7827,
+  "auroc_scoreblind": 0.4622,
+  "auroc_fusion": 0.8659,
   "lr_test": {
-    "chi2": 1.8181,
-    "p": 0.1775355372958528
+    "chi2": 0.5605,
+    "p": 0.45406823029222887
   },
-  "alpha": 1.3853,
-  "suppression": -0.3935,
+  "alpha": 1.2539,
+  "suppression": -0.3204,
   "verdict": "rational"
 }

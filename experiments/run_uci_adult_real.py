@@ -106,52 +106,64 @@ def run():
     print("G.2: Real UCI Adult re-run (n=100, GPT-4o-mini)")
     print("=" * 60)
 
-    # Load real UCI Adult via sklearn
+    # Load real UCI Adult via sklearn (preserve raw rows for prompt generation)
     print("  Loading UCI Adult...")
     adult = fetch_openml("adult", version=2, as_frame=True, parser="pandas")
-    df = adult.data.copy()
-    y_str = adult.target
-    df["target"] = (y_str == ">50K").astype(int)
-    df = df.dropna()
-    print(f"  After dropna: {df.shape}, positive rate {df['target'].mean():.3f}")
+    raw_df = adult.data.copy()
+    raw_df["target"] = (adult.target == ">50K").astype(int)
+    raw_df = raw_df.dropna().reset_index(drop=True)
+    print(f"  After dropna: {raw_df.shape}, positive rate {raw_df['target'].mean():.3f}")
 
-    # Train real GradientBoosting baseline on the full dataset
-    cat_cols = df.select_dtypes(include=["object", "category"]).columns.tolist()
+    cat_cols = raw_df.select_dtypes(include=["object", "category"]).columns.tolist()
+    feature_cols = [c for c in raw_df.columns if c != "target"]
+
+    # Stratified split on row indices (preserves alignment between encoded
+    # features and the human-readable rows used for prompt construction).
+    idx = np.arange(len(raw_df))
+    y_target = raw_df["target"].values
+    train_idx, test_idx, y_tr, y_te = train_test_split(
+        idx, y_target, test_size=0.3, random_state=42, stratify=y_target
+    )
+
+    # Encoders are fit on the train rows only (no test leakage).
     enc = {}
     for c in cat_cols:
         le = LabelEncoder()
-        df[c] = le.fit_transform(df[c].astype(str))
+        le.fit(raw_df.loc[train_idx, c].astype(str))
+        # transform test with seen + unseen handling
+        unseen = set(raw_df.loc[test_idx, c].astype(str)) - set(le.classes_)
+        if unseen:
+            le.classes_ = np.append(le.classes_, sorted(unseen))
         enc[c] = le
-    feature_cols = [c for c in df.columns if c != "target"]
-    X = df[feature_cols].values
-    y_target = df["target"].values
 
-    X_tr, X_te, y_tr, y_te = train_test_split(
-        X, y_target, test_size=0.3, random_state=42, stratify=y_target
-    )
+    def encode_rows(rows):
+        out = rows.copy()
+        for c in cat_cols:
+            out[c] = enc[c].transform(out[c].astype(str))
+        return out[feature_cols].values
+
+    X_tr = encode_rows(raw_df.loc[train_idx])
+    X_te = encode_rows(raw_df.loc[test_idx])
     gb = GradientBoostingClassifier(n_estimators=100, random_state=42).fit(X_tr, y_tr)
     test_proba = gb.predict_proba(X_te)[:, 1]
     test_auc = roc_auc_score(y_te, test_proba)
-    print(f"  GradientBoosting test AUROC = {test_auc:.4f}")
+    print(f"  GradientBoosting test AUROC (held-out) = {test_auc:.4f}")
 
-    # Pick stratified subset of 50 positive + 50 negative from test split
+    # Stratified subset of 50 positive + 50 negative from the held-out test
     rng = np.random.default_rng(42)
-    test_df = df.iloc[X_tr.shape[0]:].copy()
-    # We don't have direct mapping back; use indices instead
-    pos_idx = np.where(y_te == 1)[0]
-    neg_idx = np.where(y_te == 0)[0]
-    rng.shuffle(pos_idx)
-    rng.shuffle(neg_idx)
-    sel = np.concatenate([pos_idx[:50], neg_idx[:50]])
-    sel_X = X_te[sel]
-    sel_y = y_te[sel]
-    sel_proba = test_proba[sel]
+    pos_local = np.where(y_te == 1)[0]
+    neg_local = np.where(y_te == 0)[0]
+    rng.shuffle(pos_local)
+    rng.shuffle(neg_local)
+    sel_local = np.concatenate([pos_local[:50], neg_local[:50]])
+    sel_y = y_te[sel_local]
+    sel_proba = test_proba[sel_local]
+    selected_test_idx = test_idx[sel_local]
 
-    # Reconstruct human-readable rows for prompt: invert label encoders
-    test_rows = df.iloc[X_tr.shape[0]:].iloc[sel].copy().reset_index(drop=True)
-    for c in cat_cols:
-        if c in test_rows.columns:
-            test_rows[c] = enc[c].inverse_transform(test_rows[c].astype(int))
+    # Human-readable rows are pulled by ABSOLUTE row index — guarantees
+    # that profile, label, and ML score all refer to the same person.
+    test_rows = raw_df.loc[selected_test_idx].copy().reset_index(drop=True)
+    # No need to inverse-transform: raw_df still has the original strings.
 
     rows = []
     for i, (_, r) in enumerate(test_rows.iterrows()):

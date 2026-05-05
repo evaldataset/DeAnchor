@@ -9,11 +9,11 @@
   "bibitems_missing_verification_record": [],
   "verification_records_for_removed_bibitems": [],
   "verification_methods_distribution": {
+    "openalex": 16,
     "semantic_scholar": 1,
     "industry_source": 1,
-    "arxiv": 21,
-    "openalex": 16,
-    "url_head": 1
+    "url_head": 1,
+    "arxiv": 21
   },
   "by_bibkey": {
     "nilson2023": {

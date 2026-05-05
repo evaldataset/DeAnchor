@@ -184,18 +184,126 @@ def _print_verdict(result: dict[str, Any]) -> None:
     print("=" * 64)
 
 
+def _load_layout_b(aware_path: Path, blind_path: Path,
+                   id_key: str, label_key: str, score_key: str,
+                   fl_aware_key: str, fl_blind_key: str) -> list[dict[str, Any]]:
+    """Layout B: separate score-aware and score-blind JSONL files merged on transaction id. Each file may contain a
+    single fl field (e.g., 'fraud_likelihood' nested under 'assessment') or a top-level fl field.
+    """
+    def _extract(rec: dict[str, Any], fl_key: str) -> tuple[Any, Any, Any, Any]:
+        # transaction id
+        tid = rec.get(id_key) or (rec.get("original") or {}).get(id_key)
+        # label
+        lab = rec.get(label_key)
+        if lab is None:
+            lab = (rec.get("original") or {}).get(label_key)
+        # ml score
+        sc = rec.get(score_key)
+        if sc is None:
+            sc = (rec.get("original") or {}).get(score_key)
+        # fl
+        fl = rec.get(fl_key)
+        if fl is None and isinstance(rec.get("assessment"), dict):
+            fl = rec["assessment"].get("fraud_likelihood")
+        if fl is None and isinstance(rec.get("blind_assessment"), dict):
+            fl = rec["blind_assessment"].get("fraud_likelihood")
+        if fl is None and isinstance(rec.get("fp_explanation"), dict):
+            fl = rec["fp_explanation"].get("fraud_likelihood")
+        return tid, lab, sc, fl
+
+    aware_idx: dict[Any, dict[str, Any]] = {}
+    for line in open(aware_path):
+        if not line.strip():
+            continue
+        r = json.loads(line)
+        tid, lab, sc, fl = _extract(r, fl_aware_key)
+        if None in (tid, lab, sc, fl):
+            continue
+        aware_idx[tid] = {"label": int(lab), "ml": float(sc), "aware": float(fl)}
+
+    rows = []
+    for line in open(blind_path):
+        if not line.strip():
+            continue
+        r = json.loads(line)
+        tid, _, _, fl = _extract(r, fl_blind_key)
+        if tid is None or fl is None:
+            continue
+        if tid in aware_idx:
+            entry = aware_idx[tid]
+            rows.append({"label": entry["label"], "ml": entry["ml"],
+                         "aware": entry["aware"], "blind": float(fl)})
+    return rows
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("--inputs", required=True, type=Path,
-                   help="Paired-record JSONL (Layout A).")
+    p.add_argument("--inputs", type=Path, default=None,
+                   help="Paired-record JSONL (Layout A). Mutually exclusive with --aware/--blind.")
+    p.add_argument("--aware", type=Path, default=None,
+                   help="Score-aware JSONL (Layout B; pair with --blind).")
+    p.add_argument("--blind", type=Path, default=None,
+                   help="Score-blind JSONL (Layout B; pair with --aware).")
     p.add_argument("--ml-score-key", default="ml_score",
-                   help="Field name for the ML score (default: ml_score).")
+                   help="Field name for the ML score (default: ml_score; falls back to fraud_score).")
+    p.add_argument("--label-key", default="label",
+                   help="Field name for the ground-truth label (default: label; falls back to is_fraud).")
+    p.add_argument("--id-key", default="transaction_id",
+                   help="Field name for transaction id (default: transaction_id).")
+    p.add_argument("--fl-aware-key", default="fl_aware",
+                   help="Top-level fraud_likelihood field for score-aware (default: fl_aware).")
+    p.add_argument("--fl-blind-key", default="fl_blind",
+                   help="Top-level fraud_likelihood field for score-blind (default: fl_blind).")
     p.add_argument("--prevalence", type=float, default=None,
                    help="Operational prevalence; if absent, uses sample base rate.")
     p.add_argument("--output", type=Path, default=None,
                    help="Optional output JSON path.")
     args = p.parse_args()
 
+    # Resolve layout
+    if args.inputs is not None and (args.aware or args.blind):
+        print("ERROR: --inputs is mutually exclusive with --aware/--blind.", file=sys.stderr)
+        return 2
+    if args.aware is not None and args.blind is None or args.aware is None and args.blind is not None:
+        print("ERROR: --aware and --blind must be given together.", file=sys.stderr)
+        return 2
+
+    if args.aware and args.blind:
+        if not args.aware.exists() or not args.blind.exists():
+            print(f"ERROR: Layout B files not found.", file=sys.stderr)
+            return 2
+        # Use 'is_fraud' as a common fallback for label key in fraud datasets.
+        label_keys_to_try = [args.label_key]
+        if args.label_key == "label":
+            label_keys_to_try.append("is_fraud")
+        score_keys_to_try = [args.ml_score_key]
+        if args.ml_score_key == "ml_score":
+            score_keys_to_try.append("fraud_score")
+        rows = []
+        for lk in label_keys_to_try:
+            for sk in score_keys_to_try:
+                rows = _load_layout_b(args.aware, args.blind,
+                                      args.id_key, lk, sk,
+                                      args.fl_aware_key, args.fl_blind_key)
+                if rows:
+                    break
+            if rows:
+                break
+        if not rows:
+            print(f"ERROR: no usable paired records via Layout B.", file=sys.stderr)
+            return 2
+        result = run_audit(rows, prevalence=args.prevalence)
+        _print_verdict(result)
+        if args.output:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(json.dumps(result, indent=2))
+            print(f"  (written to {args.output})")
+        return 0
+
+    if args.inputs is None:
+        print("ERROR: must supply --inputs (Layout A) or --aware+--blind (Layout B).",
+              file=sys.stderr)
+        return 2
     if not args.inputs.exists():
         print(f"ERROR: input file does not exist: {args.inputs}", file=sys.stderr)
         return 2
