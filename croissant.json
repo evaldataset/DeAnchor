@@ -47,9 +47,9 @@
   "@type": "sc:Dataset",
   "name": "DeAnchor Paired LLM Response Dataset",
   "description": "Approximately 3,500 LLM responses (~650 strict score-aware/score-blind paired matches; remainder condition variants and within-subject paired-by-design records) collected for the DeAnchor audit benchmark. Eight LLM families (GPT-4o, GPT-4o-mini, Qwen2.5-7B, Gemma-2-9B, Claude-Haiku-4.5, Gemini-2.5-flash, o3-mini, Gemini-2.5-pro thinking) on four feature regimes (IEEE-CIS, PaySim, enriched production-like, UCI-Adult-style) plus a synthetic medical stress test.",
-  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "url": "https://anonymous.4open.science/r/deanchor-eval-2026/",
+  "url": "https://huggingface.co/datasets/EvalData/DeAnchor",
   "version": "1.0",
   "datePublished": "2026-05",
   "creator": {
@@ -81,6 +81,13 @@
   "rai:dataBiases": "All four feature regimes over-represent fraud/credit-risk decisions in financial contexts; transferability to other domains (medical, legal, hiring) requires re-running the audit. The eight-LLM panel under-samples open-source small models (no Llama-3.x, no Mistral-7B in this release).",
   "rai:dataUseCases": "Intended: (a) re-running the DeAnchor audit on subsets of interest; (b) auditing additional LLM families by re-collecting paired outputs on the released manifests; (c) meta-analysis of anchoring across model families. Not intended: training discriminative classifiers; deploying as a fraud-detection model; attribution of fraud to individuals.",
   "rai:personalSensitiveInformation": "None. Source datasets are pre-anonymized public benchmarks. Synthetic data (UCI-style, medical, enriched merchant/device fields) are randomly generated and do not correspond to real individuals.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    "https://www.kaggle.com/c/ieee-fraud-detection",
+    "https://www.kaggle.com/datasets/ealaxi/paysim1",
+    "https://archive.ics.uci.edu/dataset/2/adult"
+  ],
+  "prov:wasGeneratedBy": "LLM responses collected via API calls (OpenAI gpt-4o-2024-08-06, gpt-4o-mini-2024-07-18, o3-mini; Anthropic claude-haiku-4-5-20251001; Google gemini-2.5-flash, gemini-2.5-pro thinking-enabled) and local inference (Qwen2.5-7B-Instruct, Gemma-2-9B-it). Each transaction was prompted under matched score-aware and score-blind conditions with otherwise identical templates. Decoding: temperature=0.0; OpenAI seed=42 where supported. Synthetic transaction text (UCI-Adult-style profiles, enriched merchant/device/history fields, medical scenarios) was deterministically generated using random.Random(42) prior to LLM prompting. Preprocessing: JSON-extracted fl values clipped to [0,1]; records missing both fl_aware and fl_blind excluded from paired analyses. No human annotation step (responses are programmatic LLM outputs). Full pipeline: see https://github.com/evaldataset/DeAnchor.",
   "distribution": [
     {
       "@type": "cr:FileObject",
