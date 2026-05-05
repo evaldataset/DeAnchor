@@ -42,7 +42,9 @@
     "separator": "cr:separator",
     "source": "cr:source",
     "subField": "cr:subField",
-    "transform": "cr:transform"
+    "transform": "cr:transform",
+    "samplingRate": "cr:samplingRate",
+    "equivalentProperty": "cr:equivalentProperty"
   },
   "@type": "sc:Dataset",
   "name": "DeAnchor Paired LLM Response Dataset",
@@ -91,21 +93,20 @@
   "distribution": [
     {
       "@type": "cr:FileObject",
-      "@id": "deanchor-zip",
-      "name": "deanchor-eval-2026.zip",
-      "description": "Full code + data archive for the DeAnchor audit benchmark.",
-      "contentUrl": "https://anonymous.4open.science/r/deanchor-eval-2026/archive.zip",
-      "encodingFormat": "application/zip",
+      "@id": "audit-fixture-jsonl",
+      "name": "audit_fixture_ieee_50.jsonl",
+      "description": "Canonical paired score-aware/score-blind audit fixture (n=50, IEEE-CIS, GPT-4o-mini). One JSON object per line.",
+      "contentUrl": "https://huggingface.co/datasets/EvalData/DeAnchor/resolve/main/data/audit_fixture_ieee_50.jsonl",
+      "encodingFormat": "application/jsonlines",
       "sha256": "TBD-at-camera-ready"
     },
     {
       "@type": "cr:FileSet",
       "@id": "paired-llm-responses",
       "name": "paired-llm-responses",
-      "description": "JSONL files in experiments/results/ containing paired score-aware/score-blind LLM outputs.",
-      "containedIn": { "@id": "deanchor-zip" },
+      "description": "All JSONL files in the data/ directory of the Hugging Face mirror, containing paired score-aware/score-blind LLM outputs across eight model families and four feature regimes.",
       "encodingFormat": "application/jsonlines",
-      "includes": "experiments/results/*.jsonl"
+      "includes": "data/*.jsonl"
     }
   ],
   "recordSet": [
@@ -113,41 +114,63 @@
       "@type": "cr:RecordSet",
       "@id": "audit-record",
       "name": "audit-record",
-      "description": "One row per transaction-condition LLM response.",
+      "description": "One row per transaction in the canonical audit fixture (audit_fixture_ieee_50.jsonl). Each row pairs a single transaction's score-aware and score-blind LLM outputs with the ground-truth label and ML score.",
       "field": [
-        { "@type": "cr:Field", "@id": "transaction_id", "name": "transaction_id", "dataType": "sc:Text" },
         {
           "@type": "cr:Field",
-          "@id": "label",
+          "@id": "audit-record/transaction_id",
+          "name": "transaction_id",
+          "description": "Anonymized transaction identifier (matches the source manifest).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "audit-fixture-jsonl" },
+            "extract": { "jsonPath": "$.transaction_id" }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit-record/label",
           "name": "label",
           "description": "Ground-truth class (1 = fraud, 0 = legitimate).",
-          "dataType": "sc:Integer"
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": { "@id": "audit-fixture-jsonl" },
+            "extract": { "jsonPath": "$.label" }
+          }
         },
         {
           "@type": "cr:Field",
-          "@id": "ml_score",
+          "@id": "audit-record/ml_score",
           "name": "ml_score",
           "description": "Upstream ML model fraud probability in [0,1].",
-          "dataType": "sc:Float"
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": { "@id": "audit-fixture-jsonl" },
+            "extract": { "jsonPath": "$.ml_score" }
+          }
         },
         {
           "@type": "cr:Field",
-          "@id": "fl_aware",
+          "@id": "audit-record/fl_aware",
           "name": "fl_aware",
-          "description": "LLM fraud_likelihood when shown the ML score.",
-          "dataType": "sc:Float"
+          "description": "LLM fraud_likelihood when shown the ML score (score-aware condition).",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": { "@id": "audit-fixture-jsonl" },
+            "extract": { "jsonPath": "$.fl_aware" }
+          }
         },
         {
           "@type": "cr:Field",
-          "@id": "fl_blind",
+          "@id": "audit-record/fl_blind",
           "name": "fl_blind",
-          "description": "LLM fraud_likelihood when ML score is omitted.",
-          "dataType": "sc:Float"
-        },
-        { "@type": "cr:Field", "@id": "model_id", "name": "model_id", "dataType": "sc:Text" },
-        { "@type": "cr:Field", "@id": "temperature", "name": "temperature", "dataType": "sc:Float" },
-        { "@type": "cr:Field", "@id": "seed", "name": "seed", "dataType": "sc:Integer" },
-        { "@type": "cr:Field", "@id": "timestamp", "name": "timestamp", "dataType": "sc:DateTime" }
+          "description": "LLM fraud_likelihood when ML score is omitted (score-blind condition).",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": { "@id": "audit-fixture-jsonl" },
+            "extract": { "jsonPath": "$.fl_blind" }
+          }
+        }
       ]
     }
   ]
